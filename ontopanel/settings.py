@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-(9q@o@oq=y#5e_1&))q)0@j^5_k6uj@22u^obuf^v_r0jdzoxr'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['ontopanel.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'ontopanel.herokuapp.com']
 CORS_ALLOW_ALL_ORIGINS = True
 
 
@@ -95,8 +95,8 @@ WSGI_APPLICATION = 'ontopanel.wsgi.application'
 DATABASES = {}
 DATABASES['default'] = dj_database_url.config(conn_max_age=600)
 
-# DATABASES['default'] = dj_database_url.config(
-#     conn_max_age=600)
+DATABASES['default'] = dj_database_url.config(
+    conn_max_age=600)
 
 
 # Password validation
