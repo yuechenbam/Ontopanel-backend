@@ -1,1 +1,1 @@
-web: gunicorn pluginBackend.wsgi --log-file -
+web: gunicorn ontopanel.wsgi --log-file -
