@@ -28,7 +28,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = str(os.environ.get('DEBUG')) == "1"  # 1==True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'ontopanel.herokuapp.com']
-CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOWED_ORIGINS = [
+    "http://127.0.0.1:5500", "https://yuechenbam.github.io"
+]
 
 
 # Application definition
@@ -98,6 +101,13 @@ if 'test' in sys.argv:
 
 else:
     DATABASES['default'] = dj_database_url.config(conn_max_age=600)
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 
 # Password validation
