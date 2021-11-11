@@ -91,16 +91,6 @@ WSGI_APPLICATION = 'ontopanel.wsgi.application'
 #     }
 # }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'd376i7294p8fdf',
-#         'USER': 'mjcjhkvpepdqtv',
-#         'PASSWORD': '9a8021700787a1652856581c208e49d0416c0467ed1fbf7fd7aacc4889d4b62a',
-#         'HOST': 'ec2-54-195-195-81.eu-west-1.compute.amazonaws.com',
-#         'PORT': '5432',
-#     }
-# }
 
 DATABASES = {}
 DATABASES['default'] = dj_database_url.config(conn_max_age=600)
