@@ -1,3 +1,4 @@
+from django.http import response
 from rest_framework.test import APITestCase
 from django.urls import reverse
 from django.core import mail
@@ -27,6 +28,22 @@ class TestViews(TestSetUp):
         response = self.client.post(reverse("login"), {
                                     'username': self.user_data['email'], 'password': self.user_data['password']})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_user_logout(self):
+        self.client.post(reverse("register"), self.user_data)
+        login_response = self.client.post(reverse("login"), {
+                                          'username': self.user_data['email'], 'password': self.user_data['password']})
+        self.client.credentials(
+            HTTP_AUTHORIZATION=f"Token {login_response.data['token']}"
+        )
+        logout_response = self.client.get(reverse("logout"))
+        self.assertEqual(logout_response.status_code, status.HTTP_200_OK)
+
+        # try get
+        onto_response = self.client.get(
+            reverse("onto_lists"))
+        self.assertEqual(onto_response.status_code,
+                         status.HTTP_401_UNAUTHORIZED)
 
     def test_user_reset_password(self):
         self.client.post(reverse("register"), self.user_data)

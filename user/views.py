@@ -8,9 +8,11 @@ from rest_framework.exceptions import APIException
 from .serializers import ResetPasswordEmailSerializer, ResetPasswordConfirmSerializer, RegisterSerializer
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.authtoken.models import Token
+from rest_framework.permissions import AllowAny, IsAuthenticated
 
 
 class RegisterUser(APIView):
+    permission_classes = [AllowAny]
     serializers_class = RegisterSerializer
 
     def post(self, request):
@@ -26,6 +28,8 @@ class RegisterUser(APIView):
 
 
 class LoginUser(ObtainAuthToken):
+    permission_classes = [AllowAny]
+
     def post(self, request, *args, **kwargs):
         serializer = self.serializer_class(data=request.data,
                                            context={'request': request})
@@ -39,8 +43,22 @@ class LoginUser(ObtainAuthToken):
         })
 
 
+class LogoutUser(APIView):
+
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+
+        request.user.auth_token.delete()
+        data = {
+            "message": "You have successfully logged out.",
+        }
+        return Response(data, status=status.HTTP_200_OK)
+
+
 class PasswordResetEmail(APIView):
     serializer_class = ResetPasswordEmailSerializer
+    permission_classes = [AllowAny]
 
     def post(self, request):
         serializer = self.serializer_class(data=request.data)
@@ -51,6 +69,7 @@ class PasswordResetEmail(APIView):
 
 class PasswordResetConfirm(APIView):
     serializer_class = ResetPasswordConfirmSerializer
+    permission_classes = [AllowAny]
 
     def patch(self, request):
 
