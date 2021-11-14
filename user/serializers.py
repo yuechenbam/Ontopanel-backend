@@ -44,7 +44,7 @@ class ResetPasswordEmailSerializer(serializers.Serializer):
             user = User.objects.get(email=email)
             uidb64 = urlsafe_base64_encode(smart_bytes(user.id))
             token = PasswordResetTokenGenerator().make_token(user)
-            email_body = f"Hi, You're receiving this email because you requested a password reset for your user account at the drawio plugin. Please copy the following secret key and paste in the corresponding form: \n\n{uidb64}/{token} \n\nThanks for using our site!"
+            email_body = f"Hi, You're receiving this email because you requested a password reset for your user account at the drawio plugin. Please copy the following secret key and paste in the corresponding form: \n\n{uidb64}/{token} \n\nThanks for using our site!\n\nYue Chen"
             send_mail(
                 "Verfiy your email",
                 email_body,

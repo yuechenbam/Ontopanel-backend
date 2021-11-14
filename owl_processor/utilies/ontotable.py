@@ -6,6 +6,7 @@ from rdflib.util import find_roots, get_tree
 import json
 from rest_framework.exceptions import APIException
 from .machester import Class
+from .datatype import datatype
 
 
 class ImportOnto:
@@ -107,7 +108,7 @@ class ImportOnto:
                     pass
             if i == len(parse_format_list) - 1:
                 raise APIException(
-                    "Your ontology or it imported ontologies can not be accessed or parsed. Tried to merge ontologies first in xml or turtle.")
+                    "Your ontology or it imported ontologies can not be accessed or parsed. Please check access or the format(xml or turtle).")
 
             if list(t.triples((None, rdflib.OWL.imports, None))):
                 for _, _, o in t.triples((None, rdflib.OWL.imports, None)):
@@ -265,12 +266,15 @@ class ImportOnto:
                     "SubPropertyOf": subPropertyOf,
                 }
 
-            else:
+            elif belongsTo == "Individual":
                 type_ind = [
                     self.compute_n3(x)
                     for x in self.g.objects(subject=sub, predicate=rdflib.RDF.type)
                 ]
                 SpecialInfo = {"Type": type_ind}
+
+            else:
+                pass
 
             new_row = {
                 "Color": "none",
@@ -318,6 +322,20 @@ class ImportOnto:
             if new_row:
                 self.df = self.df.append(new_row, ignore_index=True)
 
+        # add datatype
+
+        for i in range(len(datatype)):
+            new_row_datatype = {
+                "Color": "#FF8C00",
+                "EntityName": datatype[i],
+                "RDFLabel": None,
+                "Annotations": None,
+                "SpecialInfo": None,
+                "BelongsTo": 'Datatype',
+                "namespace": rdflib.OWL}
+
+            self.df = self.df.append(new_row_datatype, ignore_index=True)
+
     def map_function(self, x):
         n3 = self.compute_n3(x, includeLabel=False)
         if x in self.deprecated:
@@ -361,12 +379,18 @@ class ImportOnto:
         for key, value in entity_type.items():
             self.entity_tree[key] = self.find_roots(value[0], value[1])
 
-        # inidvidual, has no tree structure
+        # inidvidual and datatype, have no tree structure
         Inds = sorted(
             self.df[self.df["BelongsTo"] ==
                     "Individual"]["EntityName"].tolist()
         )
         self.entity_tree["Individual"] = [(x, []) for x in Inds]
+
+        Datatype = sorted(
+            self.df[self.df["BelongsTo"] ==
+                    "Datatype"]["EntityName"].tolist()
+        )
+        self.entity_tree["Datatype"] = [(x, []) for x in Datatype]
 
     def run_all(self):
         if self.inputType == "URL":
