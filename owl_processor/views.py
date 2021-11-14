@@ -4,7 +4,7 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from .models import Onto
 from .serializers import OntoSerializer
 from rest_framework.views import APIView
-from .utilies.ontotable import onto_to_table
+from .utility.ontotable import onto_to_table
 from rest_framework import status
 import json
 from rest_framework.exceptions import APIException

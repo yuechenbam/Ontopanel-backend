@@ -1,9 +1,12 @@
 import rdflib
 import pandas as pd
 import os
-from rdflib.util import get_tree
+from rdflib.term import URIRef
+from rdflib.util import find_roots, get_tree
 import json
 from rest_framework.exceptions import APIException
+from .machester import Class
+from .datatype import datatype
 
 
 class ImportOnto:
@@ -13,10 +16,18 @@ class ImportOnto:
         self.g = rdflib.Graph()
         self.base_onto = None
         # {namespace:prefix}
-        self.namespace_list = {}
+        self.namespace_list = {
+            rdflib.URIRef("http://www.w3.org/2004/02/skos/core#"): "skos",
+            rdflib.RDF: 'rdf',
+            rdflib.RDFS: 'rdfs',
+            rdflib.OWL: 'owl',
+            rdflib.URIRef("http://www.w3.org/2000/10/swap/list#"): 'list',
+            rdflib.URIRef("http://purl.org/dc/elements/1.1/"): 'dc'
+
+        }
         self.imported_ontology = []
+        self.deprecated = []
         self.entity_tree = {}
-        self.deprected = []
         self.anno_properties = {rdflib.OWL.backwardCompatibleWith,
                                 rdflib.OWL.deprecated,
                                 rdflib.OWL.incompatibleWith,
@@ -97,7 +108,7 @@ class ImportOnto:
                     pass
             if i == len(parse_format_list) - 1:
                 raise APIException(
-                    "Your ontology or it imported ontologies can not be parsed. Tried to merge ontologies first in xml or turtle.")
+                    "Your ontology or it imported ontologies can not be accessed or parsed. Please check access or the format(xml or turtle).")
 
             if list(t.triples((None, rdflib.OWL.imports, None))):
                 for _, _, o in t.triples((None, rdflib.OWL.imports, None)):
@@ -116,8 +127,10 @@ class ImportOnto:
             if namespace not in self.namespace_list:
                 self.namespace_list[namespace] = prefix
                 # sub_n3 = self.g.namespace_manager.qname(sub)
-            n3 = self.namespace_list[namespace] + ":" + name
+            # n3 = self.namespace_list[namespace] + ":" + name
+
             # prefix_short = sub_n3.split(':')[0]
+            n3 = prefix+':'+name
 
             rdfLabel = self.g.label(entity).strip()
             if includeLabel and rdfLabel and (rdfLabel != name):
@@ -148,7 +161,7 @@ class ImportOnto:
                     if anno == rdflib.OWL.deprecated:
 
                         if anno_list[0].value == True:
-                            self.deprected.append(sub)
+                            self.deprecated.append(sub)
 
                     for j in anno_list:
                         try:
@@ -160,26 +173,10 @@ class ImportOnto:
                     annotations[anno_prop_n3] = anno_list_n3
 
             if belongsTo == "Class":
-                subClassOf = [
-                    self.compute_n3(x)
-                    for x in self.g.objects(
-                        subject=sub, predicate=rdflib.RDFS.subClassOf
-                    )
-                ]
-
-                equivalentTo = [
-                    self.compute_n3(x)
-                    for x in self.g.objects(
-                        subject=sub, predicate=rdflib.OWL.equivalentClass
-                    ) if type(x) != rdflib.BNode
-                ]
-
-                disjointWith = [
-                    self.compute_n3(x)
-                    for x in self.g.objects(
-                        subject=sub, predicate=rdflib.OWL.disjointWith
-                    )
-                ]
+                all_info = Class(sub, graph=self.g).get_expression()
+                SpecialInfo = {}
+                for i in all_info.keys():
+                    SpecialInfo[i] = [all_info[i]]
 
                 cco = rdflib.Namespace(
                     'http://www.ontologyrepository.com/CommonCoreOntologies/')
@@ -187,19 +184,14 @@ class ImportOnto:
 
                 if sub in list(self.g.transitive_subjects(object=bfo.BFO_0000015, predicate=rdflib.RDFS.subClassOf)):
 
-                    color = 'green'
+                    color = '#1C9E71'
                 elif sub in list(self.g.transitive_subjects(object=cco.InformationContentEntity, predicate=rdflib.RDFS.subClassOf)):
 
-                    color = 'yellow'
+                    color = '#F0F000'
 
                 elif sub in list(self.g.transitive_subjects(object=cco.InformationBearingArtifact, predicate=rdflib.RDFS.subClassOf)):
 
-                    color = 'grey'
-
-                SpecialInfo = {
-                    "SubClassOf": subClassOf,
-                    "EquivalentTo": equivalentTo,
-                    "DisjointWith": disjointWith}
+                    color = '#DADADA'
 
             elif belongsTo == "OP":
                 subPropertyOf = [
@@ -290,22 +282,24 @@ class ImportOnto:
                     "SubPropertyOf": subPropertyOf,
                 }
 
-            else:
+            elif belongsTo == "Individual":
                 type_ind = [
                     self.compute_n3(x)
                     for x in self.g.objects(subject=sub, predicate=rdflib.RDF.type)
                 ]
                 SpecialInfo = {"Type": type_ind}
 
+            else:
+                pass
+
             new_row = {
-                'Color': color,
+                "Color": color,
                 "EntityName": sub_n3,
                 "RDFLabel": self.g.label(sub),
                 "Annotations": annotations,
                 "SpecialInfo": SpecialInfo,
                 "BelongsTo": belongsTo,
-                "namespace": namespace,
-            }
+                "namespace": namespace}
 
         else:
             new_row = None
@@ -324,7 +318,6 @@ class ImportOnto:
             rdflib.OWL.Class: "Class",
             rdflib.OWL.ObjectProperty: "OP",
             rdflib.OWL.DatatypeProperty: "DP",
-            rdflib.OWL.AnnotationProperty: "AP",
         }
 
         i = 0
@@ -340,36 +333,54 @@ class ImportOnto:
                             self.df = self.df.append(
                                 new_row, ignore_index=True)
 
+        for anno in self.anno_properties:
+            new_row = self.assign_df(anno, "AP")
+            if new_row:
+                self.df = self.df.append(new_row, ignore_index=True)
+
+        # add datatype
+
+        for i in range(len(datatype)):
+            new_row_datatype = {
+                "Color": "#FF8C00",
+                "EntityName": datatype[i],
+                "RDFLabel": '',
+                "Annotations": '',
+                "SpecialInfo": '',
+                "BelongsTo": 'Datatype',
+                "namespace": rdflib.OWL}
+
+            self.df = self.df.append(new_row_datatype, ignore_index=True)
+
     def map_function(self, x):
-
         n3 = self.compute_n3(x, includeLabel=False)
-        if x in self.deprected:
+        if x in self.deprecated:
             return f'<del>{n3}</del>'
-
-        return n3
+        else:
+            return n3
 
     def find_roots(self, prop, obj):
         roots = []
 
-        all_entities = set(self.g.subjects(
-            predicate=rdflib.RDF.type, object=obj))
+        all_entities = set([i for i in self.g.subjects(
+            predicate=rdflib.RDF.type, object=obj) if type(i) != rdflib.BNode])
+
+        if obj == rdflib.OWL.AnnotationProperty:
+            all_entities = self.anno_properties
+
         for i in all_entities:
-            if type(i) != rdflib.BNode:
-                root_level = list(self.g.objects(subject=i, predicate=prop))
+            root_level = list(self.g.objects(subject=i, predicate=prop))
 
-                if (not root_level) or (
-                    (root_level[0] not in all_entities)
-                    and (type(root_level[0])) != rdflib.BNode
-                ):
+            if (not root_level) or (all([(x not in all_entities) for x in root_level])):
 
-                    tree = get_tree(
-                        self.g,
-                        i,
-                        prop,
-                        mapper=self.map_function,
-                        sortkey=lambda s: (s[0].startswith('<del>'), s[0])
-                    )
-                    roots.append(tree)
+                tree = get_tree(
+                    self.g,
+                    i,
+                    prop,
+                    mapper=self.map_function,
+                    sortkey=lambda s: (s[0].startswith('<del>'), s[0])
+                )
+                roots.append(tree)
 
         return sorted(roots, key=lambda s: (s[0].startswith('<del>'), s[0]))
 
@@ -384,18 +395,28 @@ class ImportOnto:
         for key, value in entity_type.items():
             self.entity_tree[key] = self.find_roots(value[0], value[1])
 
-        # inidvidual, has no tree structure
+        # inidvidual and datatype, have no tree structure
         Inds = sorted(
             self.df[self.df["BelongsTo"] ==
                     "Individual"]["EntityName"].tolist()
         )
         self.entity_tree["Individual"] = [(x, []) for x in Inds]
 
+        Datatype = sorted(
+            self.df[self.df["BelongsTo"] ==
+                    "Datatype"]["EntityName"].tolist()
+        )
+        self.entity_tree["Datatype"] = [(x, []) for x in Datatype]
+
     def run_all(self):
         if self.inputType == "URL":
             self.get_imports(self.filepath)
         else:
             self.get_imports(self.filepath, keyword="file")
+
+        for namespace, prefix in self.namespace_list.items():
+            rdflib.namespace.NamespaceManager(self.g).bind(
+                prefix, namespace, override=True)
 
         self.extract_anno_properties()
         self.extract_infos()
@@ -429,9 +450,10 @@ def onto_to_table(filepath, inputType="URL"):
 if __name__ == "__main__":
     filepath = r"https://raw.githubusercontent.com/Mat-O-Lab/MSEO/main/MSEO_mid.owl"
     df, output_namespace, tree = onto_to_table(filepath)
+
     with open(
-        r"C:\Users\ychen2\Documents\Project\javascript\Vue\drawioPlugin\vanilla\onto_file.json",
+        r"C:\Users\ychen2\Documents\Project\javascript\Vue\drawioPlugin\vanilla\ontopanel\onto_file.json",
         "w",
     ) as f:
-        json.dump({'title': "MESO", 'onto_source': filepath, 'onto_table': {"table": df, "tree": tree,
+        json.dump({'title': "MSEO", 'onto_source': filepath, 'onto_table': {"table": df, "tree": tree,
                   "namespace": output_namespace}, 'author': 'no author'}, f)

@@ -328,9 +328,9 @@ class ImportOnto:
             new_row_datatype = {
                 "Color": "#FF8C00",
                 "EntityName": datatype[i],
-                "RDFLabel": None,
-                "Annotations": None,
-                "SpecialInfo": None,
+                "RDFLabel": '',
+                "Annotations": '',
+                "SpecialInfo": '',
                 "BelongsTo": 'Datatype',
                 "namespace": rdflib.OWL}
 
