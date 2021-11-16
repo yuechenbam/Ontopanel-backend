@@ -456,4 +456,4 @@ if __name__ == "__main__":
         "w",
     ) as f:
         json.dump({'title': "MSEO", 'onto_source': filepath, 'onto_table': {"table": df, "tree": tree,
-                  "namespace": output_namespace}, 'author': 'no author'}, f)
+                  "namespaces": output_namespace}, 'author': 'no author'}, f)

@@ -29,7 +29,7 @@ DEBUG = str(os.environ.get('DEBUG')) == "1"  # 1==True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'ontopanel.herokuapp.com']
 
-CORS_ALLOWED_ORIGINS = [
+CORS_ORIGIN_WHITELIST = [
     "http://127.0.0.1:5500", "https://yuechenbam.github.io"
 ]
 
