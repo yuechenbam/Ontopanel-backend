@@ -6,7 +6,7 @@ from rdflib.util import find_roots, get_tree
 import json
 from rest_framework.exceptions import APIException
 from .machester import Class
-from .datatype import datatype
+from .specialEntities import datatype
 
 
 class ImportOnto:
@@ -283,7 +283,8 @@ class ImportOnto:
                 "Annotations": annotations,
                 "SpecialInfo": SpecialInfo,
                 "BelongsTo": belongsTo,
-                "namespace": namespace}
+                "namespace": namespace,
+                "EntityURI": sub}
 
         else:
             new_row = None
@@ -332,7 +333,9 @@ class ImportOnto:
                 "Annotations": '',
                 "SpecialInfo": '',
                 "BelongsTo": 'Datatype',
-                "namespace": rdflib.OWL}
+                "namespace": rdflib.OWL,
+
+            }
 
             self.df = self.df.append(new_row_datatype, ignore_index=True)
 

@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'corsheaders',
     'owl_processor.apps.OwlProcessorConfig',
-    'user.apps.UserConfig'
+    'user.apps.UserConfig',
+    'convertor.apps.ConvertorConfig'
 
 ]
 

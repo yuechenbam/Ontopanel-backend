@@ -1,0 +1,563 @@
+{
+  "nodes": {
+    "yP9pYQV_AgBSu3DBSgTn-0": {
+      "type": "ObjectProperty(WithCharacteristics)",
+      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+      "label": "<div>&lt;&lt;owl:ObjectProperty&gt;&gt;</div><div><br></div><div>(F,IF&nbsp; ,T,S&nbsp; ,AS,R,IR)&nbsp; &nbsp;</div><div><span>ns:&nbsp; isWarm&nbsp;&nbsp;</span></div>",
+      "geometry": { "x": 10, "y": 140, "width": 320, "height": 110 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-1": {
+      "type": "ObjectProperty",
+      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+      "label": "<div>&lt;&lt;owl:ObjectProperty&gt;&gt; ns:isWarm<br></div>",
+      "geometry": { "x": 655, "y": 100, "width": 180, "height": 75 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-2": {
+      "type": "ObjectProperty",
+      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+      "label": "<div>&lt;&lt;owl:ObjectProperty&gt;&gt; ns:isCold<br></div>",
+      "geometry": { "x": 655, "y": 228, "width": 180, "height": 75 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-4": {
+      "type": "ObjectProperty",
+      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+      "label": "<div>&lt;&lt;owl:ObjectProperty&gt;&gt; ns:isWarm<br></div>",
+      "geometry": { "x": 935, "y": 110, "width": 180, "height": 75 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-5": {
+      "type": "ObjectProperty",
+      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+      "label": "<div>&lt;&lt;owl:ObjectProperty&gt;&gt; ns:notCold<br></div>",
+      "geometry": { "x": 935, "y": 238, "width": 180, "height": 75 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-7": {
+      "type": "ObjectProperty",
+      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+      "label": "<div>&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp;</div><div><br></div><div>ns:isWarm<br></div>",
+      "geometry": { "x": 40, "y": 330, "width": 180, "height": 75 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-8": {
+      "type": "ObjectProperty",
+      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+      "label": "<div>&lt;&lt;owl:ObjectProperty&gt;&gt; ns:isNotWarm<br></div>",
+      "geometry": { "x": 40, "y": 458, "width": 180, "height": 75 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-10": {
+      "type": "ObjectProperty",
+      "style": "rhombus;whiteSpace=wrap;html=1;",
+      "label": "<div>&lt;&lt;owl:ObjectProperty&gt;&gt; ns:hasData<br></div>",
+      "geometry": { "x": 430, "y": 370, "width": 180, "height": 75 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-11": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "ns:Data",
+      "geometry": { "x": 560, "y": 475, "width": 120, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-12": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "ns:Measurement",
+      "geometry": { "x": 370, "y": 475, "width": 120, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-15": {
+      "type": "DatatypeProperty(Universal)",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+      "label": "(&nbsp; all&nbsp; )&nbsp; &nbsp;ns&nbsp; :&nbsp; hasValue1&nbsp; ~&nbsp; &nbsp;owl:real",
+      "geometry": { "x": 40, "y": 650, "width": 260, "height": 30 },
+      "objectData": { "IRI_DP": "Null", "IRI_DT": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-16": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+      "label": "ns:Result1",
+      "geometry": { "x": 40, "y": 620, "width": 260, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-17": {
+      "type": "DatatypeProperty(Universal)",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+      "label": "(<span style=\"background-color: rgb(255 , 255 , 255)\">∀</span>) ns:hasValue2~owl:real",
+      "geometry": { "x": 410, "y": 650, "width": 240, "height": 30 },
+      "objectData": { "IRI_DP": "Null", "IRI_DT": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-18": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+      "label": "ns:Result2",
+      "geometry": { "x": 410, "y": 620, "width": 240, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-19": {
+      "type": "DatatypeProperty(Existenial)",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+      "label": "(some) ns:hasValue3 ~owl:real",
+      "geometry": { "x": 780, "y": 650, "width": 270, "height": 30 },
+      "objectData": { "IRI_DP": "Null", "IRI_DT": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-20": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "<span style=\"font-family: &#34;verdana&#34;\">ns:Result3</span>",
+      "geometry": { "x": 780, "y": 620, "width": 270, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-21": {
+      "type": "DatatypeProperty(Existenial)",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+      "label": "(<span style=\"background-color: rgb(255 , 255 , 255)\">∃</span>) ns:hasValue4 ~owl:real",
+      "geometry": { "x": 40, "y": 760, "width": 240, "height": 30 },
+      "objectData": { "IRI_DP": "Null", "IRI_DT": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-22": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "<span style=\"font-family: &#34;verdana&#34;\">ns:Result4</span>",
+      "geometry": { "x": 40, "y": 730, "width": 240, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-23": {
+      "type": "DatatypeProperty(Cardinality)",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+      "label": "ns : hasValue5&nbsp; (1&nbsp; ..&nbsp; 5)&nbsp; ~&nbsp; owl:real",
+      "geometry": { "x": 410, "y": 770, "width": 285, "height": 30 },
+      "objectData": { "IRI_DP": "Null", "IRI_DT": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-24": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "<span style=\"font-family: &#34;verdana&#34;\">ns:Result5</span>",
+      "geometry": { "x": 410, "y": 740, "width": 285, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-25": {
+      "type": "DatatypeProperty(YesDomainYesRange)",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "<span style=\"font-family: &#34;verdana&#34;\">ns:hasValue6&nbsp;</span><font face=\"Verdana\">~</font><span style=\"font-family: &#34;verdana&#34;\">owl:real</span>",
+      "geometry": { "x": 47, "y": 885, "width": 230, "height": 30 },
+      "objectData": { "IRI_DP": "Null", "IRI_DT": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-26": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "<span style=\"font-family: &#34;verdana&#34;\">ns:Result6</span>",
+      "geometry": { "x": 47, "y": 855, "width": 230, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-27": {
+      "type": "DatatypeProperty(YesDomainNoRange)",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "<font face=\"Verdana\">ns:hasValue7</font>",
+      "geometry": { "x": 470, "y": 870, "width": 136, "height": 30 },
+      "objectData": { "IRI_DP": "Null", "IRI_DT": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-28": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "<span style=\"font-family: &#34;verdana&#34;\">ns:Result7</span>",
+      "geometry": { "x": 470, "y": 840, "width": 136, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-29": {
+      "type": "DatatypeProperty(NoDomainYesRange)",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;",
+      "label": "<font face=\"Verdana\">ns:hasValue8~</font><span style=\"font-family: &#34;verdana&#34;\">owl:real</span>",
+      "geometry": { "x": 650, "y": 870, "width": 240, "height": 30 },
+      "objectData": { "IRI_DP": "Null", "IRI_DT": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-30": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "<span style=\"font-family: &#34;verdana&#34;\">ns:Result8</span>",
+      "geometry": { "x": 650, "y": 840, "width": 240, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-31": {
+      "type": "DatatypeProperty(NoDomainNoRange)",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;",
+      "label": "<font face=\"Verdana\">ns:hasValue9</font>",
+      "geometry": { "x": 1000, "y": 870, "width": 136, "height": 30 },
+      "objectData": { "IRI_DP": "Null", "IRI_DT": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-32": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "<span style=\"font-family: &#34;verdana&#34;\">ns:Result9</span>",
+      "geometry": { "x": 1000, "y": 840, "width": 136, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-33": {
+      "type": "DatatypeProperty(WithCharacteristics)",
+      "style": "rhombus;whiteSpace=wrap;html=1;",
+      "label": "<div><br></div><div>&lt;&lt;owl:DatatypeProperty&gt;&gt;</div><div>&nbsp;</div><div>(&nbsp; F&nbsp; ) ns&nbsp; :&nbsp; hasNumber<br></div>",
+      "geometry": { "x": 40, "y": 980, "width": 250, "height": 75 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-34": {
+      "type": "ObjectProperty",
+      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+      "label": "<div>&lt;&lt;owl:ObjectProperty&gt;&gt; ns:hasWeather<br></div>",
+      "geometry": { "x": 455, "y": 90, "width": 180, "height": 75 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-35": {
+      "type": "ObjectProperty",
+      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+      "label": "<div>&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp;<br></div><span style=\"font-family: &#34;helvetica&#34;\">&nbsp;ns:isWarm</span>",
+      "geometry": { "x": 455, "y": 218, "width": 180, "height": 75 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-37": {
+      "type": "DatatypeProperty",
+      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+      "label": "<div>&lt;&lt;owl:DatatypeProperty&gt;&gt;&nbsp;<br></div><span style=\"font-family: &#34;helvetica&#34;\">&nbsp;ns:hasNumber</span>",
+      "geometry": { "x": 695, "y": 960, "width": 180, "height": 75 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-38": {
+      "type": "DatatypeProperty",
+      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+      "label": "<div>&lt;&lt;owl:DatatypeProperty&gt;&gt; ns:hasString<br></div>",
+      "geometry": { "x": 695, "y": 1088, "width": 180, "height": 75 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-40": {
+      "type": "DatatypeProperty",
+      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+      "label": "<div>&lt;&lt;owl:DatatypeProperty&gt;&gt;&nbsp;<br></div><span style=\"font-family: &#34;helvetica&#34;\">&nbsp;ns:hasNumber</span>",
+      "geometry": { "x": 1010, "y": 970, "width": 180, "height": 75 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-41": {
+      "type": "DatatypeProperty",
+      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+      "label": "<div>&lt;&lt;owl:DatatypeProperty&gt;&gt;&nbsp;<br></div><span style=\"font-family: &#34;helvetica&#34;\">&nbsp;ns:hasInt</span>",
+      "geometry": { "x": 1010, "y": 1098, "width": 180, "height": 75 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-43": {
+      "type": "DatatypeProperty",
+      "style": "rhombus;whiteSpace=wrap;html=1;",
+      "label": "<div>&lt;&lt;owl:DatatypeProperty&gt;&gt;&nbsp;<br></div>&nbsp;ns:hasNumber",
+      "geometry": { "x": 100, "y": 1180, "width": 180, "height": 75 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-44": {
+      "type": "DataType",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "<span style=\"font-family: &#34;verdana&#34;\">owl:real</span>",
+      "geometry": { "x": 230, "y": 1285, "width": 120, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "yP9pYQV_AgBSu3DBSgTn-45": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "ns:Result",
+      "geometry": { "x": 40, "y": 1285, "width": 120, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "B8W9SRGkYxvtz1-D7y3Z-0": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "ns:Unit",
+      "geometry": { "x": 277, "y": -200, "width": 100, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "B8W9SRGkYxvtz1-D7y3Z-1": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "ns:Data",
+      "geometry": { "x": 3, "y": -200, "width": 100, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "B8W9SRGkYxvtz1-D7y3Z-3": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "ns:Unit",
+      "geometry": { "x": 277, "y": -110, "width": 100, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "B8W9SRGkYxvtz1-D7y3Z-4": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "ns:Data",
+      "geometry": { "x": 3, "y": -110, "width": 100, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "B8W9SRGkYxvtz1-D7y3Z-6": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "ns:Unit",
+      "geometry": { "x": 290, "y": -40, "width": 100, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "B8W9SRGkYxvtz1-D7y3Z-8": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "ns:Data",
+      "geometry": { "x": 0, "y": -40, "width": 100, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "B8W9SRGkYxvtz1-D7y3Z-9": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "&nbsp; ns:Unit",
+      "geometry": { "x": 293, "y": 30, "width": 100, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "B8W9SRGkYxvtz1-D7y3Z-11": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "ns:Data",
+      "geometry": { "x": 3, "y": 30, "width": 100, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "B8W9SRGkYxvtz1-D7y3Z-12": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "ns:Unit",
+      "geometry": { "x": 794, "y": -200, "width": 100, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "B8W9SRGkYxvtz1-D7y3Z-13": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "ns:Data",
+      "geometry": { "x": 520, "y": -200, "width": 100, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "B8W9SRGkYxvtz1-D7y3Z-15": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "ns:Unit",
+      "geometry": { "x": 804, "y": -120, "width": 100, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "B8W9SRGkYxvtz1-D7y3Z-16": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "ns:Data",
+      "geometry": { "x": 530, "y": -120, "width": 100, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "B8W9SRGkYxvtz1-D7y3Z-19": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "ns:Unit",
+      "geometry": { "x": 890, "y": -60, "width": 100, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "B8W9SRGkYxvtz1-D7y3Z-21": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "ns:Data",
+      "geometry": { "x": 530, "y": -60, "width": 100, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "9gEYDRaoNw-UlSOZSAo3-0": {
+      "type": "Namespace",
+      "style": "shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;",
+      "label": "<div><b>ns</b>: http://test.namespace.com/</div><div>dc:&nbsp;http://purl.org/dc/terms/</div><div>owl:http://www.w3.org/2002/07/owl#</div><span style=\"color: rgb(37 , 37 , 37) ; font-family: sans-serif ; font-size: 14px ; background-color: rgb(255 , 255 , 255)\">&nbsp;</span>",
+      "geometry": { "x": 10, "y": -420, "width": 290, "height": 80 },
+      "objectData": "none"
+    },
+    "9gEYDRaoNw-UlSOZSAo3-8": {
+      "type": "DatatypeProperty(Cardinality)",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+      "label": "ns:hasValue5_1 (0..5)~owl:real",
+      "geometry": { "x": 760, "y": 770, "width": 285, "height": 30 },
+      "objectData": { "IRI_DP": "Null", "IRI_DT": "Null" }
+    },
+    "9gEYDRaoNw-UlSOZSAo3-9": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "<span style=\"font-family: &#34;verdana&#34;\">ns:Result5_1</span>",
+      "geometry": { "x": 760, "y": 740, "width": 285, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "9gEYDRaoNw-UlSOZSAo3-10": {
+      "type": "DatatypeProperty(Cardinality)",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+      "label": "ns:hasValue5_2 (1..N)~owl:real",
+      "geometry": { "x": 1195, "y": 850, "width": 285, "height": 30 },
+      "objectData": { "IRI_DP": "Null", "IRI_DT": "Null" }
+    },
+    "9gEYDRaoNw-UlSOZSAo3-11": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "<span style=\"font-family: &#34;verdana&#34;\">ns:Result5_2</span>",
+      "geometry": { "x": 1195, "y": 820, "width": 285, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "YP9bqUeDGiAaVYP2t-B0-0": {
+      "type": "DatatypeProperty",
+      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+      "label": "<div>&lt;&lt;owl:DatatypeProperty&gt;&gt;&nbsp; &nbsp;&nbsp;</div><div>ns:hasValue<br></div>",
+      "geometry": { "x": 393, "y": 960, "width": 180, "height": 75 },
+      "objectData": { "IRI": "Null" }
+    },
+    "YP9bqUeDGiAaVYP2t-B0-1": {
+      "type": "DatatypeProperty",
+      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+      "label": "<div>&lt;&lt;owl:DatatypeProperty&gt;&gt; ns:hasNumber<br></div>",
+      "geometry": { "x": 393, "y": 1088, "width": 180, "height": 75 },
+      "objectData": { "IRI": "Null" }
+    }
+  },
+  "edges": {
+    "yP9pYQV_AgBSu3DBSgTn-3": {
+      "type": "InverseOf",
+      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;rounded=0;",
+      "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-family: &#34;verdana&#34; ; font-size: 12px\">&lt;&lt;owl:inverseOf&gt;&gt;</span>",
+      "source": "yP9pYQV_AgBSu3DBSgTn-2",
+      "target": "yP9pYQV_AgBSu3DBSgTn-1",
+      "objectData": "none"
+    },
+    "yP9pYQV_AgBSu3DBSgTn-6": {
+      "type": "EquivalentProperty",
+      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;rounded=0;",
+      "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-family: &#34;verdana&#34; ; font-size: 12px\">&lt;&lt;owl:equivalentProperty&gt;&gt;</span>",
+      "source": "yP9pYQV_AgBSu3DBSgTn-5",
+      "target": "yP9pYQV_AgBSu3DBSgTn-4",
+      "objectData": "none"
+    },
+    "yP9pYQV_AgBSu3DBSgTn-9": {
+      "type": "DisjointProperty",
+      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;rounded=0;",
+      "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-family: &#34;verdana&#34; ; font-size: 12px\">&lt;&lt;owl:propertyDisjointWith&gt;&gt;</span>",
+      "source": "yP9pYQV_AgBSu3DBSgTn-8",
+      "target": "yP9pYQV_AgBSu3DBSgTn-7",
+      "objectData": "none"
+    },
+    "yP9pYQV_AgBSu3DBSgTn-13": {
+      "type": "Range",
+      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endSize=8;arcSize=0;exitX=1;exitY=1;exitDx=0;exitDy=0;rounded=0;",
+      "label": "<span style=\"color: rgb(0 , 0 , 0)\">&lt;&lt;rdfs:range&gt;&gt;</span>",
+      "source": "yP9pYQV_AgBSu3DBSgTn-10",
+      "target": "yP9pYQV_AgBSu3DBSgTn-11",
+      "objectData": "none"
+    },
+    "yP9pYQV_AgBSu3DBSgTn-14": {
+      "type": "Domain",
+      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;endSize=8;entryX=0.5;entryY=0;entryDx=0;entryDy=0;arcSize=0;exitX=0;exitY=1;exitDx=0;exitDy=0;rounded=0;",
+      "label": "<span style=\"color: rgb(0 , 0 , 0)\">&lt;&lt;rdfs:domain&gt;&gt;</span>",
+      "source": "yP9pYQV_AgBSu3DBSgTn-10",
+      "target": "yP9pYQV_AgBSu3DBSgTn-12",
+      "objectData": "none"
+    },
+    "yP9pYQV_AgBSu3DBSgTn-36": {
+      "type": "SubPropertyOf",
+      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;rounded=0;fontFamily=Verdana;fontSize=12;",
+      "label": "<span style=\"color: rgb(0 , 0 , 0)\">&lt;&lt;rdfs:subPropertyOf&gt;&gt;</span>",
+      "source": "yP9pYQV_AgBSu3DBSgTn-35",
+      "target": "yP9pYQV_AgBSu3DBSgTn-34",
+      "objectData": "none"
+    },
+    "yP9pYQV_AgBSu3DBSgTn-39": {
+      "type": "DisjointProperty",
+      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;rounded=0;fontFamily=Verdana;",
+      "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-size: 12px\">&lt;&lt;owl:propertyDisjointWith&gt;&gt;</span>",
+      "source": "yP9pYQV_AgBSu3DBSgTn-38",
+      "target": "yP9pYQV_AgBSu3DBSgTn-37",
+      "objectData": "none"
+    },
+    "yP9pYQV_AgBSu3DBSgTn-42": {
+      "type": "EquivalentProperty",
+      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;rounded=0;",
+      "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-family: &#34;verdana&#34; ; font-size: 12px\">&lt;&lt;owl:equivalentProperty&gt;&gt;</span>",
+      "source": "yP9pYQV_AgBSu3DBSgTn-41",
+      "target": "yP9pYQV_AgBSu3DBSgTn-40",
+      "objectData": "none"
+    },
+    "yP9pYQV_AgBSu3DBSgTn-46": {
+      "type": "Range",
+      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endSize=8;arcSize=0;exitX=1;exitY=1;exitDx=0;exitDy=0;rounded=0;",
+      "label": "<span style=\"color: rgb(0 , 0 , 0)\">&lt;&lt;rdfs:range&gt;&gt;</span>",
+      "source": "yP9pYQV_AgBSu3DBSgTn-43",
+      "target": "yP9pYQV_AgBSu3DBSgTn-44",
+      "objectData": "none"
+    },
+    "yP9pYQV_AgBSu3DBSgTn-47": {
+      "type": "Domain",
+      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;endSize=8;entryX=0.5;entryY=0;entryDx=0;entryDy=0;arcSize=0;exitX=0;exitY=1;exitDx=0;exitDy=0;rounded=0;",
+      "label": "<span style=\"color: rgb(0 , 0 , 0)\">&lt;&lt;rdfs:domain&gt;&gt;</span>",
+      "source": "yP9pYQV_AgBSu3DBSgTn-43",
+      "target": "yP9pYQV_AgBSu3DBSgTn-45",
+      "objectData": "none"
+    },
+    "B8W9SRGkYxvtz1-D7y3Z-2": {
+      "type": "ObjectProperty(NoDomainNoRange)",
+      "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;dashed=1;startArrow=oval;startFill=0;arcSize=0;rounded=0;",
+      "label": "<span style=\"font-size: 12px\">&nbsp; ns:&nbsp; &nbsp;hasUnit1</span>",
+      "source": "B8W9SRGkYxvtz1-D7y3Z-1",
+      "target": "B8W9SRGkYxvtz1-D7y3Z-0",
+      "objectData": { "IRI": "Null" }
+    },
+    "B8W9SRGkYxvtz1-D7y3Z-5": {
+      "type": "ObjectProperty(NoDomainNoRange)",
+      "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;dashed=1;arcSize=0;rounded=0;",
+      "label": "<span style=\"font-size: 12px\">ns:hasUnit2</span>",
+      "source": "B8W9SRGkYxvtz1-D7y3Z-4",
+      "target": "B8W9SRGkYxvtz1-D7y3Z-3",
+      "objectData": { "IRI": "Null" }
+    },
+    "B8W9SRGkYxvtz1-D7y3Z-7": {
+      "type": "ObjectProperty(YesDomainYesRange)",
+      "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
+      "label": "<span style=\"font-size: 12px\">ns:</span><span style=\"font-size: 12px\">hasUnit3</span>",
+      "source": "B8W9SRGkYxvtz1-D7y3Z-8",
+      "target": "B8W9SRGkYxvtz1-D7y3Z-6",
+      "objectData": { "IRI": "Null" }
+    },
+    "B8W9SRGkYxvtz1-D7y3Z-10": {
+      "type": "ObjectProperty(YesDomainYesRange)",
+      "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;startArrow=oval;startFill=1;arcSize=0;rounded=0;",
+      "label": "<span style=\"font-size: 12px\">ns:</span><span style=\"font-size: 12px\">hasUnit4</span>",
+      "source": "B8W9SRGkYxvtz1-D7y3Z-11",
+      "target": "B8W9SRGkYxvtz1-D7y3Z-9",
+      "objectData": { "IRI": "Null" }
+    },
+    "B8W9SRGkYxvtz1-D7y3Z-14": {
+      "type": "ObjectProperty(NoDomainYesRange)",
+      "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;startArrow=oval;startFill=0;arcSize=0;rounded=0;",
+      "label": "<span style=\"font-size: 12px\">ns:</span><span style=\"font-size: 12px\">hasUnit5</span>",
+      "source": "B8W9SRGkYxvtz1-D7y3Z-13",
+      "target": "B8W9SRGkYxvtz1-D7y3Z-12",
+      "objectData": { "IRI": "Null" }
+    },
+    "B8W9SRGkYxvtz1-D7y3Z-17": {
+      "type": "ObjectProperty(YesDomainNoRange)",
+      "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;startArrow=oval;startFill=1;dashed=1;arcSize=0;rounded=0;",
+      "label": "<span style=\"font-size: 12px\">ns:</span><span style=\"font-size: 12px\">hasUnit6</span>",
+      "source": "B8W9SRGkYxvtz1-D7y3Z-16",
+      "target": "B8W9SRGkYxvtz1-D7y3Z-15",
+      "objectData": { "IRI": "Null" }
+    },
+    "B8W9SRGkYxvtz1-D7y3Z-18": {
+      "type": "ObjectProperty(WithCharacteristics)",
+      "style": "endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;",
+      "label": "<span style=\"font-size: 12px\">(F,IF,T,S,&nbsp; AS,R,&nbsp; IR)&nbsp; &nbsp;ns:</span><span style=\"font-size: 12px\">hasUnit7</span>",
+      "source": "B8W9SRGkYxvtz1-D7y3Z-21",
+      "target": "B8W9SRGkYxvtz1-D7y3Z-19",
+      "objectData": { "IRI": "Null" }
+    },
+    "YP9bqUeDGiAaVYP2t-B0-2": {
+      "type": "SubPropertyOf",
+      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;rounded=0;fontFamily=Verdana;fontSize=12;",
+      "label": "<span style=\"color: rgb(0 , 0 , 0)\">&lt;&lt;rdfs:subPropertyOf&gt;&gt;</span>",
+      "source": "YP9bqUeDGiAaVYP2t-B0-1",
+      "target": "YP9bqUeDGiAaVYP2t-B0-0",
+      "objectData": "none"
+    }
+  }
+}
