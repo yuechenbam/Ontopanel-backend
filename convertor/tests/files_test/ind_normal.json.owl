@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:ns1="http://test.namespace.com/"
+   xmlns:ns2="http://www.w3.org/2002/07/owl#"
+   xmlns:ns3="http://purl.org/dc/elements/1.1/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://test.namespace.com/datatype1">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/pinkLady">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns2:differentFrom rdf:resource="http://test.namespace.com/Fuji"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/Apple3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/pinkLady1">
+    <ns1:hasTaste rdf:resource="http://test.namespace.com/sweet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://test.namespace.com/Apple1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasGrade">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/pinkLady2">
+    <rdf:type rdf:resource="http://test.namespace.com/Apple2"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/Apple1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/">
+    <ns3:title>test</ns3:title>
+    <ns3:creator>yue</ns3:creator>
+    <ns2:versionInfo>0.0.1</ns2:versionInfo>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/NonApple1">
+    <ns1:hasMark rdf:datatype="http://test.namespace.com/literal">grade1</ns1:hasMark>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <ns2:complementOf rdf:resource="http://test.namespace.com/Fruit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/japanApple">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/isWarm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <ns1:hasMark xml:lang="de">grade1</ns1:hasMark>
+    <ns2:inverseOf rdf:resource="http://test.namespace.com/isCold"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasNumber">
+    <ns1:hasMark>number1</ns1:hasMark>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/sweet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns1:label xml:lang="en">annotation1</ns1:label>
+    <ns1:hasGrade rdf:datatype="http://test.namespace.com/grade">grade1</ns1:hasGrade>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf57a39c2b5c240a9b599ff593a27044d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+    <ns2:distinctMembers rdf:nodeID="N05155b14ceab4534b19ffb94443e9eb8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasAnno">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/pinkLady3">
+    <rdf:type rdf:resource="http://test.namespace.com/Apple3"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/label">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/subcomment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://test.namespace.com/comment"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N05155b14ceab4534b19ffb94443e9eb8">
+    <rdf:first rdf:resource="http://test.namespace.com/pinkLady2"/>
+    <rdf:rest rdf:nodeID="Nde24299d960441b483289ed424882d17"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/datatype3">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/literal">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/Fruit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/comment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <ns1:hasAnno>annotation2</ns1:hasAnno>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/isCold">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <ns2:inverseOf rdf:resource="http://test.namespace.com/isWarm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasTaste">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N16d7102f982c4ef29da2de05e546a630">
+    <rdf:first rdf:resource="http://test.namespace.com/pinkLady1"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/Fuji">
+    <ns2:sameAs rdf:resource="http://test.namespace.com/japanApple"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/Apple2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nde24299d960441b483289ed424882d17">
+    <rdf:first rdf:resource="http://test.namespace.com/pinkLady3"/>
+    <rdf:rest rdf:nodeID="N16d7102f982c4ef29da2de05e546a630"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasMark">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/datatype2">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/grade">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+</rdf:RDF>

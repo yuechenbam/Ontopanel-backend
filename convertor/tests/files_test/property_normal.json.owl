@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:ns2="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N54a14e9a095949a99d512d7d285d0d84">
+    <ns2:onProperty rdf:resource="http://test.namespace.com/hasValue2"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <ns2:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/Result5_1">
+    <rdfs:subClassOf rdf:nodeID="N3172eb272204460bbb1471ef82769c28"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3172eb272204460bbb1471ef82769c28">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <ns2:onProperty rdf:resource="http://test.namespace.com/hasValue5_1"/>
+    <ns2:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    <ns2:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</ns2:maxCardinality>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/isWarm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://test.namespace.com/hasWeather"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <ns2:equivalentProperty rdf:resource="http://test.namespace.com/notCold"/>
+    <ns2:propertyDisjointWith rdf:resource="http://test.namespace.com/isNotWarm"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <ns2:inverseOf rdf:resource="http://test.namespace.com/isCold"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasUnit7">
+    <rdfs:range rdf:resource="http://test.namespace.com/Unit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:domain rdf:resource="http://test.namespace.com/Data"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/Result5_2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="N54116f1404ce4ac3b09d70bbb59679a6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/Result8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasNumber">
+    <ns2:propertyDisjointWith rdf:resource="http://test.namespace.com/hasString"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    <rdfs:subPropertyOf rdf:resource="http://test.namespace.com/hasValue"/>
+    <rdfs:domain rdf:resource="http://test.namespace.com/Result"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <ns2:equivalentProperty rdf:resource="http://test.namespace.com/hasInt"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasValue5_2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/isNotWarm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <ns2:propertyDisjointWith rdf:resource="http://test.namespace.com/isWarm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/Result4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="Nba4ff3c8281d41f8aafdda5dc6416194"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasValue6">
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    <rdfs:domain rdf:resource="http://test.namespace.com/Result6"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasData">
+    <rdfs:range rdf:resource="http://test.namespace.com/Data"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://test.namespace.com/Measurement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/Result5">
+    <rdfs:subClassOf rdf:nodeID="N37e76a4f9d004614b991813f29f54206"/>
+    <rdfs:subClassOf rdf:nodeID="Nd679a60334b14123a3a3fe0ffdad0eb7"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N449da54409734536851b46f8d60d22fd">
+    <ns2:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    <ns2:onProperty rdf:resource="http://test.namespace.com/hasValue1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/Result3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="N17a14f3fc21f4cb0b13ca5b9901dbcff"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N54116f1404ce4ac3b09d70bbb59679a6">
+    <ns2:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ns2:minCardinality>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <ns2:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    <ns2:onProperty rdf:resource="http://test.namespace.com/hasValue5_2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#real">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/isCold">
+    <ns2:inverseOf rdf:resource="http://test.namespace.com/isWarm"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasValue2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N37e76a4f9d004614b991813f29f54206">
+    <ns2:onProperty rdf:resource="http://test.namespace.com/hasValue5"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <ns2:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</ns2:maxCardinality>
+    <ns2:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nba4ff3c8281d41f8aafdda5dc6416194">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <ns2:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    <ns2:onProperty rdf:resource="http://test.namespace.com/hasValue4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/Result2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="N54a14e9a095949a99d512d7d285d0d84"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasInt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <ns2:equivalentProperty rdf:resource="http://test.namespace.com/hasNumber"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd679a60334b14123a3a3fe0ffdad0eb7">
+    <ns2:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    <ns2:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ns2:minCardinality>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <ns2:onProperty rdf:resource="http://test.namespace.com/hasValue5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/Measurement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasUnit3">
+    <rdfs:domain rdf:resource="http://test.namespace.com/Data"/>
+    <rdfs:range rdf:resource="http://test.namespace.com/Unit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasUnit4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://test.namespace.com/Unit"/>
+    <rdfs:domain rdf:resource="http://test.namespace.com/Data"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/notCold">
+    <ns2:equivalentProperty rdf:resource="http://test.namespace.com/isWarm"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasWeather">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/Result6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/Result1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="N449da54409734536851b46f8d60d22fd"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasUnit1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasValue7">
+    <rdfs:domain rdf:resource="http://test.namespace.com/Result7"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasValue8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/Result9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasUnit5">
+    <rdfs:range rdf:resource="http://test.namespace.com/Unit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N17a14f3fc21f4cb0b13ca5b9901dbcff">
+    <ns2:onProperty rdf:resource="http://test.namespace.com/hasValue3"/>
+    <ns2:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/Result">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/Unit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasString">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <ns2:propertyDisjointWith rdf:resource="http://test.namespace.com/hasNumber"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasValue3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasValue1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasUnit6">
+    <rdfs:domain rdf:resource="http://test.namespace.com/Data"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/Result7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasValue5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasValue5_1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasValue4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasValue9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasUnit2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/Data">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

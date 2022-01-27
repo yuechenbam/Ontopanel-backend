@@ -1,0 +1,91 @@
+{
+  "nodes": {
+    "qEgJ2SNGjk6zOFQvI_H5-0": {
+      "type": "Namespace",
+      "style": "shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;",
+      "label": "<div><b>base</b>: http://base.namespace.com</div><div><b>ns:&nbsp;</b>http://other.namespace.com/<br></div>",
+      "geometry": { "x": 10, "y": 50, "width": 290, "height": 100 },
+      "objectData": "none"
+    },
+    "qEgJ2SNGjk6zOFQvI_H5-1": {
+      "type": "Metadata",
+      "style": "shape=document;whiteSpace=wrap;html=1;boundedLbl=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fontSize=12;fontColor=#000000;size=0.23333333333333334;",
+      "label": "<div><b>dc:creator:</b>&nbsp;Full Na&nbsp;</div><div><b>owl:</b>&nbsp;0.0.1&nbsp;<b>ns:</b>Template Ontology</div>",
+      "geometry": { "x": 400, "y": 40, "width": 253, "height": 90 },
+      "objectData": "none"
+    },
+    "qEgJ2SNGjk6zOFQvI_H5-2": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "nd:Class",
+      "geometry": { "x": 20, "y": 210, "width": 120, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "qEgJ2SNGjk6zOFQvI_H5-5": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "ns:Class1",
+      "geometry": { "x": 270, "y": 200, "width": 100, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "qEgJ2SNGjk6zOFQvI_H5-8": {
+      "type": "Class",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+      "label": "ns:Class1",
+      "geometry": { "x": 20, "y": 290, "width": 100, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "qEgJ2SNGjk6zOFQvI_H5-9": {
+      "type": "Individual",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;",
+      "label": "<u>ns:Individual1</u>",
+      "geometry": { "x": 340, "y": 290, "width": 100, "height": 30 },
+      "objectData": { "IRI": "Null" }
+    },
+    "zppa_QvL3lk_qWl2nK_1-25": {
+      "type": "DataValue",
+      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;shadow=0;glass=0;sketch=0;strokeColor=default;fontSize=12;fontFamily=Verdana;",
+      "label": "\"annotation\"^^ns:Literal",
+      "geometry": { "x": 240, "y": 390, "width": 170, "height": 30 },
+      "objectData": { "IRI_DT": "Null" }
+    },
+    "zppa_QvL3lk_qWl2nK_1-26": {
+      "type": "CustomDataType",
+      "style": "shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;",
+      "label": "<br>ns:customDatatype",
+      "geometry": {
+        "x": -139.9999999999999,
+        "y": 364.63,
+        "width": 211.63,
+        "height": 80.74
+      },
+      "objectData": "none"
+    }
+  },
+  "edges": {
+    "qEgJ2SNGjk6zOFQvI_H5-3": {
+      "type": "DisjointClass",
+      "style": "endArrow=open;html=1;fontColor=#000099;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;arcSize=0;rounded=0;",
+      "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-size: 12px\">&lt;&lt;owl:disjointWith&gt;&gt;</span>",
+      "source": "qEgJ2SNGjk6zOFQvI_H5-5",
+      "target": "none",
+      "objectData": "none"
+    },
+    "qEgJ2SNGjk6zOFQvI_H5-6": {
+      "type": "ComplementOf",
+      "style": "endArrow=open;html=1;fontColor=#000099;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;startArrow=open;startFill=0;startSize=8;rounded=0;",
+      "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-size: 12px\">&lt;&lt;owl:complementOf&gt;&gt;</span>",
+      "source": "qEgJ2SNGjk6zOFQvI_H5-8",
+      "target": "qEgJ2SNGjk6zOFQvI_H5-9",
+      "objectData": "none"
+    },
+    "zppa_QvL3lk_qWl2nK_1-24": {
+      "type": "AnnotationProperty",
+      "style": "rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;endArrow=diamond;endFill=1;strokeWidth=1;fontFamily=Verdana;",
+      "label": "ns:annotationProperty",
+      "source": "zppa_QvL3lk_qWl2nK_1-26",
+      "target": "zppa_QvL3lk_qWl2nK_1-25",
+      "objectData": { "IRI": "Null" }
+    }
+  }
+}
