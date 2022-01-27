@@ -79,7 +79,7 @@ def compare_geo(geometry1, geometry2):
         # geo1 bottom left y and geo2 upper left y
         dy = abs(geo1_p1[1] - geo2_p2[1])
 
-        if dx < 5 and dy < 5:
+        if dx < 1 and dy < 1:
             stacked = True
 
     return stacked
