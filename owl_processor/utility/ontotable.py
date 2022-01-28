@@ -7,7 +7,7 @@ import json
 from rest_framework.exceptions import APIException
 from .machester import Class
 from owl_processor.utility.machester import Class
-from owl_processor.utility.specialEntities import datatype, annotation_properties
+from owl_processor.utility.special_entities import datatype, annotation_properties
 
 
 class ImportOnto:
@@ -50,29 +50,19 @@ class ImportOnto:
             else:
                 parse_format = rdflib.util.guess_format(address)
 
+            parse_format_list = [
+                "xml",
+                "turtle",
+                "html",
+                "hturtle",
+                "n3",
+                "nquads",
+                "trix",
+                "rdfa",
+            ]
+
             if parse_format:
-                parse_format_list = [
-                    parse_format,
-                    "xml",
-                    "turtle",
-                    "html",
-                    "hturtle",
-                    "n3",
-                    "nquads",
-                    "trix",
-                    "rdfa",
-                ]
-            else:
-                parse_format_list = [
-                    "xml",
-                    "turtle",
-                    "html",
-                    "hturtle",
-                    "n3",
-                    "nquads",
-                    "trix",
-                    "rdfa",
-                ]
+                parse_format_list.insert(0, parse_format)
 
             t = rdflib.Graph()
             if keyword != "URL":
@@ -146,6 +136,7 @@ class ImportOnto:
 
             # get annotations
             annotations = {}
+
             color = 'none'
 
             for anno in self.anno_properties:
@@ -167,13 +158,14 @@ class ImportOnto:
                     anno_prop_n3 = self.compute_n3(anno)
                     annotations[anno_prop_n3] = anno_list_n3
 
+            specialInfo = {}
+
             if belongsTo == "Class":
                 all_info = Class(sub, graph=self.g).get_expression()
-                SpecialInfo = {}
                 for i in all_info.keys():
-                    SpecialInfo[i] = [all_info[i]]
+                    specialInfo[i] = [all_info[i]]
 
-            elif belongsTo == "OP":
+            elif belongsTo == "ObjectProperty":
                 OP_attributes = {
                     "subPropertyOf": rdflib.RDFS.subPropertyOf,
                     "inverseOf": rdflib.RDFS.subPropertyOf,
@@ -182,7 +174,6 @@ class ImportOnto:
                     "range": rdflib.RDFS.range,
                     "equivalentTo": rdflib.OWL.equivalentProperty
                 }
-                specialInfo = {}
 
                 for k, v in OP_attributes.items():
                     attr_list = [
@@ -194,7 +185,7 @@ class ImportOnto:
                     if attr_list:
                         specialInfo[k] = attr_list
 
-            elif belongsTo == "DP":
+            elif belongsTo == "DatatypeProperty":
                 DP_attributes = {
                     "subPropertyOf": rdflib.RDFS.subPropertyOf,
                     "disjointWith": rdflib.OWL.disjointWith,
@@ -202,7 +193,6 @@ class ImportOnto:
                     "range": rdflib.RDFS.range,
                     "equivalentTo": rdflib.OWL.equivalentProperty
                 }
-                specialInfo = {}
 
                 for k, v in DP_attributes.items():
                     attr_list = [
@@ -215,7 +205,6 @@ class ImportOnto:
                         specialInfo[k] = attr_list
 
             elif belongsTo == "AnnotationProperty":
-                specialInfo = {}
 
                 subPropertyOf = [
                     self.compute_n3(x)
@@ -229,7 +218,6 @@ class ImportOnto:
                     }
 
             elif belongsTo == "Individual":
-                specialInfo = {}
 
                 type_ind = [
                     self.compute_n3(x)
@@ -240,7 +228,6 @@ class ImportOnto:
 
             elif belongsTo == "Datatype":
                 color = "#FF8C00"
-                specialInfo = {}
 
             else:
                 pass
@@ -250,7 +237,7 @@ class ImportOnto:
                 "EntityName": sub_n3,
                 "RDFLabel": self.g.label(sub),
                 "Annotations": annotations,
-                "SpecialInfo": SpecialInfo,
+                "SpecialInfo": specialInfo,
                 "BelongsTo": belongsTo,
                 "namespace": namespace,
                 "EntityURI": sub}

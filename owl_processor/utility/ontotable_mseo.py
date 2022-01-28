@@ -5,8 +5,8 @@ from rdflib.term import URIRef
 from rdflib.util import find_roots, get_tree
 import json
 from rest_framework.exceptions import APIException
-from ontopanel.owl_processor.utility.machester import Class
-from ontopanel.owl_processor.utility.specialEntities import datatype, annotation_properties
+from owl_processor.utility.machester import Class
+from owl_processor.utility.special_entities import datatype, annotation_properties
 
 
 class ImportOnto:
