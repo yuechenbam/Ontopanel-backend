@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+import psycopg2
 from pathlib import Path
 import dj_database_url
 import os
@@ -30,7 +31,7 @@ DEBUG = str(os.environ.get('DEBUG')) == "1"  # 1==True
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'ontopanel.herokuapp.com']
 
 # CORS_ORIGIN_ORIGINS = [
-#     "http://127.0.0.1:5500", "https://yuechenbam.github.io"
+#     "http://127.0.0.1", "https://yuechenbam.github.io"
 # ]
 CORS_ORIGIN_ALLOW_ALL = True
 
@@ -48,7 +49,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'owl_processor.apps.OwlProcessorConfig',
     'user.apps.UserConfig',
-    "convertor.apps.ConvertorConfig"
+    'convertor.apps.ConvertorConfig'
 
 ]
 
@@ -101,7 +102,9 @@ if 'test' in sys.argv:
 
 
 else:
-    DATABASES['default'] = dj_database_url.config(conn_max_age=600)
+    DATABASES['default'] = dj_database_url.config(
+        conn_max_age=600, ssl_require=True)
+
 
 # DATABASES = {
 #     'default': {

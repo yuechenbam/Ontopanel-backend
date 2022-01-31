@@ -6,7 +6,8 @@ from rdflib.util import find_roots, get_tree
 import json
 from rest_framework.exceptions import APIException
 from .machester import Class
-from .datatype import datatype
+from owl_processor.utility.machester import Class
+from owl_processor.utility.special_entities import datatype, annotation_properties
 
 
 class ImportOnto:
@@ -28,14 +29,7 @@ class ImportOnto:
         self.imported_ontology = []
         self.deprecated = []
         self.entity_tree = {}
-        self.anno_properties = {rdflib.OWL.backwardCompatibleWith,
-                                rdflib.OWL.deprecated,
-                                rdflib.OWL.incompatibleWith,
-                                rdflib.OWL.priorVersion,
-                                rdflib.OWL.versionInfo,
-                                rdflib.RDFS.comment,
-                                rdflib.RDFS.isDefinedBy,
-                                rdflib.RDFS.seeAlso}
+        self.anno_properties = annotation_properties
         self.df = pd.DataFrame(
             [],
             columns=(
@@ -45,6 +39,7 @@ class ImportOnto:
                 "SpecialInfo",
                 "Color",
                 "namespace",
+                "EntityIRI"
             ),
         )
 
@@ -55,29 +50,19 @@ class ImportOnto:
             else:
                 parse_format = rdflib.util.guess_format(address)
 
+            parse_format_list = [
+                "xml",
+                "turtle",
+                "html",
+                "hturtle",
+                "n3",
+                "nquads",
+                "trix",
+                "rdfa",
+            ]
+
             if parse_format:
-                parse_format_list = [
-                    parse_format,
-                    "xml",
-                    "turtle",
-                    "html",
-                    "hturtle",
-                    "n3",
-                    "nquads",
-                    "trix",
-                    "rdfa",
-                ]
-            else:
-                parse_format_list = [
-                    "xml",
-                    "turtle",
-                    "html",
-                    "hturtle",
-                    "n3",
-                    "nquads",
-                    "trix",
-                    "rdfa",
-                ]
+                parse_format_list.insert(0, parse_format)
 
             t = rdflib.Graph()
             if keyword != "URL":
@@ -152,6 +137,8 @@ class ImportOnto:
             # get annotations
             annotations = {}
 
+            color = 'none'
+
             for anno in self.anno_properties:
                 anno_list = list(self.g.objects(subject=sub, predicate=anno))
                 # see anno property used multi times
@@ -171,119 +158,89 @@ class ImportOnto:
                     anno_prop_n3 = self.compute_n3(anno)
                     annotations[anno_prop_n3] = anno_list_n3
 
+            specialInfo = {}
+
             if belongsTo == "Class":
                 all_info = Class(sub, graph=self.g).get_expression()
-                SpecialInfo = {}
                 for i in all_info.keys():
-                    SpecialInfo[i] = [all_info[i]]
+                    specialInfo[i] = [all_info[i]]
 
-            elif belongsTo == "OP":
+            elif belongsTo == "ObjectProperty":
+                OP_attributes = {
+                    "subPropertyOf": rdflib.RDFS.subPropertyOf,
+                    "inverseOf": rdflib.RDFS.subPropertyOf,
+                    "disjointWith": rdflib.OWL.disjointWith,
+                    "domain": rdflib.RDFS.domain,
+                    "range": rdflib.RDFS.range,
+                    "equivalentTo": rdflib.OWL.equivalentProperty
+                }
+
+                for k, v in OP_attributes.items():
+                    attr_list = [
+                        self.compute_n3(x)
+                        for x in self.g.objects(
+                            subject=sub, predicate=v
+                        ) if type(x) != rdflib.BNode
+                    ]
+                    if attr_list:
+                        specialInfo[k] = attr_list
+
+            elif belongsTo == "DatatypeProperty":
+                DP_attributes = {
+                    "subPropertyOf": rdflib.RDFS.subPropertyOf,
+                    "disjointWith": rdflib.OWL.disjointWith,
+                    "domain": rdflib.RDFS.domain,
+                    "range": rdflib.RDFS.range,
+                    "equivalentTo": rdflib.OWL.equivalentProperty
+                }
+
+                for k, v in DP_attributes.items():
+                    attr_list = [
+                        self.compute_n3(x)
+                        for x in self.g.objects(
+                            subject=sub, predicate=v
+                        ) if type(x) != rdflib.BNode
+                    ]
+                    if attr_list:
+                        specialInfo[k] = attr_list
+
+            elif belongsTo == "AnnotationProperty":
+
                 subPropertyOf = [
                     self.compute_n3(x)
                     for x in self.g.objects(
                         subject=sub, predicate=rdflib.RDFS.subPropertyOf
-                    )
+                    )if type(x) != rdflib.BNode
                 ]
-                inverseOf = [
-                    self.compute_n3(x)
-                    for x in self.g.objects(subject=sub, predicate=rdflib.OWL.inverseOf)
-                ]
-                disjointWith = [
-                    self.compute_n3(x)
-                    for x in self.g.objects(
-                        subject=sub, predicate=rdflib.OWL.disjointWith
-                    )
-                ]
-                domain = [
-                    self.compute_n3(x)
-                    for x in self.g.objects(subject=sub, predicate=rdflib.RDFS.domain)
-                ]
-                range_op = [
-                    self.compute_n3(x)
-                    for x in self.g.objects(subject=sub, predicate=rdflib.RDFS.range)
-                ]
-
-                equivalentTo = [
-                    self.compute_n3(x)
-                    for x in self.g.objects(
-                        subject=sub, predicate=rdflib.OWL.equivalentProperty
-                    ) if type(x) != rdflib.BNode
-                ]
-
-                SpecialInfo = {
-                    "SubPropertyOf": subPropertyOf,
-                    "EquivalentTo": equivalentTo,
-                    "DisjointWith": disjointWith,
-                    "InverseOf": inverseOf,
-                    "Domain": domain,
-                    "Range": range_op,
-                }
-
-            elif belongsTo == "DP":
-                subPropertyOf = [
-                    self.compute_n3(x)
-                    for x in self.g.objects(
-                        subject=sub, predicate=rdflib.RDFS.subPropertyOf
-                    )
-                ]
-                disjointWith = [
-                    self.compute_n3(x)
-                    for x in self.g.objects(
-                        subject=sub, predicate=rdflib.OWL.disjointWith
-                    )
-                ]
-                domain = [
-                    self.compute_n3(x)
-                    for x in self.g.objects(subject=sub, predicate=rdflib.RDFS.domain)
-                ]
-                range_op = [
-                    self.compute_n3(x)
-                    for x in self.g.objects(subject=sub, predicate=rdflib.RDFS.range)
-                ]
-                equivalentTo = [
-                    self.compute_n3(x)
-                    for x in self.g.objects(
-                        subject=sub, predicate=rdflib.OWL.equivalentProperty
-                    ) if type(x) != rdflib.BNode
-                ]
-
-                SpecialInfo = {
-                    "SubPropertyOf": subPropertyOf,
-                    "EquivalentTo": equivalentTo,
-                    "DisjointWith": disjointWith,
-                    "Domain": domain,
-                    "Range": range_op,
-                }
-
-            elif belongsTo == "AP":
-                subPropertyOf = [
-                    self.compute_n3(x)
-                    for x in self.g.objects(
-                        subject=sub, predicate=rdflib.RDFS.subPropertyOf
-                    )
-                ]
-                SpecialInfo = {
-                    "SubPropertyOf": subPropertyOf,
-                }
+                if subPropertyOf:
+                    specialInfo = {
+                        "SubPropertyOf": subPropertyOf,
+                    }
 
             elif belongsTo == "Individual":
+
                 type_ind = [
                     self.compute_n3(x)
-                    for x in self.g.objects(subject=sub, predicate=rdflib.RDF.type)
+                    for x in self.g.objects(subject=sub, predicate=rdflib.RDF.type)if type(x) != rdflib.BNode
                 ]
-                SpecialInfo = {"Type": type_ind}
+                if type_ind:
+                    specialInfo = {"Type": type_ind}
+
+            elif belongsTo == "Datatype":
+                color = "#FF8C00"
 
             else:
                 pass
 
             new_row = {
-                "Color": "none",
+                "Color": color,
                 "EntityName": sub_n3,
                 "RDFLabel": self.g.label(sub),
                 "Annotations": annotations,
-                "SpecialInfo": SpecialInfo,
+                "SpecialInfo": specialInfo,
                 "BelongsTo": belongsTo,
-                "namespace": namespace}
+                "namespace": namespace,
+                "EntityURI": sub}
 
         else:
             new_row = None
@@ -300,8 +257,9 @@ class ImportOnto:
     def extract_infos(self):
         extract_entity = {
             rdflib.OWL.Class: "Class",
-            rdflib.OWL.ObjectProperty: "OP",
-            rdflib.OWL.DatatypeProperty: "DP",
+            rdflib.OWL.ObjectProperty: "ObjectProperty",
+            rdflib.OWL.DatatypeProperty: "DatatypeProperty",
+            rdflib.RDFS.Datatype: "Datatype",
         }
 
         i = 0
@@ -318,21 +276,23 @@ class ImportOnto:
                                 new_row, ignore_index=True)
 
         for anno in self.anno_properties:
-            new_row = self.assign_df(anno, "AP")
+            new_row = self.assign_df(anno, "AnnotationProperty")
             if new_row:
                 self.df = self.df.append(new_row, ignore_index=True)
 
         # add datatype
 
-        for i in range(len(datatype)):
+        for dt in datatype:
+            data_n3 = self.compute_n3(dt, includeLabel=False)
             new_row_datatype = {
                 "Color": "#FF8C00",
-                "EntityName": datatype[i],
+                "EntityName": data_n3,
                 "RDFLabel": '',
-                "Annotations": '',
-                "SpecialInfo": '',
+                "Annotations": {},
+                "SpecialInfo": {},
                 "BelongsTo": 'Datatype',
-                "namespace": rdflib.OWL}
+                "namespace": rdflib.OWL,
+                "EntityIRI": dt}
 
             self.df = self.df.append(new_row_datatype, ignore_index=True)
 
@@ -371,9 +331,9 @@ class ImportOnto:
     def get_roots(self):
         entity_type = {
             "Class": [rdflib.RDFS.subClassOf, rdflib.OWL.Class],
-            "OP": [rdflib.RDFS.subPropertyOf, rdflib.OWL.ObjectProperty],
-            "DP": [rdflib.RDFS.subPropertyOf, rdflib.OWL.DatatypeProperty],
-            "AP": [rdflib.RDFS.subPropertyOf, rdflib.OWL.AnnotationProperty],
+            "ObjectProperty": [rdflib.RDFS.subPropertyOf, rdflib.OWL.ObjectProperty],
+            "DatatypeProperty": [rdflib.RDFS.subPropertyOf, rdflib.OWL.DatatypeProperty],
+            "AnnotationProperty": [rdflib.RDFS.subPropertyOf, rdflib.OWL.AnnotationProperty],
         }
 
         for key, value in entity_type.items():

@@ -106,7 +106,7 @@ class MakeEntityDF():
                         assert len(ann.split(
                             ":")) >= 3, f"The form of metaData {ann} should be preifx:name:string."
                         ann_prefix = ann.split(":")[0].strip()
-                        assert ann_prefix in self.namespaces, f"Prefix {prefix} of metaData {ann} is not defined."
+                        assert ann_prefix in self.namespaces, f"Prefix {ann_prefix} of metaData {ann} is not defined."
                         ann_type = ann.split(":")[1].strip()
                         if ann_type == "imports":
                             ann_name = ann.split(":")[2:]
@@ -1074,6 +1074,7 @@ class MakeOntology(MakeEntityDF):
                     "message": 'No ontologies exist in the file. Please use the templates to make ontologies.'}
                 self.errors["other_errors"].append(error)
             else:
+                self._create_namespace()
                 self._create_metadata()
                 self._create_connector()
                 self._create_property()
