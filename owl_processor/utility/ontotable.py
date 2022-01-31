@@ -240,7 +240,7 @@ class ImportOnto:
                 "SpecialInfo": specialInfo,
                 "BelongsTo": belongsTo,
                 "namespace": namespace,
-                "EntityURI": sub}
+                "EntityIRI": sub}
 
         else:
             new_row = None
