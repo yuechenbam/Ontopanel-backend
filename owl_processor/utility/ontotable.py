@@ -8,6 +8,7 @@ from rest_framework.exceptions import APIException
 from .machester import Class
 from owl_processor.utility.machester import Class
 from owl_processor.utility.special_entities import datatype, annotation_properties
+import copy
 
 
 class ImportOnto:
@@ -29,7 +30,7 @@ class ImportOnto:
         self.imported_ontology = []
         self.deprecated = []
         self.entity_tree = {}
-        self.anno_properties = annotation_properties
+        self.anno_properties = copy.deepcopy(annotation_properties)
         self.df = pd.DataFrame(
             [],
             columns=(
