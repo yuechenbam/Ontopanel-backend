@@ -392,13 +392,16 @@ class MakeEntityDF():
         if keyword in object_value:
             iri_value = object_value[keyword].strip()
             if iri_value != 'Null' and iri_value:
+                validated = uri_validator(iri_value)
+                assert validated, f'"{iri_value}" in shape data {keyword} is not a valid URI. Should be URI, Null, or empty.'
                 node_IRI = URIRef(iri_value)
 
         if not node_IRI:
 
             check = label.split(":", 1)  # Check if error in text
 
-            assert len(check) == 2, f"IRI of {label} should be prefix:name."
+            assert len(
+                check) == 2, f'IRI form of "{label}" label should be prefix:name.'
 
             prefix = check[0].strip()
             assert prefix in self.namespaces, f"Prefix {prefix} is not defined."
