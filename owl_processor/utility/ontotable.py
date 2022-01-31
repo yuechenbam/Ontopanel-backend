@@ -365,7 +365,6 @@ class ImportOnto:
         self.extract_anno_properties()
         self.extract_infos()
         self.get_roots()
-
         used_namespaces = self.df["namespace"].unique()
 
         output_namespace = [

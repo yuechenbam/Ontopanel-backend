@@ -86,6 +86,7 @@ class OwlTable(APIView):
         file_object = request.FILES.get("formFile")
         file_url = request.POST.get("formURL").strip()
         tagName = request.POST.get("formName").strip()
+
         if file_url:
             table, namespaces, tree = onto_to_table(file_url)
             onto_source = file_url
