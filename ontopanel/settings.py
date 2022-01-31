@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
-import subprocess
 import psycopg2
 from pathlib import Path
 import dj_database_url
@@ -32,7 +31,7 @@ DEBUG = str(os.environ.get('DEBUG')) == "1"  # 1==True
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'ontopanel.herokuapp.com']
 
 # CORS_ORIGIN_ORIGINS = [
-#     "http://127.0.0.1:5500", "https://yuechenbam.github.io"
+#     "http://127.0.0.1", "https://yuechenbam.github.io"
 # ]
 CORS_ORIGIN_ALLOW_ALL = True
 
