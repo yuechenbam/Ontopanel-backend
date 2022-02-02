@@ -9,6 +9,7 @@ from .machester import Class
 from owl_processor.utility.machester import Class
 from owl_processor.utility.special_entities import datatype, annotation_properties
 import copy
+import time
 
 
 class ImportOnto:
@@ -263,14 +264,19 @@ class ImportOnto:
             rdflib.RDFS.Datatype: "Datatype",
         }
 
-        i = 0
         for entity in extract_entity.keys():
-            for s, _, _ in self.g.triples((None, rdflib.RDF.type, entity)):
+            subjects = self.g.subjects(
+                predicate=rdflib.RDF.type, object=entity
+            )
+            for s in subjects:
                 new_row = self.assign_df(s, extract_entity[entity])
                 if new_row:
                     self.df = self.df.append(new_row, ignore_index=True)
                 if entity == rdflib.OWL.Class:
-                    for s_in, _, _ in self.g.triples((None, rdflib.RDF.type, s)):
+                    subjects_ind = self.g.subjects(
+                        predicate=rdflib.RDF.type, object=s
+                    )
+                    for s_in in subjects_ind:
                         new_row = self.assign_df(s_in, "Individual")
                         if new_row:
                             self.df = self.df.append(
@@ -354,6 +360,7 @@ class ImportOnto:
         self.entity_tree["Datatype"] = [(x, []) for x in Datatype]
 
     def run_all(self):
+
         if self.inputType == "URL":
             self.get_imports(self.filepath)
         else:
@@ -364,8 +371,11 @@ class ImportOnto:
                 prefix, namespace, override=True)
 
         self.extract_anno_properties()
+
         self.extract_infos()
+
         self.get_roots()
+
         used_namespaces = self.df["namespace"].unique()
 
         output_namespace = [

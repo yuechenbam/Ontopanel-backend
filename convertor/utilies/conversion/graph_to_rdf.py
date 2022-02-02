@@ -15,8 +15,8 @@ import sys
 import traceback
 
 
-from convertor.utilies.shapes_notes import *
-from convertor.utilies.helpfunc import *
+from convertor.utilies.conversion.shapes_notes import *
+from convertor.utilies.conversion.helpfunc import *
 
 logger = logging.getLogger(__name__)
 

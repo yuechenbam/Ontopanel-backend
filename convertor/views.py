@@ -5,7 +5,8 @@ from rest_framework.views import APIView
 from rest_framework import status
 import json
 from rest_framework.exceptions import APIException
-from .utilies.graph_to_rdf import MakeOntology
+from .utilies.conversion.graph_to_rdf import MakeOntology
+from .utilies.datauploader import data_process
 
 
 class GraphConvertor(APIView):
@@ -34,3 +35,20 @@ class GraphConvertor(APIView):
         }
 
         return Response(data=data, status=status.HTTP_200_OK)
+
+
+class TableDataProcessor(APIView):
+    permission_classes = [AllowAny]
+
+    def process_data(self, request):
+        file_object = request.FILES.get("formFile")
+        keyword = request.POST.get("filetype")
+        result = data_process(file_object, keyword)
+
+        return result
+
+    def post(self, request):
+
+        result = self.process_data(request)
+
+        return Response(data=result, status=status.HTTP_200_OK)

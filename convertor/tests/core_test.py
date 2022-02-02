@@ -4,7 +4,7 @@ import os
 from rdflib import Literal, XSD, DCTERMS, DC, URIRef, RDFS, RDF, OWL
 from rdflib import Namespace, Graph, BNode
 from rdflib.extras.infixowl import Class, Restriction, Ontology, BooleanClass
-from convertor.utilies.graph_to_rdf import MakeOntology
+from convertor.utilies.conversion.graph_to_rdf import MakeOntology
 import owlready2
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
