@@ -1,207 +1,224 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:ns3="http://www.w3.org/2002/07/owl#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_object">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Government"/>
-    <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GovernmentAgency"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CombustionChamber">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Ncf3dcf9698e1460fa593e4ea3fd13839">
-    <ns3:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ns3:minCardinality>
-    <ns3:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#real"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <ns3:onProperty rdf:resource="http://www.daml.org/2003/01/periodictable/PeriodicTable#symbol"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0010001">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/RadioReceiver"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-    <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/WireReceiver"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_latitude_value">
+  <rdf:Description rdf:about="http://www.daml.org/2003/01/periodictable/PeriodicTable#symbol">
+    <owl:propertyDisjointWith rdf:resource="http://www.daml.org/2003/01/periodictable/PeriodicTable#number"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <ns3:equivalentProperty rdf:resource="http://www.daml.org/2003/01/periodictable/PeriodicTable#atomicWeight"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_recipient">
-    <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nebb4480dfbf9492eab87570f2bddf9c4">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_longitude_value"/>
-    <ns3:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#real"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
-    <rdfs:subClassOf rdf:nodeID="Ncf3dcf9698e1460fa593e4ea3fd13839"/>
-    <rdfs:subClassOf rdf:nodeID="Nebb4480dfbf9492eab87570f2bddf9c4"/>
-    <rdfs:subClassOf rdf:nodeID="N449a69408dd441d795c7c605a336e4bb"/>
-    <rdfs:subClassOf rdf:nodeID="N1d6c32a51a5b444d813c02da0eb943f9"/>
-    <rdfs:subClassOf rdf:nodeID="Nec676d7d75ee46f8807ecc6722b1de82"/>
-    <rdfs:subClassOf rdf:nodeID="N2ac6114a2ee24cae995d55b358c5d7e2"/>
-    <rdfs:subClassOf rdf:nodeID="N4819864343194960b2732834f23807c8"/>
-    <rdfs:subClassOf rdf:nodeID="Ncd9218b12c2b4d7bb52326ace2e7d858"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/has_column_index">
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_longitude_value">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/caused_by">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_maternal_uncle">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_subsidiary">
-    <rdfs:subPropertyOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_affiliate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_grandson">
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_grandson_of">
+    <owl:inverseOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_grandson"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <ns3:inverseOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_grandson_of"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ArmedForce">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N1d6c32a51a5b444d813c02da0eb943f9">
-    <ns3:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#real"/>
-    <ns3:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ns3:minCardinality>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <ns3:onProperty rdf:resource="http://www.daml.org/2003/01/periodictable/PeriodicTable#casRegistryID"/>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_grandmother_of">
+    <owl:equivalentProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_paternal_grandmother_of"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.daml.org/2003/01/periodictable/PeriodicTable#number">
-    <ns3:propertyDisjointWith rdf:resource="http://www.daml.org/2003/01/periodictable/PeriodicTable#symbol"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <owl:propertyDisjointWith rdf:resource="http://www.daml.org/2003/01/periodictable/PeriodicTable#symbol"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_affiliate">
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0010001">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/RadioReceiver"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/WireReceiver"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_paternal_grandmother_of">
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#real">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_object">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <ns3:equivalentProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_grandmother_of"/>
+    <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GovernmentAgency"/>
+    <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Government"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N548f30998e554c6b989eb4d426e12a1e">
+    <owl:onProperty rdf:resource="http://www.daml.org/2003/01/periodictable/PeriodicTable#casRegistryID"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:minCardinality>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.daml.org/2003/01/periodictable/PeriodicTable#atomicWeight">
+    <owl:equivalentProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_latitude_value"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <ns3:equivalentProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_latitude_value"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_son_in_law">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:propertyDisjointWith rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_sister_in_law"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001015">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CombustionChamber"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Ncd9218b12c2b4d7bb52326ace2e7d858">
-    <ns3:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</ns3:maxCardinality>
-    <ns3:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+  <rdf:Description rdf:nodeID="Nb929485decd4412cab2f661113e0d5e1">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <ns3:onProperty rdf:resource="http://www.daml.org/2003/01/periodictable/PeriodicTable#casRegistryID"/>
+    <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_longitude_value"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#real"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N449a69408dd441d795c7c605a336e4bb">
-    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_integer_value"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <ns3:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#real"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_grandson_of">
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_subsidiary">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <ns3:inverseOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_grandson"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_affiliate"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://test.namespace.com/">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.daml.org/2003/01/periodictable/PeriodicTable#symbol">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <ns3:propertyDisjointWith rdf:resource="http://www.daml.org/2003/01/periodictable/PeriodicTable#number"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.daml.org/2003/01/periodictable/PeriodicTable#casRegistryID">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  <rdf:Description rdf:nodeID="N2a363a0bc0684b9598595de1954f879a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_integer_value"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_URI_value">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Tattoo">
+  <rdf:Description rdf:nodeID="N7b053b59035141cca9848f074ac83247">
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_latitude_value"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Farm">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N2ac6114a2ee24cae995d55b358c5d7e2">
-    <ns3:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</ns3:maxCardinality>
+  <rdf:Description rdf:nodeID="Ne69d40676f984e349e75d70888a17643">
+    <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    <owl:onProperty rdf:resource="http://www.daml.org/2003/01/periodictable/PeriodicTable#casRegistryID"/>
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</owl:maxCardinality>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <ns3:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#real"/>
-    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_boolean_value"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndf072df66f674003ae301ccf969583b9">
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</owl:maxCardinality>
+    <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_boolean_value"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne013d50318164f94abf9c7edcf169f8e">
+    <owl:onProperty rdf:resource="http://www.daml.org/2003/01/periodictable/PeriodicTable#symbol"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:minCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_grandson">
+    <owl:inverseOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_grandson_of"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.daml.org/2003/01/periodictable/PeriodicTable#atomicNumber">
+    <rdfs:subPropertyOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_latitude_value"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_paternal_grandmother_of">
+    <owl:equivalentProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_grandmother_of"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
+    <rdfs:subClassOf rdf:nodeID="Ndf072df66f674003ae301ccf969583b9"/>
+    <rdfs:subClassOf rdf:nodeID="Naefc56f921a54b35b14e32773ae06858"/>
+    <rdfs:subClassOf rdf:nodeID="N7b053b59035141cca9848f074ac83247"/>
+    <rdfs:subClassOf rdf:nodeID="Ne69d40676f984e349e75d70888a17643"/>
+    <rdfs:subClassOf rdf:nodeID="Ne013d50318164f94abf9c7edcf169f8e"/>
+    <rdfs:subClassOf rdf:nodeID="N548f30998e554c6b989eb4d426e12a1e"/>
+    <rdfs:subClassOf rdf:nodeID="N2a363a0bc0684b9598595de1954f879a"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="Nb929485decd4412cab2f661113e0d5e1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/caused_by">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naefc56f921a54b35b14e32773ae06858">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_date_value"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_sister_in_law">
+    <owl:propertyDisjointWith rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_son_in_law"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_recipient">
+    <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_text_value">
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/designator_annotation">
     <rdfs:subPropertyOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/definition_source"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_sister_in_law">
+  <rdf:Description rdf:about="http://www.daml.org/2003/01/periodictable/PeriodicTable#color">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_latitude_value">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <owl:equivalentProperty rdf:resource="http://www.daml.org/2003/01/periodictable/PeriodicTable#atomicWeight"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_integer_value">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_nephew_of">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <ns3:propertyDisjointWith rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_son_in_law"/>
+    <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Farm"/>
+    <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Stage"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/content_license">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/RadioCommunicationInstrument">
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/SocialNetwork">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#real">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_double_value">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_input">
+    <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CarrierAirWing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ParamilitaryForce"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ArmedForce">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Government">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_date_value">
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/content_license">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/RadioCommunicationInstrument">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.daml.org/2003/01/periodictable/PeriodicTable#casRegistryID">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.daml.org/2003/01/periodictable/PeriodicTable#atomicNumber">
+  <rdf:Description rdf:about="https://purl.matolab.org/mseo/mid/has_column_index">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_latitude_value"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_son_in_law">
-    <ns3:propertyDisjointWith rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_sister_in_law"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/RadioReceiver">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/WireReceiver">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_input">
-    <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ParamilitaryForce"/>
-    <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CarrierAirWing"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Farm">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_double_value">
-    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CarrierAirWing">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_boolean_value">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ParamilitaryForce">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -209,60 +226,43 @@
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/condition_described_by">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/SocialNetwork">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_nephew_of">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Farm"/>
-    <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Stage"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_longitude_value">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_text_value">
-    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_grandmother_of">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <ns3:equivalentProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_paternal_grandmother_of"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/definition_source">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/RadioReceiver">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nec676d7d75ee46f8807ecc6722b1de82">
-    <ns3:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#real"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_date_value"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N4819864343194960b2732834f23807c8">
-    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_latitude_value"/>
-    <ns3:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#real"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Stage">
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/GovernmentAgency">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.daml.org/2003/01/periodictable/PeriodicTable#color">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CombustionChamber">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ScalpHair">
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Tattoo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CarrierAirWing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/definition_source">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Organization">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_integer_value">
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_affiliate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_boolean_value">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_date_value">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Stage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ScalpHair">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>

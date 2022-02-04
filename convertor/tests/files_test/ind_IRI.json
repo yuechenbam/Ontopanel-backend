@@ -1,329 +1,183 @@
 {
-  "nodes": {
-    "C9JETBEs-Y8uT5viI2CL-4": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "cco:Resource",
-      "geometry": {
-        "x": 210,
-        "y": -930,
-        "width": 100,
-        "height": 30,
-        "TRANSLATE_CONTROL_POINTS": true,
-        "alternateBounds": null,
-        "sourcePoint": null,
-        "targetPoint": null,
-        "points": null,
-        "offset": null,
-        "relative": false
+  "format": "application/rdf+xml",
+  "fileData": {
+    "nodes": {
+      "C9JETBEs-Y8uT5viI2CL-4": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "cco:Resource",
+        "geometry": { "x": 210, "y": -930, "width": 100, "height": 30 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/Resource"
+        }
       },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/Resource"
+      "C9JETBEs-Y8uT5viI2CL-5": {
+        "type": "Individual",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;fontFamily=Verdana;fontSize=12;fillColor=#FFFFFF;",
+        "label": "<u>cco:AlbaniaLek</u>",
+        "geometry": { "x": 210, "y": -850, "width": 100, "height": 30 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/AlbaniaLek"
+        }
+      },
+      "C9JETBEs-Y8uT5viI2CL-7": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Verdana;fontSize=12;fillColor=#FFFFFF;",
+        "label": "cco:Agent",
+        "geometry": { "x": 410, "y": -930, "width": 100, "height": 30 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/Agent"
+        }
+      },
+      "C9JETBEs-Y8uT5viI2CL-8": {
+        "type": "Individual",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;fontFamily=Verdana;fontSize=12;fillColor=#FFFFFF;",
+        "label": "<u>cco:ArmenianDram</u>",
+        "geometry": { "x": 410, "y": -850, "width": 100, "height": 30 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/ArmenianDram"
+        }
+      },
+      "C9JETBEs-Y8uT5viI2CL-9": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Verdana;fontSize=12;fillColor=#FFFFFF;",
+        "label": "cco:Target",
+        "geometry": { "x": 650, "y": -930, "width": 100, "height": 30 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/Target"
+        }
+      },
+      "C9JETBEs-Y8uT5viI2CL-10": {
+        "type": "Individual",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;fontFamily=Verdana;fontSize=12;fillColor=#FFFFFF;",
+        "label": "<u>cco:AzerbaijanManat</u>",
+        "geometry": { "x": 650, "y": -900, "width": 100, "height": 30 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/AzerbaijanManat"
+        }
+      },
+      "C9JETBEs-Y8uT5viI2CL-24": {
+        "type": "Individual",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Verdana;fontSize=12;fillColor=#FFFFFF;",
+        "label": "<u>cco:BelarussianRuble</u>",
+        "geometry": { "x": 200, "y": -760, "width": 100, "height": 30 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/BelarussianRuble"
+        }
+      },
+      "C9JETBEs-Y8uT5viI2CL-25": {
+        "type": "Individual",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Verdana;fontSize=12;fillColor=#FFFFFF;",
+        "label": "<u>cco:BoliviaBoliviano</u>",
+        "geometry": { "x": 440, "y": -759.5, "width": 100, "height": 30 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/BoliviaBoliviano"
+        }
+      },
+      "C9JETBEs-Y8uT5viI2CL-27": {
+        "type": "DataValue",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;shadow=0;glass=0;sketch=0;strokeColor=default;fontSize=12;fontFamily=Verdana;fillColor=#FF8C00;",
+        "label": "\"IRI\"^^xsd:long",
+        "geometry": { "x": 470, "y": -680, "width": 170, "height": 30 },
+        "objectData": { "IRI_DT": "http://www.w3.org/2001/XMLSchema#long" }
+      },
+      "C9JETBEs-Y8uT5viI2CL-28": {
+        "type": "Individual",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];shadow=0;glass=0;sketch=0;strokeColor=default;fontSize=12;fontFamily=Verdana;fillColor=#FFFFFF;",
+        "label": "<u>cco:BruneiDollar</u>",
+        "geometry": { "x": 190, "y": -680, "width": 100, "height": 30 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/BruneiDollar"
+        }
+      },
+      "C9JETBEs-Y8uT5viI2CL-32": {
+        "type": "DataValue",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;shadow=0;glass=0;sketch=0;strokeColor=default;fontSize=12;fontFamily=Verdana;",
+        "label": "&nbsp; \"&nbsp; &nbsp;annotation1&nbsp; \"&nbsp; &nbsp;@en&nbsp; &nbsp;",
+        "geometry": { "x": 160, "y": -510, "width": 170, "height": 30 },
+        "objectData": { "IRI_DT": "Null" }
+      },
+      "w_6RQGmWUIJt2WVegk6u-0": {
+        "type": "ObjectProperty",
+        "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp; &nbsp;has affiliate",
+        "geometry": { "x": 130, "y": -410, "width": 180, "height": 75 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_affiliate"
+        }
+      },
+      "w_6RQGmWUIJt2WVegk6u-1": {
+        "type": "ObjectProperty",
+        "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp; &nbsp;has subsidiary",
+        "geometry": { "x": 130, "y": -282, "width": 180, "height": 75 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_subsidiary"
+        }
       }
     },
-    "C9JETBEs-Y8uT5viI2CL-5": {
-      "type": "Individual",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;fontFamily=Verdana;fontSize=12;fillColor=#FFFFFF;",
-      "label": "<u>cco:AlbaniaLek</u>",
-      "geometry": {
-        "x": 210,
-        "y": -850,
-        "width": 100,
-        "height": 30,
-        "TRANSLATE_CONTROL_POINTS": true,
-        "alternateBounds": null,
-        "sourcePoint": null,
-        "targetPoint": null,
-        "points": null,
-        "offset": null,
-        "relative": false
+    "edges": {
+      "C9JETBEs-Y8uT5viI2CL-3": {
+        "type": "RDFType",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;exitX=0.5;exitY=0;exitDx=0;exitDy=0;rounded=0;fontFamily=Verdana;fontSize=12;",
+        "label": "",
+        "source": "C9JETBEs-Y8uT5viI2CL-5",
+        "target": "C9JETBEs-Y8uT5viI2CL-4",
+        "objectData": "none"
       },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/AlbaniaLek"
+      "C9JETBEs-Y8uT5viI2CL-6": {
+        "type": "RDFType",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;exitX=0.5;exitY=0;exitDx=0;exitDy=0;rounded=0;fontFamily=Verdana;fontSize=12;",
+        "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-size: 12px\">&lt;&lt;rdf:type&gt;&gt;</span>",
+        "source": "C9JETBEs-Y8uT5viI2CL-8",
+        "target": "C9JETBEs-Y8uT5viI2CL-7",
+        "objectData": "none"
+      },
+      "C9JETBEs-Y8uT5viI2CL-26": {
+        "type": "ObjectProperty",
+        "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;rounded=0;fontFamily=Verdana;fontSize=12;fillColor=#FFFFFF;",
+        "label": "cco:delimits",
+        "source": "C9JETBEs-Y8uT5viI2CL-24",
+        "target": "C9JETBEs-Y8uT5viI2CL-25",
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/delimits"
+        }
+      },
+      "C9JETBEs-Y8uT5viI2CL-29": {
+        "type": "DatatypeProperty",
+        "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;rounded=0;strokeWidth=1;fontSize=12;fontFamily=Verdana;fillColor=#FFFFFF;",
+        "label": "cco:has_date_value",
+        "source": "C9JETBEs-Y8uT5viI2CL-28",
+        "target": "C9JETBEs-Y8uT5viI2CL-27",
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_date_value"
+        }
+      },
+      "C9JETBEs-Y8uT5viI2CL-31": {
+        "type": "AnnotationProperty",
+        "style": "rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;endArrow=diamond;endFill=1;strokeWidth=1;fontFamily=Verdana;fillColor=#FFFFFF;",
+        "label": "cco:SI_unit_label",
+        "source": "C9JETBEs-Y8uT5viI2CL-28",
+        "target": "C9JETBEs-Y8uT5viI2CL-32",
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/SI_unit_label"
+        }
+      },
+      "w_6RQGmWUIJt2WVegk6u-2": {
+        "type": "SubPropertyOf",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;rounded=0;fontFamily=Verdana;fontSize=12;",
+        "label": "<span style=\"color: rgb(0 , 0 , 0)\">&lt;&lt;rdfs:subPropertyOf&gt;&gt;</span>",
+        "source": "w_6RQGmWUIJt2WVegk6u-1",
+        "target": "w_6RQGmWUIJt2WVegk6u-0",
+        "objectData": "none"
       }
     },
-    "C9JETBEs-Y8uT5viI2CL-7": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Verdana;fontSize=12;fillColor=#FFFFFF;",
-      "label": "cco:Agent",
-      "geometry": {
-        "x": 410,
-        "y": -930,
-        "width": 100,
-        "height": 30,
-        "TRANSLATE_CONTROL_POINTS": true,
-        "alternateBounds": null,
-        "sourcePoint": null,
-        "targetPoint": null,
-        "points": null,
-        "offset": null,
-        "relative": false
-      },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/Agent"
-      }
-    },
-    "C9JETBEs-Y8uT5viI2CL-8": {
-      "type": "Individual",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;fontFamily=Verdana;fontSize=12;fillColor=#FFFFFF;",
-      "label": "<u>cco:ArmenianDram</u>",
-      "geometry": {
-        "x": 410,
-        "y": -850,
-        "width": 100,
-        "height": 30,
-        "TRANSLATE_CONTROL_POINTS": true,
-        "alternateBounds": null,
-        "sourcePoint": null,
-        "targetPoint": null,
-        "points": null,
-        "offset": null,
-        "relative": false
-      },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/ArmenianDram"
-      }
-    },
-    "C9JETBEs-Y8uT5viI2CL-9": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Verdana;fontSize=12;fillColor=#FFFFFF;",
-      "label": "cco:Target",
-      "geometry": {
-        "x": 650,
-        "y": -930,
-        "width": 100,
-        "height": 30,
-        "TRANSLATE_CONTROL_POINTS": true,
-        "alternateBounds": null,
-        "sourcePoint": null,
-        "targetPoint": null,
-        "points": null,
-        "offset": null,
-        "relative": false
-      },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/Target"
-      }
-    },
-    "C9JETBEs-Y8uT5viI2CL-10": {
-      "type": "Individual",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;fontFamily=Verdana;fontSize=12;fillColor=#FFFFFF;",
-      "label": "<u>cco:AzerbaijanManat</u>",
-      "geometry": {
-        "x": 650,
-        "y": -900,
-        "width": 100,
-        "height": 30,
-        "TRANSLATE_CONTROL_POINTS": true,
-        "alternateBounds": null,
-        "sourcePoint": null,
-        "targetPoint": null,
-        "points": null,
-        "offset": null,
-        "relative": false
-      },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/AzerbaijanManat"
-      }
-    },
-    "C9JETBEs-Y8uT5viI2CL-24": {
-      "type": "Individual",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Verdana;fontSize=12;fillColor=#FFFFFF;",
-      "label": "<u>cco:BelarussianRuble</u>",
-      "geometry": {
-        "x": 200,
-        "y": -760,
-        "width": 100,
-        "height": 30,
-        "TRANSLATE_CONTROL_POINTS": true,
-        "alternateBounds": null,
-        "sourcePoint": null,
-        "targetPoint": null,
-        "points": null,
-        "offset": null,
-        "relative": false
-      },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/BelarussianRuble"
-      }
-    },
-    "C9JETBEs-Y8uT5viI2CL-25": {
-      "type": "Individual",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontFamily=Verdana;fontSize=12;fillColor=#FFFFFF;",
-      "label": "<u>cco:BoliviaBoliviano</u>",
-      "geometry": {
-        "x": 440,
-        "y": -759.5,
-        "width": 100,
-        "height": 30,
-        "TRANSLATE_CONTROL_POINTS": true,
-        "alternateBounds": null,
-        "sourcePoint": null,
-        "targetPoint": null,
-        "points": null,
-        "offset": null,
-        "relative": false
-      },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/BoliviaBoliviano"
-      }
-    },
-    "C9JETBEs-Y8uT5viI2CL-27": {
-      "type": "DataValue",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;shadow=0;glass=0;sketch=0;strokeColor=default;fontSize=12;fontFamily=Verdana;fillColor=#FF8C00;",
-      "label": "\"IRI\"^^xsd:long",
-      "geometry": {
-        "x": 470,
-        "y": -680,
-        "width": 170,
-        "height": 30,
-        "TRANSLATE_CONTROL_POINTS": true,
-        "alternateBounds": null,
-        "sourcePoint": null,
-        "targetPoint": null,
-        "points": null,
-        "offset": null,
-        "relative": false
-      },
-      "objectData": { "IRI_DT": "http://www.w3.org/2001/XMLSchema#long" }
-    },
-    "C9JETBEs-Y8uT5viI2CL-28": {
-      "type": "Individual",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];shadow=0;glass=0;sketch=0;strokeColor=default;fontSize=12;fontFamily=Verdana;fillColor=#FFFFFF;",
-      "label": "<u>cco:BruneiDollar</u>",
-      "geometry": {
-        "x": 190,
-        "y": -680,
-        "width": 100,
-        "height": 30,
-        "TRANSLATE_CONTROL_POINTS": true,
-        "alternateBounds": null,
-        "sourcePoint": null,
-        "targetPoint": null,
-        "points": null,
-        "offset": null,
-        "relative": false
-      },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/BruneiDollar"
-      }
-    },
-    "C9JETBEs-Y8uT5viI2CL-32": {
-      "type": "DataValue",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;shadow=0;glass=0;sketch=0;strokeColor=default;fontSize=12;fontFamily=Verdana;",
-      "label": "&nbsp; \"&nbsp; &nbsp;annotation1&nbsp; \"&nbsp; &nbsp;@en&nbsp; &nbsp;",
-      "geometry": {
-        "x": 160,
-        "y": -510,
-        "width": 170,
-        "height": 30,
-        "TRANSLATE_CONTROL_POINTS": true,
-        "alternateBounds": null,
-        "sourcePoint": null,
-        "targetPoint": null,
-        "points": null,
-        "offset": null,
-        "relative": false
-      },
-      "objectData": { "IRI_DT": "Null" }
-    },
-    "w_6RQGmWUIJt2WVegk6u-0": {
-      "type": "ObjectProperty",
-      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp; &nbsp;has affiliate",
-      "geometry": {
-        "x": 130,
-        "y": -410,
-        "width": 180,
-        "height": 75,
-        "TRANSLATE_CONTROL_POINTS": true,
-        "alternateBounds": null,
-        "sourcePoint": null,
-        "targetPoint": null,
-        "points": null,
-        "offset": null,
-        "relative": false
-      },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_affiliate"
-      }
-    },
-    "w_6RQGmWUIJt2WVegk6u-1": {
-      "type": "ObjectProperty",
-      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp; &nbsp;has subsidiary",
-      "geometry": {
-        "x": 130,
-        "y": -282,
-        "width": 180,
-        "height": 75,
-        "TRANSLATE_CONTROL_POINTS": true,
-        "alternateBounds": null,
-        "sourcePoint": null,
-        "targetPoint": null,
-        "points": null,
-        "offset": null,
-        "relative": false
-      },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_subsidiary"
-      }
+    "errors": {
+      "node_errors": [],
+      "edge_errors": [],
+      "relation_errors": [],
+      "other_errors": []
     }
   },
-  "edges": {
-    "C9JETBEs-Y8uT5viI2CL-3": {
-      "type": "RDFType",
-      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;exitX=0.5;exitY=0;exitDx=0;exitDy=0;rounded=0;fontFamily=Verdana;fontSize=12;",
-      "label": "",
-      "source": "C9JETBEs-Y8uT5viI2CL-5",
-      "target": "C9JETBEs-Y8uT5viI2CL-4",
-      "objectData": "none"
-    },
-    "C9JETBEs-Y8uT5viI2CL-6": {
-      "type": "RDFType",
-      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;exitX=0.5;exitY=0;exitDx=0;exitDy=0;rounded=0;fontFamily=Verdana;fontSize=12;",
-      "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-size: 12px\">&lt;&lt;rdf:type&gt;&gt;</span>",
-      "source": "C9JETBEs-Y8uT5viI2CL-8",
-      "target": "C9JETBEs-Y8uT5viI2CL-7",
-      "objectData": "none"
-    },
-    "C9JETBEs-Y8uT5viI2CL-26": {
-      "type": "ObjectProperty",
-      "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;rounded=0;fontFamily=Verdana;fontSize=12;fillColor=#FFFFFF;",
-      "label": "cco:delimits",
-      "source": "C9JETBEs-Y8uT5viI2CL-24",
-      "target": "C9JETBEs-Y8uT5viI2CL-25",
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/delimits"
-      }
-    },
-    "C9JETBEs-Y8uT5viI2CL-29": {
-      "type": "DatatypeProperty",
-      "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;rounded=0;strokeWidth=1;fontSize=12;fontFamily=Verdana;fillColor=#FFFFFF;",
-      "label": "cco:has_date_value",
-      "source": "C9JETBEs-Y8uT5viI2CL-28",
-      "target": "C9JETBEs-Y8uT5viI2CL-27",
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_date_value"
-      }
-    },
-    "C9JETBEs-Y8uT5viI2CL-31": {
-      "type": "AnnotationProperty",
-      "style": "rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;endArrow=diamond;endFill=1;strokeWidth=1;fontFamily=Verdana;fillColor=#FFFFFF;",
-      "label": "cco:SI_unit_label",
-      "source": "C9JETBEs-Y8uT5viI2CL-28",
-      "target": "C9JETBEs-Y8uT5viI2CL-32",
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/SI_unit_label"
-      }
-    },
-    "w_6RQGmWUIJt2WVegk6u-2": {
-      "type": "SubPropertyOf",
-      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;rounded=0;fontFamily=Verdana;fontSize=12;",
-      "label": "<span style=\"color: rgb(0 , 0 , 0)\">&lt;&lt;rdfs:subPropertyOf&gt;&gt;</span>",
-      "source": "w_6RQGmWUIJt2WVegk6u-1",
-      "target": "w_6RQGmWUIJt2WVegk6u-0",
-      "objectData": "none"
-    }
-  }
+  "mappingData": null
 }

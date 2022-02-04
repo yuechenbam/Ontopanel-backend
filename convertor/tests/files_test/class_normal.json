@@ -1,711 +1,721 @@
 {
-  "nodes": {
-    "1T0hYeEeylewZDRt19ES-0": {
-      "type": "Namespace",
-      "style": "shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;",
-      "label": "<div><b>ns</b>: http://test.namespace.com/</div><div><br></div><div>&nbsp; &nbsp; &nbsp; &nbsp;dc:&nbsp;http://purl.org/dc/terms/&nbsp; &nbsp; &nbsp;</div><div>owl:http://www.w3.org/2002/07/owl#</div><span style=\"color: rgb(37 , 37 , 37) ; font-family: sans-serif ; font-size: 14px ; background-color: rgb(255 , 255 , 255)\">&nbsp;</span>",
-      "geometry": { "x": 30, "y": 20, "width": 290, "height": 80 },
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-4": {
-      "type": "IntersectionOf",
-      "style": "ellipse;whiteSpace=wrap;html=1;aspect=fixed;",
-      "label": "<span style=\"font-size: 17px\">⨅</span>",
-      "geometry": { "x": 40, "y": 290, "width": 30, "height": 30 },
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-5": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Apple1",
-      "geometry": { "x": 127, "y": 260, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-6": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Orange1",
-      "geometry": { "x": 127, "y": 310, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-9": {
-      "type": "IntersectionOf",
-      "style": "ellipse;whiteSpace=wrap;html=1;aspect=fixed;",
-      "label": "<span style=\"text-align: left\">&lt;&lt;owl:intersectionOf&gt;&gt;</span>",
-      "geometry": { "x": 50, "y": 420, "width": 30, "height": 30 },
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-10": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "&nbsp; ns:Apple2&nbsp; &nbsp;",
-      "geometry": { "x": 137, "y": 390, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-11": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Orange2",
-      "geometry": { "x": 137, "y": 440, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-14": {
-      "type": "UnionOf",
-      "style": "ellipse;whiteSpace=wrap;html=1;aspect=fixed;",
-      "label": "<span style=\"font-size: 17px\">⨆</span>",
-      "geometry": { "x": 650, "y": 460, "width": 30, "height": 30 },
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-15": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Apple2",
-      "geometry": { "x": 737, "y": 430, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-16": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Orange2",
-      "geometry": { "x": 737, "y": 480, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-19": {
-      "type": "UnionOf",
-      "style": "ellipse;whiteSpace=wrap;html=1;aspect=fixed;",
-      "label": "<span style=\"text-align: left\">&lt;&lt;owl:unionOf&gt;&gt;</span>",
-      "geometry": { "x": 670, "y": 330, "width": 30, "height": 30 },
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-20": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Apple1",
-      "geometry": { "x": 757, "y": 300, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-21": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Orange1",
-      "geometry": { "x": 757, "y": 350, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-25": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Fruit",
-      "geometry": { "x": 50, "y": 520, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-26": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Apple1",
-      "geometry": { "x": 50, "y": 620, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-28": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Fruit",
-      "geometry": { "x": 240, "y": 520, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-29": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Orange1",
-      "geometry": { "x": 240, "y": 620, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-30": {
-      "type": "EquivalentClass",
-      "style": "ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=17;",
-      "label": "≡",
-      "geometry": { "x": 567, "y": 550, "width": 30, "height": 30 },
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-31": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Orange2",
-      "geometry": { "x": 467, "y": 602.5, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-32": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Orange1",
-      "geometry": { "x": 597, "y": 602.5, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-36": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Apple2",
-      "geometry": { "x": 357, "y": 710, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-37": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Apple1",
-      "geometry": { "x": 60, "y": 710, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-38": {
-      "type": "DisjointClass",
-      "style": "ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=17;",
-      "label": "⊥",
-      "geometry": { "x": 632, "y": 680, "width": 30, "height": 30 },
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-39": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Apple2",
-      "geometry": { "x": 532, "y": 732.5, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-40": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:NonApple2",
-      "geometry": { "x": 662, "y": 732.5, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-44": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:NonApple1",
-      "geometry": { "x": 356, "y": 780, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-45": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Apple1",
-      "geometry": { "x": 60, "y": 780, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-47": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Fruit",
-      "geometry": { "x": 349.5, "y": 840, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-48": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:NonApple1",
-      "geometry": { "x": 60, "y": 840, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-49": {
-      "type": "Individual",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontStyle=4",
-      "label": "ns:pinkLady",
-      "geometry": { "x": 380, "y": 910, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-51": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Apple1",
-      "geometry": { "x": 60, "y": 910, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-52": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Round",
-      "geometry": { "x": 350, "y": 980, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-54": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Apple1",
-      "geometry": { "x": 60, "y": 980, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-55": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "&nbsp; ns:Round",
-      "geometry": { "x": 350, "y": 1060, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-57": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Apple2",
-      "geometry": { "x": 60, "y": 1060, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-58": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Round",
-      "geometry": { "x": 350, "y": 1140, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-60": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Apple3",
-      "geometry": { "x": 60, "y": 1140, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-61": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Red",
-      "geometry": { "x": 350, "y": 1210, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-63": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Apple1",
-      "geometry": { "x": 60, "y": 1210, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-64": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Red",
-      "geometry": { "x": 350, "y": 1270, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-66": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Apple2",
-      "geometry": { "x": 60, "y": 1270, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-67": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Red",
-      "geometry": { "x": 350, "y": 1340, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-69": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Apple3",
-      "geometry": { "x": 60, "y": 1340, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-70": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Type",
-      "geometry": { "x": 350, "y": 1410, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-72": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Apple1",
-      "geometry": { "x": 60, "y": 1410, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-80": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:OrangeApple",
-      "geometry": { "x": -290, "y": 350, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-84": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:sweetFruit",
-      "geometry": { "x": 350, "y": 380, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-88": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Type",
-      "geometry": { "x": 349.5, "y": 1470, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-90": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Apple2",
-      "geometry": { "x": 59.5, "y": 1470, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-91": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Type",
-      "geometry": { "x": 349.5, "y": 1530, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-93": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
-      "label": "ns:Apple3",
-      "geometry": { "x": 59.5, "y": 1530, "width": 100, "height": 30 },
-      "objectData": { "IRI": "Null" }
-    },
-    "vUBCjjH_zmkcctQFmvQK-0": {
-      "type": "Individual",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;fontFamily=Verdana;fontSize=12;",
-      "label": "<u>ns:pinkLady1</u>",
-      "geometry": {
-        "x": 720.5,
-        "y": 870,
-        "width": 100,
-        "height": 30,
-        "TRANSLATE_CONTROL_POINTS": true,
-        "alternateBounds": null,
-        "sourcePoint": null,
-        "targetPoint": null,
-        "points": null,
-        "offset": null,
-        "relative": false
+  "format": "application/rdf+xml",
+  "fileData": {
+    "nodes": {
+      "1T0hYeEeylewZDRt19ES-0": {
+        "type": "Namespace",
+        "style": "shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;",
+        "label": "<div><b>ns</b>: http://test.namespace.com/</div><div><br></div><div>&nbsp; &nbsp; &nbsp; &nbsp;dc:&nbsp;http://purl.org/dc/terms/&nbsp; &nbsp; &nbsp;</div><div>owl:http://www.w3.org/2002/07/owl#</div><span style=\"color: rgb(37 , 37 , 37) ; font-family: sans-serif ; font-size: 14px ; background-color: rgb(255 , 255 , 255)\">&nbsp;</span>",
+        "geometry": { "x": 30, "y": 20, "width": 290, "height": 80 },
+        "objectData": "none"
       },
-      "objectData": { "IRI": "Null" }
-    },
-    "vUBCjjH_zmkcctQFmvQK-1": {
-      "type": "Individual",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;fontFamily=Verdana;fontSize=12;",
-      "label": "<u>ns:pinkLady2</u>",
-      "geometry": {
-        "x": 720.5,
-        "y": 938.2600000000002,
-        "width": 100,
-        "height": 30,
-        "TRANSLATE_CONTROL_POINTS": true,
-        "alternateBounds": null,
-        "sourcePoint": null,
-        "targetPoint": null,
-        "points": null,
-        "offset": null,
-        "relative": false
+      "1T0hYeEeylewZDRt19ES-4": {
+        "type": "IntersectionOf",
+        "style": "ellipse;whiteSpace=wrap;html=1;aspect=fixed;",
+        "label": "<span style=\"font-size: 17px\">⨅</span>",
+        "geometry": { "x": 40, "y": 290, "width": 30, "height": 30 },
+        "objectData": "none"
       },
-      "objectData": { "IRI": "Null" }
-    },
-    "vUBCjjH_zmkcctQFmvQK-2": {
-      "type": "Individual",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;fontFamily=Verdana;fontSize=12;",
-      "label": "<u>ns:pinkLady3</u>",
-      "geometry": {
-        "x": 720.5,
-        "y": 1005.7600000000002,
-        "width": 100,
-        "height": 30,
-        "TRANSLATE_CONTROL_POINTS": true,
-        "alternateBounds": null,
-        "sourcePoint": null,
-        "targetPoint": null,
-        "points": null,
-        "offset": null,
-        "relative": false
+      "1T0hYeEeylewZDRt19ES-5": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Apple1",
+        "geometry": { "x": 127, "y": 260, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
       },
-      "objectData": { "IRI": "Null" }
-    },
-    "vUBCjjH_zmkcctQFmvQK-3": {
-      "type": "AllDifferent",
-      "style": "shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Verdana;fontSize=12;",
-      "label": "&lt;&lt;owl:AllDifferent&gt;&gt;",
-      "geometry": {
-        "x": 549.5,
-        "y": 938.2600000000002,
-        "width": 129.5,
-        "height": 30,
-        "TRANSLATE_CONTROL_POINTS": true,
-        "alternateBounds": null,
-        "sourcePoint": null,
-        "targetPoint": null,
-        "points": null,
-        "offset": null,
-        "relative": false
+      "1T0hYeEeylewZDRt19ES-6": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Orange1",
+        "geometry": { "x": 127, "y": 310, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
       },
-      "objectData": "none"
+      "1T0hYeEeylewZDRt19ES-9": {
+        "type": "IntersectionOf",
+        "style": "ellipse;whiteSpace=wrap;html=1;aspect=fixed;",
+        "label": "<span style=\"text-align: left\">&lt;&lt;owl:intersectionOf&gt;&gt;</span>",
+        "geometry": { "x": 50, "y": 420, "width": 30, "height": 30 },
+        "objectData": "none"
+      },
+      "1T0hYeEeylewZDRt19ES-10": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "&nbsp; ns:Apple2&nbsp; &nbsp;",
+        "geometry": { "x": 137, "y": 390, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-11": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Orange2",
+        "geometry": { "x": 137, "y": 440, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-14": {
+        "type": "UnionOf",
+        "style": "ellipse;whiteSpace=wrap;html=1;aspect=fixed;",
+        "label": "<span style=\"font-size: 17px\">⨆</span>",
+        "geometry": { "x": 650, "y": 460, "width": 30, "height": 30 },
+        "objectData": "none"
+      },
+      "1T0hYeEeylewZDRt19ES-15": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Apple2",
+        "geometry": { "x": 737, "y": 430, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-16": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Orange2",
+        "geometry": { "x": 737, "y": 480, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-19": {
+        "type": "UnionOf",
+        "style": "ellipse;whiteSpace=wrap;html=1;aspect=fixed;",
+        "label": "<span style=\"text-align: left\">&lt;&lt;owl:unionOf&gt;&gt;</span>",
+        "geometry": { "x": 670, "y": 330, "width": 30, "height": 30 },
+        "objectData": "none"
+      },
+      "1T0hYeEeylewZDRt19ES-20": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Apple1",
+        "geometry": { "x": 757, "y": 300, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-21": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Orange1",
+        "geometry": { "x": 757, "y": 350, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-25": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Fruit",
+        "geometry": { "x": 50, "y": 520, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-26": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Apple1",
+        "geometry": { "x": 50, "y": 620, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-28": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Fruit",
+        "geometry": { "x": 240, "y": 520, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-29": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Orange1",
+        "geometry": { "x": 240, "y": 620, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-30": {
+        "type": "EquivalentClass",
+        "style": "ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=17;",
+        "label": "≡",
+        "geometry": { "x": 567, "y": 550, "width": 30, "height": 30 },
+        "objectData": "none"
+      },
+      "1T0hYeEeylewZDRt19ES-31": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Orange2",
+        "geometry": { "x": 467, "y": 602.5, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-32": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Orange1",
+        "geometry": { "x": 597, "y": 602.5, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-36": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Apple2",
+        "geometry": { "x": 357, "y": 710, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-37": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Apple1",
+        "geometry": { "x": 60, "y": 710, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-38": {
+        "type": "DisjointClass",
+        "style": "ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=17;",
+        "label": "⊥",
+        "geometry": { "x": 632, "y": 680, "width": 30, "height": 30 },
+        "objectData": "none"
+      },
+      "1T0hYeEeylewZDRt19ES-39": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Apple2",
+        "geometry": { "x": 532, "y": 732.5, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-40": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:NonApple2",
+        "geometry": { "x": 662, "y": 732.5, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-44": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:NonApple1",
+        "geometry": { "x": 356, "y": 780, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-45": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Apple1",
+        "geometry": { "x": 60, "y": 780, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-47": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Fruit",
+        "geometry": { "x": 349.5, "y": 840, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-48": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:NonApple1",
+        "geometry": { "x": 60, "y": 840, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-49": {
+        "type": "Individual",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fontStyle=4",
+        "label": "ns:pinkLady",
+        "geometry": { "x": 380, "y": 910, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-51": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Apple1",
+        "geometry": { "x": 60, "y": 910, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-52": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Round",
+        "geometry": { "x": 350, "y": 980, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-54": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Apple1",
+        "geometry": { "x": 60, "y": 980, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-55": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "&nbsp; ns:Round",
+        "geometry": { "x": 350, "y": 1060, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-57": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Apple2",
+        "geometry": { "x": 60, "y": 1060, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-58": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Round",
+        "geometry": { "x": 350, "y": 1140, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-60": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Apple3",
+        "geometry": { "x": 60, "y": 1140, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-61": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Red",
+        "geometry": { "x": 350, "y": 1210, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-63": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Apple1",
+        "geometry": { "x": 60, "y": 1210, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-64": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Red",
+        "geometry": { "x": 350, "y": 1270, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-66": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Apple2",
+        "geometry": { "x": 60, "y": 1270, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-67": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Red",
+        "geometry": { "x": 350, "y": 1340, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-69": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Apple3",
+        "geometry": { "x": 60, "y": 1340, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-70": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Type",
+        "geometry": { "x": 350, "y": 1410, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-72": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Apple1",
+        "geometry": { "x": 60, "y": 1410, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-80": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:OrangeApple",
+        "geometry": { "x": -290, "y": 350, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-84": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:sweetFruit",
+        "geometry": { "x": 350, "y": 380, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-88": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Type",
+        "geometry": { "x": 349.5, "y": 1470, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-90": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Apple2",
+        "geometry": { "x": 59.5, "y": 1470, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-91": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Type",
+        "geometry": { "x": 349.5, "y": 1530, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-93": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Apple3",
+        "geometry": { "x": 59.5, "y": 1530, "width": 100, "height": 30 },
+        "objectData": { "IRI": "Null" }
+      },
+      "ezwLJCd7JYQQ_omVNLmQ-16": {
+        "type": "Individual",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;",
+        "label": "<u style=\"font-family: &#34;verdana&#34;\">ns:pinkLady1</u>",
+        "geometry": {
+          "x": 720.5,
+          "y": 810,
+          "width": 100,
+          "height": 30,
+          "TRANSLATE_CONTROL_POINTS": true,
+          "alternateBounds": null,
+          "sourcePoint": null,
+          "targetPoint": null,
+          "points": null,
+          "offset": null,
+          "relative": false
+        },
+        "objectData": { "IRI": "Null" }
+      },
+      "ezwLJCd7JYQQ_omVNLmQ-17": {
+        "type": "Individual",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;",
+        "label": "<u style=\"font-family: &#34;verdana&#34;\">ns:pinkLady2</u>",
+        "geometry": {
+          "x": 720.5,
+          "y": 878.2600000000002,
+          "width": 100,
+          "height": 30,
+          "TRANSLATE_CONTROL_POINTS": true,
+          "alternateBounds": null,
+          "sourcePoint": null,
+          "targetPoint": null,
+          "points": null,
+          "offset": null,
+          "relative": false
+        },
+        "objectData": { "IRI": "Null" }
+      },
+      "ezwLJCd7JYQQ_omVNLmQ-18": {
+        "type": "Individual",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;",
+        "label": "<u style=\"font-family: &#34;verdana&#34;\">ns:pinkLady3</u>",
+        "geometry": {
+          "x": 720.5,
+          "y": 945.7600000000002,
+          "width": 100,
+          "height": 30,
+          "TRANSLATE_CONTROL_POINTS": true,
+          "alternateBounds": null,
+          "sourcePoint": null,
+          "targetPoint": null,
+          "points": null,
+          "offset": null,
+          "relative": false
+        },
+        "objectData": { "IRI": "Null" }
+      },
+      "ezwLJCd7JYQQ_omVNLmQ-19": {
+        "type": "AllDifferent",
+        "style": "shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;",
+        "label": "&lt;&lt;owl:AllDifferent&gt;&gt;",
+        "geometry": {
+          "x": 549.5,
+          "y": 878.2600000000002,
+          "width": 129.5,
+          "height": 30,
+          "TRANSLATE_CONTROL_POINTS": true,
+          "alternateBounds": null,
+          "sourcePoint": null,
+          "targetPoint": null,
+          "points": null,
+          "offset": null,
+          "relative": false
+        },
+        "objectData": "none"
+      }
+    },
+    "edges": {
+      "1T0hYeEeylewZDRt19ES-24": {
+        "type": "SubClassOf",
+        "style": "endArrow=block;html=1;fontColor=#000099;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endFill=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
+        "label": "",
+        "source": "1T0hYeEeylewZDRt19ES-26",
+        "target": "1T0hYeEeylewZDRt19ES-25",
+        "objectData": "none"
+      },
+      "1T0hYeEeylewZDRt19ES-27": {
+        "type": "SubClassOf",
+        "style": "endArrow=open;html=1;fontColor=#000099;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
+        "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-size: 12px\">&lt;&lt;rdfs:subClassOf&gt;&gt;</span>",
+        "source": "1T0hYeEeylewZDRt19ES-29",
+        "target": "1T0hYeEeylewZDRt19ES-28",
+        "objectData": "none"
+      },
+      "1T0hYeEeylewZDRt19ES-35": {
+        "type": "EquivalentClass",
+        "style": "endArrow=open;html=1;fontColor=#000099;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;rounded=0;",
+        "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-size: 12px\">&lt;&lt;owl:equivalentClass&gt;&gt;</span>",
+        "source": "1T0hYeEeylewZDRt19ES-37",
+        "target": "1T0hYeEeylewZDRt19ES-36",
+        "objectData": "none"
+      },
+      "1T0hYeEeylewZDRt19ES-43": {
+        "type": "DisjointClass",
+        "style": "endArrow=open;html=1;fontColor=#000099;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;arcSize=0;rounded=0;",
+        "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-size: 12px\">&lt;&lt;owl:disjointWith&gt;&gt;</span>",
+        "source": "1T0hYeEeylewZDRt19ES-45",
+        "target": "1T0hYeEeylewZDRt19ES-44",
+        "objectData": "none"
+      },
+      "1T0hYeEeylewZDRt19ES-46": {
+        "type": "ComplementOf",
+        "style": "endArrow=open;html=1;fontColor=#000099;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;startArrow=open;startFill=0;startSize=8;rounded=0;",
+        "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-size: 12px\">&lt;&lt;owl:complementOf&gt;&gt;</span>",
+        "source": "1T0hYeEeylewZDRt19ES-48",
+        "target": "1T0hYeEeylewZDRt19ES-47",
+        "objectData": "none"
+      },
+      "1T0hYeEeylewZDRt19ES-50": {
+        "type": "ObjectProperty(HasValue)",
+        "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
+        "label": "<span style=\"font-size: 12px\">(hasValue)&nbsp; &nbsp;ns:hasBrand</span>",
+        "source": "1T0hYeEeylewZDRt19ES-51",
+        "target": "1T0hYeEeylewZDRt19ES-49",
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-53": {
+        "type": "ObjectProperty(Universal)",
+        "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
+        "label": "<div style=\"font-size: 12px\">&lt;&lt;owl:allValuesFrom&gt;&gt;</div><span style=\"font-size: 12px\"><br>ns:hasShape</span>",
+        "source": "1T0hYeEeylewZDRt19ES-54",
+        "target": "1T0hYeEeylewZDRt19ES-52",
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-56": {
+        "type": "ObjectProperty(Universal)",
+        "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
+        "label": "<span style=\"font-size: 12px\">(</span><span class=\"ILfuVd NA6bn\" style=\"font-size: 12px\">∀&nbsp;&nbsp;</span><span style=\"font-size: 12px\">) </span><span style=\"font-size: 12px\">ns:&nbsp; hasShape</span>",
+        "source": "1T0hYeEeylewZDRt19ES-57",
+        "target": "1T0hYeEeylewZDRt19ES-55",
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-59": {
+        "type": "ObjectProperty(Universal)",
+        "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
+        "label": "<span style=\"font-size: 12px\">(all&nbsp; )&nbsp; &nbsp;</span><span style=\"font-size: 12px\">ns:hasShape</span>",
+        "source": "1T0hYeEeylewZDRt19ES-60",
+        "target": "1T0hYeEeylewZDRt19ES-58",
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-62": {
+        "type": "ObjectProperty(Existential)",
+        "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
+        "label": "<div style=\"font-size: 12px\">&lt;&lt;owl:someValuesFrom&gt;&gt;</div><span style=\"font-size: 12px\">&nbsp; ns&nbsp; :hasColor&nbsp; &nbsp; &nbsp;&nbsp;</span>",
+        "source": "1T0hYeEeylewZDRt19ES-63",
+        "target": "1T0hYeEeylewZDRt19ES-61",
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-65": {
+        "type": "ObjectProperty(Existential)",
+        "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
+        "label": "<span style=\"font-size: 12px\">(</span><span class=\"ILfuVd NA6bn\" style=\"font-size: 12px\">∃</span><span style=\"font-size: 12px\">) ns:&nbsp; objectProperty</span>",
+        "source": "1T0hYeEeylewZDRt19ES-66",
+        "target": "1T0hYeEeylewZDRt19ES-64",
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-68": {
+        "type": "ObjectProperty(Existential)",
+        "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
+        "label": "<span style=\"font-size: 12px\">(some) ns:objectProperty</span>",
+        "source": "1T0hYeEeylewZDRt19ES-69",
+        "target": "1T0hYeEeylewZDRt19ES-67",
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-71": {
+        "type": "ObjectProperty(Cardinality)",
+        "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
+        "label": "<span style=\"font-size: 12px\">ns:hasType (1&nbsp; .. 20)</span>",
+        "source": "1T0hYeEeylewZDRt19ES-72",
+        "target": "1T0hYeEeylewZDRt19ES-70",
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-83": {
+        "type": "EquivalentClass",
+        "style": "endArrow=open;html=1;fontColor=#000099;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;rounded=0;",
+        "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-size: 12px\">&lt;&lt;owl:equivalentClass&gt;&gt;</span>",
+        "source": "1T0hYeEeylewZDRt19ES-80",
+        "target": "1T0hYeEeylewZDRt19ES-4",
+        "objectData": "none"
+      },
+      "1T0hYeEeylewZDRt19ES-85": {
+        "type": "EquivalentClass",
+        "style": "endArrow=open;html=1;fontColor=#000099;exitX=1;exitY=0.7;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;rounded=0;",
+        "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-size: 12px\">&lt;&lt;owl:equivalentClass&gt;&gt;</span>",
+        "source": "1T0hYeEeylewZDRt19ES-80",
+        "target": "1T0hYeEeylewZDRt19ES-9",
+        "objectData": "none"
+      },
+      "1T0hYeEeylewZDRt19ES-86": {
+        "type": "EquivalentClass",
+        "style": "endArrow=open;html=1;fontColor=#000099;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;rounded=0;",
+        "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-size: 12px\">&lt;&lt;owl:equivalentClass&gt;&gt;</span>",
+        "source": "1T0hYeEeylewZDRt19ES-84",
+        "target": "1T0hYeEeylewZDRt19ES-19",
+        "objectData": "none"
+      },
+      "1T0hYeEeylewZDRt19ES-87": {
+        "type": "EquivalentClass",
+        "style": "endArrow=open;html=1;fontColor=#000099;exitX=1;exitY=0.7;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;rounded=0;",
+        "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-size: 12px\">&lt;&lt;owl:equivalentClass&gt;&gt;</span>",
+        "source": "1T0hYeEeylewZDRt19ES-84",
+        "target": "1T0hYeEeylewZDRt19ES-14",
+        "objectData": "none"
+      },
+      "1T0hYeEeylewZDRt19ES-89": {
+        "type": "ObjectProperty(Cardinality)",
+        "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
+        "label": "<span style=\"font-size: 12px\">ns:hasType&nbsp; &nbsp;(&nbsp; 0.. 20)</span>",
+        "source": "1T0hYeEeylewZDRt19ES-90",
+        "target": "1T0hYeEeylewZDRt19ES-88",
+        "objectData": { "IRI": "Null" }
+      },
+      "1T0hYeEeylewZDRt19ES-92": {
+        "type": "ObjectProperty(Cardinality)",
+        "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
+        "label": "<span style=\"font-size: 12px\">ns:hasType (1 .. N2)</span>",
+        "source": "1T0hYeEeylewZDRt19ES-93",
+        "target": "1T0hYeEeylewZDRt19ES-91",
+        "objectData": { "IRI": "Null" }
+      },
+      "ezwLJCd7JYQQ_omVNLmQ-3": {
+        "type": "Connector",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;endSize=8;arcSize=0;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;",
+        "label": "",
+        "source": "1T0hYeEeylewZDRt19ES-4",
+        "target": "1T0hYeEeylewZDRt19ES-5",
+        "objectData": "none"
+      },
+      "ezwLJCd7JYQQ_omVNLmQ-5": {
+        "type": "Connector",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;endSize=8;arcSize=0;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;",
+        "label": "",
+        "source": "1T0hYeEeylewZDRt19ES-4",
+        "target": "1T0hYeEeylewZDRt19ES-6",
+        "objectData": "none"
+      },
+      "ezwLJCd7JYQQ_omVNLmQ-6": {
+        "type": "Connector",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;endSize=8;arcSize=0;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;",
+        "label": "",
+        "source": "1T0hYeEeylewZDRt19ES-9",
+        "target": "1T0hYeEeylewZDRt19ES-10",
+        "objectData": "none"
+      },
+      "ezwLJCd7JYQQ_omVNLmQ-7": {
+        "type": "Connector",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;endSize=8;arcSize=0;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;",
+        "label": "",
+        "source": "1T0hYeEeylewZDRt19ES-9",
+        "target": "1T0hYeEeylewZDRt19ES-11",
+        "objectData": "none"
+      },
+      "ezwLJCd7JYQQ_omVNLmQ-8": {
+        "type": "Connector",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;endSize=8;arcSize=0;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;",
+        "label": "",
+        "source": "1T0hYeEeylewZDRt19ES-19",
+        "target": "1T0hYeEeylewZDRt19ES-20",
+        "objectData": "none"
+      },
+      "ezwLJCd7JYQQ_omVNLmQ-9": {
+        "type": "Connector",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;endSize=8;arcSize=0;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;",
+        "label": "",
+        "source": "1T0hYeEeylewZDRt19ES-19",
+        "target": "1T0hYeEeylewZDRt19ES-21",
+        "objectData": "none"
+      },
+      "ezwLJCd7JYQQ_omVNLmQ-10": {
+        "type": "Connector",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;endSize=8;arcSize=0;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;",
+        "label": "",
+        "source": "1T0hYeEeylewZDRt19ES-14",
+        "target": "1T0hYeEeylewZDRt19ES-15",
+        "objectData": "none"
+      },
+      "ezwLJCd7JYQQ_omVNLmQ-11": {
+        "type": "Connector",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;endSize=8;arcSize=0;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;",
+        "label": "",
+        "source": "1T0hYeEeylewZDRt19ES-14",
+        "target": "1T0hYeEeylewZDRt19ES-16",
+        "objectData": "none"
+      },
+      "ezwLJCd7JYQQ_omVNLmQ-12": {
+        "type": "Connector",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;endSize=8;arcSize=0;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;",
+        "label": "",
+        "source": "1T0hYeEeylewZDRt19ES-30",
+        "target": "1T0hYeEeylewZDRt19ES-31",
+        "objectData": "none"
+      },
+      "ezwLJCd7JYQQ_omVNLmQ-13": {
+        "type": "Connector",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;endSize=8;arcSize=0;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.6;entryY=0;entryDx=0;entryDy=0;",
+        "label": "",
+        "source": "1T0hYeEeylewZDRt19ES-30",
+        "target": "1T0hYeEeylewZDRt19ES-32",
+        "objectData": "none"
+      },
+      "ezwLJCd7JYQQ_omVNLmQ-14": {
+        "type": "Connector",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;endSize=8;arcSize=0;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;",
+        "label": "",
+        "source": "1T0hYeEeylewZDRt19ES-38",
+        "target": "1T0hYeEeylewZDRt19ES-39",
+        "objectData": "none"
+      },
+      "ezwLJCd7JYQQ_omVNLmQ-15": {
+        "type": "Connector",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;endSize=8;arcSize=0;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;",
+        "label": "",
+        "source": "1T0hYeEeylewZDRt19ES-38",
+        "target": "1T0hYeEeylewZDRt19ES-40",
+        "objectData": "none"
+      },
+      "ezwLJCd7JYQQ_omVNLmQ-20": {
+        "type": "Connector",
+        "style": "rounded=0;jumpSize=4;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+        "label": "",
+        "source": "ezwLJCd7JYQQ_omVNLmQ-19",
+        "target": "ezwLJCd7JYQQ_omVNLmQ-17",
+        "objectData": "none"
+      },
+      "ezwLJCd7JYQQ_omVNLmQ-21": {
+        "type": "Connector",
+        "style": "rounded=0;jumpSize=4;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;edgeStyle=orthogonalEdgeStyle;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+        "label": "",
+        "source": "ezwLJCd7JYQQ_omVNLmQ-19",
+        "target": "ezwLJCd7JYQQ_omVNLmQ-18",
+        "objectData": "none"
+      },
+      "ezwLJCd7JYQQ_omVNLmQ-22": {
+        "type": "Connector",
+        "style": "rounded=0;jumpSize=4;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
+        "label": "",
+        "source": "ezwLJCd7JYQQ_omVNLmQ-19",
+        "target": "ezwLJCd7JYQQ_omVNLmQ-16",
+        "objectData": "none"
+      }
+    },
+    "errors": {
+      "node_errors": [],
+      "edge_errors": [],
+      "relation_errors": [],
+      "other_errors": []
     }
   },
-  "edges": {
-    "1T0hYeEeylewZDRt19ES-7": {
-      "type": "ElipseConnection",
-      "style": "endArrow=open;html=1;fontColor=#000099;exitX=1;exitY=0;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
-      "label": "",
-      "source": "1T0hYeEeylewZDRt19ES-4",
-      "target": "1T0hYeEeylewZDRt19ES-5",
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-8": {
-      "type": "ElipseConnection",
-      "style": "endArrow=open;html=1;fontColor=#000099;exitX=1;exitY=1;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
-      "label": "",
-      "source": "1T0hYeEeylewZDRt19ES-4",
-      "target": "1T0hYeEeylewZDRt19ES-6",
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-12": {
-      "type": "ElipseConnection",
-      "style": "endArrow=open;html=1;fontColor=#000099;exitX=1;exitY=0;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
-      "label": "",
-      "source": "1T0hYeEeylewZDRt19ES-9",
-      "target": "1T0hYeEeylewZDRt19ES-10",
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-13": {
-      "type": "ElipseConnection",
-      "style": "endArrow=open;html=1;fontColor=#000099;exitX=1;exitY=1;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
-      "label": "",
-      "source": "1T0hYeEeylewZDRt19ES-9",
-      "target": "1T0hYeEeylewZDRt19ES-11",
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-17": {
-      "type": "ElipseConnection",
-      "style": "endArrow=open;html=1;fontColor=#000099;exitX=1;exitY=0;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
-      "label": "",
-      "source": "1T0hYeEeylewZDRt19ES-14",
-      "target": "1T0hYeEeylewZDRt19ES-15",
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-18": {
-      "type": "ElipseConnection",
-      "style": "endArrow=open;html=1;fontColor=#000099;exitX=1;exitY=1;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
-      "label": "",
-      "source": "1T0hYeEeylewZDRt19ES-14",
-      "target": "1T0hYeEeylewZDRt19ES-16",
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-22": {
-      "type": "ElipseConnection",
-      "style": "endArrow=open;html=1;fontColor=#000099;exitX=1;exitY=0;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
-      "label": "",
-      "source": "1T0hYeEeylewZDRt19ES-19",
-      "target": "1T0hYeEeylewZDRt19ES-20",
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-23": {
-      "type": "ElipseConnection",
-      "style": "endArrow=open;html=1;fontColor=#000099;exitX=1;exitY=1;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
-      "label": "",
-      "source": "1T0hYeEeylewZDRt19ES-19",
-      "target": "1T0hYeEeylewZDRt19ES-21",
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-24": {
-      "type": "SubClassOf",
-      "style": "endArrow=block;html=1;fontColor=#000099;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endFill=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
-      "label": "",
-      "source": "1T0hYeEeylewZDRt19ES-26",
-      "target": "1T0hYeEeylewZDRt19ES-25",
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-27": {
-      "type": "SubClassOf",
-      "style": "endArrow=open;html=1;fontColor=#000099;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
-      "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-size: 12px\">&lt;&lt;rdfs:subClassOf&gt;&gt;</span>",
-      "source": "1T0hYeEeylewZDRt19ES-29",
-      "target": "1T0hYeEeylewZDRt19ES-28",
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-33": {
-      "type": "ElipseConnection",
-      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;endSize=8;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;arcSize=0;rounded=0;",
-      "label": "",
-      "source": "1T0hYeEeylewZDRt19ES-30",
-      "target": "1T0hYeEeylewZDRt19ES-31",
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-34": {
-      "type": "ElipseConnection",
-      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;arcSize=0;rounded=0;",
-      "label": "",
-      "source": "1T0hYeEeylewZDRt19ES-30",
-      "target": "1T0hYeEeylewZDRt19ES-32",
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-35": {
-      "type": "EquivalentClass",
-      "style": "endArrow=open;html=1;fontColor=#000099;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;rounded=0;",
-      "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-size: 12px\">&lt;&lt;owl:equivalentClass&gt;&gt;</span>",
-      "source": "1T0hYeEeylewZDRt19ES-37",
-      "target": "1T0hYeEeylewZDRt19ES-36",
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-41": {
-      "type": "ElipseConnection",
-      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;endSize=8;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;arcSize=0;rounded=0;",
-      "label": "",
-      "source": "1T0hYeEeylewZDRt19ES-38",
-      "target": "1T0hYeEeylewZDRt19ES-39",
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-42": {
-      "type": "ElipseConnection",
-      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;arcSize=0;rounded=0;",
-      "label": "",
-      "source": "1T0hYeEeylewZDRt19ES-38",
-      "target": "1T0hYeEeylewZDRt19ES-40",
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-43": {
-      "type": "DisjointClass",
-      "style": "endArrow=open;html=1;fontColor=#000099;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;arcSize=0;rounded=0;",
-      "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-size: 12px\">&lt;&lt;owl:disjointWith&gt;&gt;</span>",
-      "source": "1T0hYeEeylewZDRt19ES-45",
-      "target": "1T0hYeEeylewZDRt19ES-44",
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-46": {
-      "type": "ComplementOf",
-      "style": "endArrow=open;html=1;fontColor=#000099;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;startArrow=open;startFill=0;startSize=8;rounded=0;",
-      "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-size: 12px\">&lt;&lt;owl:complementOf&gt;&gt;</span>",
-      "source": "1T0hYeEeylewZDRt19ES-48",
-      "target": "1T0hYeEeylewZDRt19ES-47",
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-50": {
-      "type": "ObjectProperty(HasValue)",
-      "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
-      "label": "<span style=\"font-size: 12px\">(hasValue)&nbsp; &nbsp;ns:hasBrand</span>",
-      "source": "1T0hYeEeylewZDRt19ES-51",
-      "target": "1T0hYeEeylewZDRt19ES-49",
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-53": {
-      "type": "ObjectProperty(Universal)",
-      "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
-      "label": "<div style=\"font-size: 12px\">&lt;&lt;owl:allValuesFrom&gt;&gt;</div><span style=\"font-size: 12px\"><br>ns:hasShape</span>",
-      "source": "1T0hYeEeylewZDRt19ES-54",
-      "target": "1T0hYeEeylewZDRt19ES-52",
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-56": {
-      "type": "ObjectProperty(Universal)",
-      "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
-      "label": "<span style=\"font-size: 12px\">(</span><span class=\"ILfuVd NA6bn\" style=\"font-size: 12px\">∀&nbsp;&nbsp;</span><span style=\"font-size: 12px\">) </span><span style=\"font-size: 12px\">ns:&nbsp; hasShape</span>",
-      "source": "1T0hYeEeylewZDRt19ES-57",
-      "target": "1T0hYeEeylewZDRt19ES-55",
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-59": {
-      "type": "ObjectProperty(Universal)",
-      "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
-      "label": "<span style=\"font-size: 12px\">(all&nbsp; )&nbsp; &nbsp;</span><span style=\"font-size: 12px\">ns:hasShape</span>",
-      "source": "1T0hYeEeylewZDRt19ES-60",
-      "target": "1T0hYeEeylewZDRt19ES-58",
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-62": {
-      "type": "ObjectProperty(Existential)",
-      "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
-      "label": "<div style=\"font-size: 12px\">&lt;&lt;owl:someValuesFrom&gt;&gt;</div><span style=\"font-size: 12px\">&nbsp; ns&nbsp; :hasColor&nbsp; &nbsp; &nbsp;&nbsp;</span>",
-      "source": "1T0hYeEeylewZDRt19ES-63",
-      "target": "1T0hYeEeylewZDRt19ES-61",
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-65": {
-      "type": "ObjectProperty(Existential)",
-      "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
-      "label": "<span style=\"font-size: 12px\">(</span><span class=\"ILfuVd NA6bn\" style=\"font-size: 12px\">∃</span><span style=\"font-size: 12px\">) ns:&nbsp; objectProperty</span>",
-      "source": "1T0hYeEeylewZDRt19ES-66",
-      "target": "1T0hYeEeylewZDRt19ES-64",
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-68": {
-      "type": "ObjectProperty(Existential)",
-      "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
-      "label": "<span style=\"font-size: 12px\">(some) ns:objectProperty</span>",
-      "source": "1T0hYeEeylewZDRt19ES-69",
-      "target": "1T0hYeEeylewZDRt19ES-67",
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-71": {
-      "type": "ObjectProperty(Cardinality)",
-      "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
-      "label": "<span style=\"font-size: 12px\">ns:hasType (1&nbsp; .. 20)</span>",
-      "source": "1T0hYeEeylewZDRt19ES-72",
-      "target": "1T0hYeEeylewZDRt19ES-70",
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-83": {
-      "type": "EquivalentClass",
-      "style": "endArrow=open;html=1;fontColor=#000099;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;rounded=0;",
-      "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-size: 12px\">&lt;&lt;owl:equivalentClass&gt;&gt;</span>",
-      "source": "1T0hYeEeylewZDRt19ES-80",
-      "target": "1T0hYeEeylewZDRt19ES-4",
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-85": {
-      "type": "EquivalentClass",
-      "style": "endArrow=open;html=1;fontColor=#000099;exitX=1;exitY=0.7;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;rounded=0;",
-      "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-size: 12px\">&lt;&lt;owl:equivalentClass&gt;&gt;</span>",
-      "source": "1T0hYeEeylewZDRt19ES-80",
-      "target": "1T0hYeEeylewZDRt19ES-9",
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-86": {
-      "type": "EquivalentClass",
-      "style": "endArrow=open;html=1;fontColor=#000099;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;rounded=0;",
-      "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-size: 12px\">&lt;&lt;owl:equivalentClass&gt;&gt;</span>",
-      "source": "1T0hYeEeylewZDRt19ES-84",
-      "target": "1T0hYeEeylewZDRt19ES-19",
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-87": {
-      "type": "EquivalentClass",
-      "style": "endArrow=open;html=1;fontColor=#000099;exitX=1;exitY=0.7;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;rounded=0;",
-      "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-size: 12px\">&lt;&lt;owl:equivalentClass&gt;&gt;</span>",
-      "source": "1T0hYeEeylewZDRt19ES-84",
-      "target": "1T0hYeEeylewZDRt19ES-14",
-      "objectData": "none"
-    },
-    "1T0hYeEeylewZDRt19ES-89": {
-      "type": "ObjectProperty(Cardinality)",
-      "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
-      "label": "<span style=\"font-size: 12px\">ns:hasType&nbsp; &nbsp;(&nbsp; 0.. 20)</span>",
-      "source": "1T0hYeEeylewZDRt19ES-90",
-      "target": "1T0hYeEeylewZDRt19ES-88",
-      "objectData": { "IRI": "Null" }
-    },
-    "1T0hYeEeylewZDRt19ES-92": {
-      "type": "ObjectProperty(Cardinality)",
-      "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;",
-      "label": "<span style=\"font-size: 12px\">ns:hasType (1 .. N2)</span>",
-      "source": "1T0hYeEeylewZDRt19ES-93",
-      "target": "1T0hYeEeylewZDRt19ES-91",
-      "objectData": { "IRI": "Null" }
-    },
-    "vUBCjjH_zmkcctQFmvQK-4": {
-      "type": "HexagonConnection",
-      "style": "rounded=0;jumpSize=4;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
-      "label": "",
-      "source": "vUBCjjH_zmkcctQFmvQK-3",
-      "target": "vUBCjjH_zmkcctQFmvQK-1",
-      "objectData": "none"
-    },
-    "vUBCjjH_zmkcctQFmvQK-5": {
-      "type": "HexagonConnection",
-      "style": "rounded=0;jumpSize=4;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;edgeStyle=orthogonalEdgeStyle;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
-      "label": "",
-      "source": "vUBCjjH_zmkcctQFmvQK-3",
-      "target": "vUBCjjH_zmkcctQFmvQK-2",
-      "objectData": "none"
-    },
-    "vUBCjjH_zmkcctQFmvQK-6": {
-      "type": "HexagonConnection",
-      "style": "rounded=0;jumpSize=4;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;fontFamily=Verdana;fontSize=12;fontColor=#000000;",
-      "label": "",
-      "source": "vUBCjjH_zmkcctQFmvQK-3",
-      "target": "vUBCjjH_zmkcctQFmvQK-0",
-      "objectData": "none"
-    }
-  }
+  "mappingData": null
 }

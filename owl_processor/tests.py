@@ -154,46 +154,46 @@ class TestViews(TestSetUp):
                          status.HTTP_204_NO_CONTENT)
 
 
-class TestOnotable(APITestCase):
-    def test_owltable_funs(self):
-        sources = [{
-            "formURL": "https://protege.stanford.edu/ontologies/camera.owl",
-            "formName": "Cam",
-        }, {
-            "formURL": "https://protege.stanford.edu/ontologies/pizza/pizza.owl",
-            "formName": "Pizza",
-        }, {
-            "formURL": "http://owl.man.ac.uk/2006/07/sssw/people.owl",
-            "formName": "Peop",
+# class TestOnotable(APITestCase):
+#     def test_owltable_funs(self):
+#         sources = [{
+#             "formURL": "https://protege.stanford.edu/ontologies/camera.owl",
+#             "formName": "Cam",
+#         }, {
+#             "formURL": "https://protege.stanford.edu/ontologies/pizza/pizza.owl",
+#             "formName": "Pizza",
+#         }, {
+#             "formURL": "http://owl.man.ac.uk/2006/07/sssw/people.owl",
+#             "formName": "Peop",
 
-        }, {
-            "formURL": "https://raw.githubusercontent.com/Mat-O-Lab/MSEO/main/MSEO_mid.owl",
-            "formName": "test1",
-        }]
-        # counts: class, objectproperty, dataproperty, individual, annotation property, from protege
-        # camera,pizza, people, mid
+#         }, {
+#             "formURL": "https://raw.githubusercontent.com/Mat-O-Lab/MSEO/main/MSEO_mid.owl",
+#             "formName": "test1",
+#         }]
+#         # counts: class, objectproperty, dataproperty, individual, annotation property, from protege
+#         # camera,pizza, people, mid
 
-        # AP will have at least 8
+#         # AP will have at least 8
 
-        counts = [[12, 7, 8, 2, 8],
-                  [99, 8, 0, 5, 8+8], [60, 14, 0, 22, 8], [1663, 286, 29, 515, 66]]
-        for i in range(len(sources)):
-            response = self.client.post(
-                reverse("onto_owltable"), sources[i])
-            self.assertEqual(response.status_code, status.HTTP_200_OK)
+#         counts = [[12, 7, 8, 2, 8],
+#                   [99, 8, 0, 5, 8+8], [60, 14, 0, 22, 8], [1663, 286, 29, 515, 66]]
+#         for i in range(len(sources)):
+#             response = self.client.post(
+#                 reverse("onto_owltable"), sources[i])
+#             self.assertEqual(response.status_code, status.HTTP_200_OK)
 
-            table = json.loads(response.data["onto_table"]['table'])
-            tree = response.data["onto_table"]['tree']
-            df_length = []
-            # assert lens of df and in protege are equal
-            # assert tree and df have the same entities, no one is missing.
-            for j in ['Class', 'OP', 'DP', 'Individual', 'AP']:
-                entity = set(
-                    [x for x in table.keys() if table[x]['BelongsTo'] == j])
-                df_length.append(len(entity))
+#             table = json.loads(response.data["onto_table"]['table'])
+#             tree = response.data["onto_table"]['tree']
+#             df_length = []
+#             # assert lens of df and in protege are equal
+#             # assert tree and df have the same entities, no one is missing.
+#             for j in ['Class', 'ObjectProperty', 'DatatypeProperty', 'Individual', 'AnnotationProperty']:
+#                 entity = set(
+#                     [x for x in table.keys() if table[x]['BelongsTo'] == j])
+#                 df_length.append(len(entity))
 
-                tree_entity = set(flatten(tree[j]))
+#                 tree_entity = set(flatten(tree[j]))
 
-            self.assertEqual(df_length, counts[i])
+#             self.assertEqual(df_length, counts[i])
 
-            self.assertEqual(tree_entity, entity)
+#             self.assertEqual(tree_entity, entity)

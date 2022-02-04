@@ -1,15 +1,17 @@
-import rdflib
-import pandas as pd
-import os
-from rdflib.term import URIRef
-from rdflib.util import find_roots, get_tree
-import json
-from rest_framework.exceptions import APIException
-from .machester import Class
-from owl_processor.utility.machester import Class
-from owl_processor.utility.special_entities import datatype, annotation_properties
-import copy
 import time
+import copy
+from owl_processor.utility.special_entities import datatype, annotation_properties
+from owl_processor.utility.machester import Class
+from .machester import Class
+from rest_framework.exceptions import APIException
+import json
+from rdflib.util import find_roots, get_tree
+from rdflib.term import URIRef
+import os
+import pandas as pd
+import rdflib
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
 
 
 class ImportOnto:

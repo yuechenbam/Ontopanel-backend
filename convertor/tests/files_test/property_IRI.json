@@ -1,709 +1,719 @@
 {
-  "nodes": {
-    "CeI93uY9QLuZRJVfTrI0-17": {
-      "type": "DatatypeProperty(Universal)",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "(&nbsp; all&nbsp; )&nbsp; &nbsp;has date value&nbsp; ~&nbsp; &nbsp;owl:real",
-      "geometry": { "x": 40, "y": 650, "width": 260, "height": 30 },
-      "objectData": {
-        "IRI_DP": "http://www.ontologyrepository.com/CommonCoreOntologies/has_date_value",
-        "IRI_DT": "Null"
+  "format": "application/rdf+xml",
+  "fileData": {
+    "nodes": {
+      "CeI93uY9QLuZRJVfTrI0-17": {
+        "type": "DatatypeProperty(Universal)",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "(&nbsp; all&nbsp; )&nbsp; &nbsp;has date value&nbsp; ~&nbsp; &nbsp;owl:real",
+        "geometry": { "x": 40, "y": 650, "width": 260, "height": 30 },
+        "objectData": {
+          "IRI_DP": "http://www.ontologyrepository.com/CommonCoreOntologies/has_date_value",
+          "IRI_DT": "Null"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-18": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "entity",
+        "geometry": { "x": 40, "y": 620, "width": 260, "height": 30 },
+        "objectData": { "IRI": "http://purl.obolibrary.org/obo/BFO_0000001" }
+      },
+      "CeI93uY9QLuZRJVfTrI0-19": {
+        "type": "DatatypeProperty(Universal)",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "(∀) cco:has_longitude_value~owl:real",
+        "geometry": { "x": 410, "y": 650, "width": 240, "height": 30 },
+        "objectData": {
+          "IRI_DP": "http://www.ontologyrepository.com/CommonCoreOntologies/has_longitude_value",
+          "IRI_DT": "Null"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-20": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "entity",
+        "geometry": { "x": 410, "y": 620, "width": 240, "height": 30 },
+        "objectData": { "IRI": "http://purl.obolibrary.org/obo/BFO_0000001" }
+      },
+      "CeI93uY9QLuZRJVfTrI0-21": {
+        "type": "DatatypeProperty(Existenial)",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "(some) cco:has_latitude_value ~owl:real",
+        "geometry": { "x": 780, "y": 650, "width": 270, "height": 30 },
+        "objectData": {
+          "IRI_DP": "http://www.ontologyrepository.com/CommonCoreOntologies/has_latitude_value",
+          "IRI_DT": "Null"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-22": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "entity",
+        "geometry": { "x": 780, "y": 620, "width": 270, "height": 30 },
+        "objectData": { "IRI": "http://purl.obolibrary.org/obo/BFO_0000001" }
+      },
+      "CeI93uY9QLuZRJVfTrI0-23": {
+        "type": "DatatypeProperty(Existenial)",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "(∃) cco:has_integer_value ~owl:real",
+        "geometry": { "x": 40, "y": 760, "width": 240, "height": 30 },
+        "objectData": {
+          "IRI_DP": "http://www.ontologyrepository.com/CommonCoreOntologies/has_integer_value",
+          "IRI_DT": "Null"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-24": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "entity",
+        "geometry": { "x": 40, "y": 730, "width": 240, "height": 30 },
+        "objectData": { "IRI": "http://purl.obolibrary.org/obo/BFO_0000001" }
+      },
+      "CeI93uY9QLuZRJVfTrI0-25": {
+        "type": "DatatypeProperty(Cardinality)",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "pt:casRegistryID&nbsp; (1&nbsp; ..&nbsp; 5)&nbsp; ~owl:real",
+        "geometry": { "x": 410, "y": 770, "width": 285, "height": 30 },
+        "objectData": {
+          "IRI_DP": "http://www.daml.org/2003/01/periodictable/PeriodicTable#casRegistryID",
+          "IRI_DT": "http://www.w3.org/2002/07/owl#real"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-26": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "entity",
+        "geometry": { "x": 410, "y": 740, "width": 285, "height": 30 },
+        "objectData": { "IRI": "http://purl.obolibrary.org/obo/BFO_0000001" }
+      },
+      "CeI93uY9QLuZRJVfTrI0-27": {
+        "type": "DatatypeProperty(YesDomainYesRange)",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "has double value&nbsp;~</font><span style=\"font-family: &#34;verdana&#34;\">owl:real</span>",
+        "geometry": { "x": 47, "y": 885, "width": 230, "height": 30 },
+        "objectData": {
+          "IRI_DP": "http://www.ontologyrepository.com/CommonCoreOntologies/has_double_value",
+          "IRI_DT": "Null"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-28": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "entity",
+        "geometry": { "x": 47, "y": 855, "width": 230, "height": 30 },
+        "objectData": { "IRI": "http://purl.obolibrary.org/obo/BFO_0000001" }
+      },
+      "CeI93uY9QLuZRJVfTrI0-29": {
+        "type": "DatatypeProperty(YesDomainNoRange)",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "cco:has_text_value",
+        "geometry": { "x": 470, "y": 870, "width": 136, "height": 30 },
+        "objectData": {
+          "IRI_DP": "http://www.ontologyrepository.com/CommonCoreOntologies/has_text_value",
+          "IRI_DT": "Null"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-30": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "entity",
+        "geometry": { "x": 470, "y": 840, "width": 136, "height": 30 },
+        "objectData": { "IRI": "http://purl.obolibrary.org/obo/BFO_0000001" }
+      },
+      "CeI93uY9QLuZRJVfTrI0-31": {
+        "type": "DatatypeProperty(NoDomainYesRange)",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;fillColor=#FFFFFF;",
+        "label": "pt:symbol~</font><span style=\"font-family: &#34;verdana&#34;\">owl:real</span>",
+        "geometry": { "x": 650, "y": 870, "width": 240, "height": 30 },
+        "objectData": {
+          "IRI_DP": "http://www.daml.org/2003/01/periodictable/PeriodicTable#symbol",
+          "IRI_DT": "Null"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-32": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "entity",
+        "geometry": { "x": 650, "y": 840, "width": 240, "height": 30 },
+        "objectData": { "IRI": "http://purl.obolibrary.org/obo/BFO_0000001" }
+      },
+      "CeI93uY9QLuZRJVfTrI0-33": {
+        "type": "DatatypeProperty(NoDomainNoRange)",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;fillColor=#FFFFFF;",
+        "label": "pt:color",
+        "geometry": { "x": 1000, "y": 870, "width": 136, "height": 30 },
+        "objectData": {
+          "IRI_DP": "http://www.daml.org/2003/01/periodictable/PeriodicTable#color",
+          "IRI_DT": "Null"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-34": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "entity",
+        "geometry": { "x": 1000, "y": 840, "width": 136, "height": 30 },
+        "objectData": { "IRI": "http://purl.obolibrary.org/obo/BFO_0000001" }
+      },
+      "CeI93uY9QLuZRJVfTrI0-50": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "Tattoo",
+        "geometry": { "x": 423, "y": 320, "width": 100, "height": 30 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/Tattoo"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-51": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "Scalp Hair",
+        "geometry": { "x": 149, "y": 320, "width": 100, "height": 30 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/ScalpHair"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-53": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "Armed Force",
+        "geometry": { "x": 423, "y": 410, "width": 100, "height": 30 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/ArmedForce"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-54": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "Organization",
+        "geometry": { "x": 149, "y": 410, "width": 100, "height": 30 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/Organization"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-56": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "Paramilitary Force",
+        "geometry": { "x": 436, "y": 480, "width": 100, "height": 30 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/ParamilitaryForce"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-58": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "Carrier Air Wing",
+        "geometry": { "x": 146, "y": 480, "width": 100, "height": 30 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/CarrierAirWing"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-59": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "&nbsp; Government Agency",
+        "geometry": { "x": 439, "y": 550, "width": 100, "height": 30 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/GovernmentAgency"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-61": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "Government",
+        "geometry": { "x": 149, "y": 550, "width": 100, "height": 30 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/Government"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-62": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "Artifact",
+        "geometry": { "x": 940, "y": 320, "width": 100, "height": 30 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-63": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "Social Network",
+        "geometry": { "x": 666, "y": 320, "width": 100, "height": 30 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/SocialNetwork"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-65": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "Radio Communication Instrument",
+        "geometry": { "x": 950, "y": 400, "width": 100, "height": 30 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/RadioCommunicationInstrument"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-66": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "Combustion Chamber",
+        "geometry": { "x": 676, "y": 400, "width": 100, "height": 30 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/CombustionChamber"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-69": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "Wire Receiver",
+        "geometry": { "x": 1036, "y": 460, "width": 100, "height": 30 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/WireReceiver"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-70": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "Radio Receiver",
+        "geometry": { "x": 676, "y": 460, "width": 100, "height": 30 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/RadioReceiver"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-72": {
+        "type": "DatatypeProperty(Cardinality)",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "cco:has_boolean_value (0..5)~owl:real",
+        "geometry": { "x": 760, "y": 770, "width": 285, "height": 30 },
+        "objectData": {
+          "IRI_DP": "http://www.ontologyrepository.com/CommonCoreOntologies/has_boolean_value",
+          "IRI_DT": "http://www.w3.org/2002/07/owl#real"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-73": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "entity",
+        "geometry": { "x": 760, "y": 740, "width": 285, "height": 30 },
+        "objectData": { "IRI": "http://purl.obolibrary.org/obo/BFO_0000001" }
+      },
+      "CeI93uY9QLuZRJVfTrI0-74": {
+        "type": "DatatypeProperty(Cardinality)",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "pt:symbol (1..N)~owl:real",
+        "geometry": { "x": 1195, "y": 850, "width": 285, "height": 30 },
+        "objectData": {
+          "IRI_DP": "http://www.daml.org/2003/01/periodictable/PeriodicTable#symbol",
+          "IRI_DT": "Null"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-75": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "entity",
+        "geometry": { "x": 1195, "y": 820, "width": 285, "height": 30 },
+        "objectData": { "IRI": "http://purl.obolibrary.org/obo/BFO_0000001" }
+      },
+      "KapBo2hNp-XjdLUf9UMG-0": {
+        "type": "ObjectProperty(WithCharacteristics)",
+        "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp; &nbsp; (F,IF,T,S,AS,R,IR)&nbsp;cco:has_maternal_uncle",
+        "geometry": { "x": 54, "y": 1046, "width": 320, "height": 110 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_maternal_uncle"
+        }
+      },
+      "KapBo2hNp-XjdLUf9UMG-1": {
+        "type": "ObjectProperty",
+        "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp; &nbsp;has affiliate",
+        "geometry": { "x": 627, "y": 1000, "width": 180, "height": 75 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_affiliate"
+        }
+      },
+      "KapBo2hNp-XjdLUf9UMG-2": {
+        "type": "ObjectProperty",
+        "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp; &nbsp;has subsidiary",
+        "geometry": { "x": 627, "y": 1128, "width": 180, "height": 75 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_subsidiary"
+        }
+      },
+      "KapBo2hNp-XjdLUf9UMG-4": {
+        "type": "ObjectProperty",
+        "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp; &nbsp;cco:is_grandson_of",
+        "geometry": { "x": 54, "y": 1226, "width": 180, "height": 75 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/is_grandson_of"
+        }
+      },
+      "KapBo2hNp-XjdLUf9UMG-5": {
+        "type": "ObjectProperty",
+        "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp; &nbsp; cco:has_grandson",
+        "geometry": { "x": 54, "y": 1354, "width": 180, "height": 75 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_grandson"
+        }
+      },
+      "KapBo2hNp-XjdLUf9UMG-10": {
+        "type": "ObjectProperty",
+        "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp; &nbsp;cco:is_grandmother_of",
+        "geometry": { "x": 342, "y": 1226, "width": 180, "height": 75 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/is_grandmother_of"
+        }
+      },
+      "KapBo2hNp-XjdLUf9UMG-11": {
+        "type": "ObjectProperty",
+        "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp; &nbsp; cco:is_paternal_grandmother_of",
+        "geometry": { "x": 342, "y": 1354, "width": 180, "height": 75 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/is_paternal_grandmother_of"
+        }
+      },
+      "KapBo2hNp-XjdLUf9UMG-13": {
+        "type": "ObjectProperty",
+        "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp; &nbsp;cco:has_son_in_law",
+        "geometry": { "x": 611, "y": 1236, "width": 180, "height": 75 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_son_in_law"
+        }
+      },
+      "KapBo2hNp-XjdLUf9UMG-14": {
+        "type": "ObjectProperty",
+        "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp; cco:has_sister_in_law",
+        "geometry": { "x": 611, "y": 1364, "width": 180, "height": 75 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_sister_in_law"
+        }
+      },
+      "KapBo2hNp-XjdLUf9UMG-16": {
+        "type": "ObjectProperty",
+        "style": "rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;",
+        "label": "&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp; &nbsp;cco:is_nephew_of",
+        "geometry": { "x": 977, "y": 1286, "width": 180, "height": 75 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/is_nephew_of"
+        }
+      },
+      "KapBo2hNp-XjdLUf9UMG-17": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "cco:Stage",
+        "geometry": { "x": 1107, "y": 1391, "width": 120, "height": 30 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/Stage"
+        }
+      },
+      "KapBo2hNp-XjdLUf9UMG-18": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "cco:Farm",
+        "geometry": { "x": 917, "y": 1391, "width": 120, "height": 30 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/Farm"
+        }
+      },
+      "KapBo2hNp-XjdLUf9UMG-21": {
+        "type": "DatatypeProperty(WithCharacteristics)",
+        "style": "rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;",
+        "label": "&lt;&lt;owl:DatatypeProperty&gt;&gt;&nbsp;&nbsp; (F) has column index",
+        "geometry": { "x": 30, "y": 1530, "width": 140, "height": 81 },
+        "objectData": {
+          "IRI": "https://purl.matolab.org/mseo/mid/has_column_index"
+        }
+      },
+      "KapBo2hNp-XjdLUf9UMG-22": {
+        "type": "DatatypeProperty",
+        "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "&lt;&lt;owl:DatatypeProperty&gt;&gt;&nbsp; &nbsp;has latitude value",
+        "geometry": { "x": 342, "y": 1506, "width": 180, "height": 75 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_latitude_value"
+        }
+      },
+      "KapBo2hNp-XjdLUf9UMG-23": {
+        "type": "DatatypeProperty",
+        "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "&lt;&lt;owl:DatatypeProperty&gt;&gt;&nbsp; &nbsp;pt:atomicNumber",
+        "geometry": { "x": 342, "y": 1634, "width": 180, "height": 75 },
+        "objectData": {
+          "IRI": "http://www.daml.org/2003/01/periodictable/PeriodicTable#atomicNumber"
+        }
+      },
+      "KapBo2hNp-XjdLUf9UMG-25": {
+        "type": "DatatypeProperty",
+        "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "&lt;&lt;owl:DatatypeProperty&gt;&gt;&nbsp; &nbsp;pt:number",
+        "geometry": { "x": 611, "y": 1506, "width": 180, "height": 75 },
+        "objectData": {
+          "IRI": "http://www.daml.org/2003/01/periodictable/PeriodicTable#number"
+        }
+      },
+      "KapBo2hNp-XjdLUf9UMG-26": {
+        "type": "DatatypeProperty",
+        "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "&lt;&lt;owl:DatatypeProperty&gt;&gt;&nbsp; &nbsp;pt:symbol",
+        "geometry": { "x": 611, "y": 1634, "width": 180, "height": 75 },
+        "objectData": {
+          "IRI": "http://www.daml.org/2003/01/periodictable/PeriodicTable#symbol"
+        }
+      },
+      "KapBo2hNp-XjdLUf9UMG-28": {
+        "type": "DatatypeProperty",
+        "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "&lt;&lt;owl:DatatypeProperty&gt;&gt;&nbsp; &nbsp;has latitude value",
+        "geometry": { "x": 937, "y": 1516, "width": 180, "height": 75 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_latitude_value"
+        }
+      },
+      "KapBo2hNp-XjdLUf9UMG-29": {
+        "type": "DatatypeProperty",
+        "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
+        "label": "&lt;&lt;owl:DatatypeProperty&gt;&gt;&nbsp; &nbsp;pt:atomicWeight",
+        "geometry": { "x": 937, "y": 1644, "width": 180, "height": 75 },
+        "objectData": {
+          "IRI": "http://www.daml.org/2003/01/periodictable/PeriodicTable#atomicWeight"
+        }
+      },
+      "KapBo2hNp-XjdLUf9UMG-31": {
+        "type": "DatatypeProperty",
+        "style": "rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;",
+        "label": "&lt;&lt;owl:DatatypeProperty&gt;&gt;&nbsp; &nbsp; &nbsp; has URI value",
+        "geometry": { "x": 97, "y": 1746, "width": 180, "height": 75 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_URI_value"
+        }
+      },
+      "KapBo2hNp-XjdLUf9UMG-32": {
+        "type": "DataType",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FF8C00;",
+        "label": "owl:real",
+        "geometry": { "x": 227, "y": 1851, "width": 120, "height": 30 },
+        "objectData": { "IRI": "http://www.w3.org/2002/07/owl#real" }
+      },
+      "KapBo2hNp-XjdLUf9UMG-33": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
+        "label": "material entity",
+        "geometry": { "x": 37, "y": 1851, "width": 120, "height": 30 },
+        "objectData": { "IRI": "http://purl.obolibrary.org/obo/BFO_0000040" }
+      },
+      "KapBo2hNp-XjdLUf9UMG-36": {
+        "type": "AnnotationProperty",
+        "style": "rhombus;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=12;fillColor=#FFFFFF;",
+        "label": "&lt;&lt;owl:AnnotationProperty&gt;&gt;&nbsp;&nbsp; &nbsp; content license",
+        "geometry": { "x": 507, "y": 1866, "width": 213, "height": 75 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/content_license"
+        }
+      },
+      "KapBo2hNp-XjdLUf9UMG-38": {
+        "type": "AnnotationProperty",
+        "style": "rhombus;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=12;fillColor=#FFFFFF;",
+        "label": "&lt;&lt;owl:AnnotationProperty&gt;&gt;&nbsp;&nbsp; definition source",
+        "geometry": { "x": 942, "y": 1826, "width": 250, "height": 75 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/definition_source"
+        }
+      },
+      "KapBo2hNp-XjdLUf9UMG-39": {
+        "type": "AnnotationProperty",
+        "style": "rhombus;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=12;fillColor=#FFFFFF;",
+        "label": "&lt;&lt;owl:AnnotationProperty&gt;&gt;&nbsp;&nbsp; designator annotation",
+        "geometry": { "x": 942, "y": 1961, "width": 250, "height": 75 },
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/designator_annotation"
+        }
+      },
+      "sMs8Wqos0WnFd3LLX1jw-0": {
+        "type": "Namespace",
+        "style": "shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;",
+        "label": "<div><b>ns</b>: http://test.namespace.com/</div><div>dc:&nbsp;http://purl.org/dc/terms/</div><div>owl:http://www.w3.org/2002/07/owl#</div><span style=\"color: rgb(37 , 37 , 37) ; font-family: sans-serif ; font-size: 14px ; background-color: rgb(255 , 255 , 255)\">&nbsp;</span>",
+        "geometry": { "x": 170, "y": 160, "width": 290, "height": 80 },
+        "objectData": "none"
       }
     },
-    "CeI93uY9QLuZRJVfTrI0-18": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "entity",
-      "geometry": { "x": 40, "y": 620, "width": 260, "height": 30 },
-      "objectData": { "IRI": "http://purl.obolibrary.org/obo/BFO_0000001" }
-    },
-    "CeI93uY9QLuZRJVfTrI0-19": {
-      "type": "DatatypeProperty(Universal)",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "(∀) cco:has_longitude_value~owl:real",
-      "geometry": { "x": 410, "y": 650, "width": 240, "height": 30 },
-      "objectData": {
-        "IRI_DP": "http://www.ontologyrepository.com/CommonCoreOntologies/has_longitude_value",
-        "IRI_DT": "Null"
+    "edges": {
+      "CeI93uY9QLuZRJVfTrI0-52": {
+        "type": "ObjectProperty(NoDomainNoRange)",
+        "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;dashed=1;startArrow=oval;startFill=0;arcSize=0;rounded=0;fillColor=#FFFFFF;",
+        "label": "<span style=\"font-size: 12px\">&nbsp; caused by</span>",
+        "source": "CeI93uY9QLuZRJVfTrI0-51",
+        "target": "CeI93uY9QLuZRJVfTrI0-50",
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/caused_by"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-55": {
+        "type": "ObjectProperty(NoDomainNoRange)",
+        "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;dashed=1;arcSize=0;rounded=0;fillColor=#FFFFFF;",
+        "label": "<span style=\"font-size: 12px\">condition described by</span>",
+        "source": "CeI93uY9QLuZRJVfTrI0-54",
+        "target": "CeI93uY9QLuZRJVfTrI0-53",
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/condition_described_by"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-57": {
+        "type": "ObjectProperty(YesDomainYesRange)",
+        "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;fillColor=#FFFFFF;",
+        "label": "cco:has_input",
+        "source": "CeI93uY9QLuZRJVfTrI0-58",
+        "target": "CeI93uY9QLuZRJVfTrI0-56",
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_input"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-60": {
+        "type": "ObjectProperty(YesDomainYesRange)",
+        "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;startArrow=oval;startFill=1;arcSize=0;rounded=0;fillColor=#FFFFFF;",
+        "label": "cco:has_object",
+        "source": "CeI93uY9QLuZRJVfTrI0-61",
+        "target": "CeI93uY9QLuZRJVfTrI0-59",
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_object"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-64": {
+        "type": "ObjectProperty(NoDomainYesRange)",
+        "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;startArrow=oval;startFill=0;arcSize=0;rounded=0;fillColor=#FFFFFF;",
+        "label": "cco:has_recipient",
+        "source": "CeI93uY9QLuZRJVfTrI0-63",
+        "target": "CeI93uY9QLuZRJVfTrI0-62",
+        "objectData": {
+          "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_recipient"
+        }
+      },
+      "CeI93uY9QLuZRJVfTrI0-67": {
+        "type": "ObjectProperty(YesDomainNoRange)",
+        "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;startArrow=oval;startFill=1;dashed=1;arcSize=0;rounded=0;fillColor=#FFFFFF;",
+        "label": "location of",
+        "source": "CeI93uY9QLuZRJVfTrI0-66",
+        "target": "CeI93uY9QLuZRJVfTrI0-65",
+        "objectData": { "IRI": "http://purl.obolibrary.org/obo/RO_0001015" }
+      },
+      "CeI93uY9QLuZRJVfTrI0-68": {
+        "type": "ObjectProperty(WithCharacteristics)",
+        "style": "endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#FFFFFF;",
+        "label": "(F,IF,T,S,&nbsp; AS,R,&nbsp; IR)&nbsp; &nbsp;generically depends on",
+        "source": "CeI93uY9QLuZRJVfTrI0-70",
+        "target": "CeI93uY9QLuZRJVfTrI0-69",
+        "objectData": { "IRI": "http://purl.obolibrary.org/obo/RO_0010001" }
+      },
+      "KapBo2hNp-XjdLUf9UMG-3": {
+        "type": "SubPropertyOf",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;rounded=0;fontFamily=Verdana;fontSize=12;",
+        "label": "<span style=\"color: rgb(0 , 0 , 0)\">&lt;&lt;rdfs:subPropertyOf&gt;&gt;</span>",
+        "source": "KapBo2hNp-XjdLUf9UMG-2",
+        "target": "KapBo2hNp-XjdLUf9UMG-1",
+        "objectData": "none"
+      },
+      "KapBo2hNp-XjdLUf9UMG-6": {
+        "type": "InverseOf",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;rounded=0;",
+        "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-family: &#34;verdana&#34; ; font-size: 12px\">&lt;&lt;owl:inverseOf&gt;&gt;</span>",
+        "source": "KapBo2hNp-XjdLUf9UMG-5",
+        "target": "KapBo2hNp-XjdLUf9UMG-4",
+        "objectData": "none"
+      },
+      "KapBo2hNp-XjdLUf9UMG-12": {
+        "type": "EquivalentProperty",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;rounded=0;",
+        "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-family: &#34;verdana&#34; ; font-size: 12px\">&lt;&lt;owl:equivalentProperty&gt;&gt;</span>",
+        "source": "KapBo2hNp-XjdLUf9UMG-11",
+        "target": "KapBo2hNp-XjdLUf9UMG-10",
+        "objectData": "none"
+      },
+      "KapBo2hNp-XjdLUf9UMG-15": {
+        "type": "DisjointProperty",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;rounded=0;",
+        "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-family: &#34;verdana&#34; ; font-size: 12px\">&lt;&lt;owl:propertyDisjointWith&gt;&gt;</span>",
+        "source": "KapBo2hNp-XjdLUf9UMG-14",
+        "target": "KapBo2hNp-XjdLUf9UMG-13",
+        "objectData": "none"
+      },
+      "KapBo2hNp-XjdLUf9UMG-19": {
+        "type": "Range",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endSize=8;arcSize=0;exitX=1;exitY=1;exitDx=0;exitDy=0;rounded=0;",
+        "label": "<span style=\"color: rgb(0 , 0 , 0)\">&lt;&lt;rdfs:range&gt;&gt;</span>",
+        "source": "KapBo2hNp-XjdLUf9UMG-16",
+        "target": "KapBo2hNp-XjdLUf9UMG-17",
+        "objectData": "none"
+      },
+      "KapBo2hNp-XjdLUf9UMG-20": {
+        "type": "Domain",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;endSize=8;entryX=0.5;entryY=0;entryDx=0;entryDy=0;arcSize=0;exitX=0;exitY=1;exitDx=0;exitDy=0;rounded=0;",
+        "label": "<span style=\"color: rgb(0 , 0 , 0)\">&lt;&lt;rdfs:domain&gt;&gt;</span>",
+        "source": "KapBo2hNp-XjdLUf9UMG-16",
+        "target": "KapBo2hNp-XjdLUf9UMG-18",
+        "objectData": "none"
+      },
+      "KapBo2hNp-XjdLUf9UMG-24": {
+        "type": "SubPropertyOf",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;rounded=0;fontFamily=Verdana;fontSize=12;",
+        "label": "<span style=\"color: rgb(0 , 0 , 0)\">&lt;&lt;rdfs:subPropertyOf&gt;&gt;</span>",
+        "source": "KapBo2hNp-XjdLUf9UMG-23",
+        "target": "KapBo2hNp-XjdLUf9UMG-22",
+        "objectData": "none"
+      },
+      "KapBo2hNp-XjdLUf9UMG-27": {
+        "type": "DisjointProperty",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;rounded=0;fontFamily=Verdana;",
+        "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-size: 12px\">&lt;&lt;owl:propertyDisjointWith&gt;&gt;</span>",
+        "source": "KapBo2hNp-XjdLUf9UMG-26",
+        "target": "KapBo2hNp-XjdLUf9UMG-25",
+        "objectData": "none"
+      },
+      "KapBo2hNp-XjdLUf9UMG-30": {
+        "type": "EquivalentProperty",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;rounded=0;",
+        "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-family: &#34;verdana&#34; ; font-size: 12px\">&lt;&lt;owl:equivalentProperty&gt;&gt;</span>",
+        "source": "KapBo2hNp-XjdLUf9UMG-29",
+        "target": "KapBo2hNp-XjdLUf9UMG-28",
+        "objectData": "none"
+      },
+      "KapBo2hNp-XjdLUf9UMG-34": {
+        "type": "Range",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endSize=8;arcSize=0;exitX=1;exitY=1;exitDx=0;exitDy=0;rounded=0;",
+        "label": "<span style=\"color: rgb(0 , 0 , 0)\">&lt;&lt;rdfs:range&gt;&gt;</span>",
+        "source": "KapBo2hNp-XjdLUf9UMG-31",
+        "target": "KapBo2hNp-XjdLUf9UMG-32",
+        "objectData": "none"
+      },
+      "KapBo2hNp-XjdLUf9UMG-35": {
+        "type": "Domain",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;endSize=8;entryX=0.5;entryY=0;entryDx=0;entryDy=0;arcSize=0;exitX=0;exitY=1;exitDx=0;exitDy=0;rounded=0;",
+        "label": "<span style=\"color: rgb(0 , 0 , 0)\">&lt;&lt;rdfs:domain&gt;&gt;</span>",
+        "source": "KapBo2hNp-XjdLUf9UMG-31",
+        "target": "KapBo2hNp-XjdLUf9UMG-33",
+        "objectData": "none"
+      },
+      "KapBo2hNp-XjdLUf9UMG-37": {
+        "type": "SubPropertyOf",
+        "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;rounded=0;fontFamily=Verdana;fontSize=12;exitX=0.5;exitY=0;exitDx=0;exitDy=0;",
+        "label": "<span style=\"color: rgb(0 , 0 , 0)\">&lt;&lt;rdfs:subPropertyOf&gt;&gt;</span>",
+        "source": "KapBo2hNp-XjdLUf9UMG-39",
+        "target": "KapBo2hNp-XjdLUf9UMG-38",
+        "objectData": "none"
       }
     },
-    "CeI93uY9QLuZRJVfTrI0-20": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "entity",
-      "geometry": { "x": 410, "y": 620, "width": 240, "height": 30 },
-      "objectData": { "IRI": "http://purl.obolibrary.org/obo/BFO_0000001" }
-    },
-    "CeI93uY9QLuZRJVfTrI0-21": {
-      "type": "DatatypeProperty(Existenial)",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "(some) cco:has_latitude_value ~owl:real",
-      "geometry": { "x": 780, "y": 650, "width": 270, "height": 30 },
-      "objectData": {
-        "IRI_DP": "http://www.ontologyrepository.com/CommonCoreOntologies/has_latitude_value",
-        "IRI_DT": "Null"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-22": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "entity",
-      "geometry": { "x": 780, "y": 620, "width": 270, "height": 30 },
-      "objectData": { "IRI": "http://purl.obolibrary.org/obo/BFO_0000001" }
-    },
-    "CeI93uY9QLuZRJVfTrI0-23": {
-      "type": "DatatypeProperty(Existenial)",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "(∃) cco:has_integer_value ~owl:real",
-      "geometry": { "x": 40, "y": 760, "width": 240, "height": 30 },
-      "objectData": {
-        "IRI_DP": "http://www.ontologyrepository.com/CommonCoreOntologies/has_integer_value",
-        "IRI_DT": "Null"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-24": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "entity",
-      "geometry": { "x": 40, "y": 730, "width": 240, "height": 30 },
-      "objectData": { "IRI": "http://purl.obolibrary.org/obo/BFO_0000001" }
-    },
-    "CeI93uY9QLuZRJVfTrI0-25": {
-      "type": "DatatypeProperty(Cardinality)",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "pt:casRegistryID&nbsp; (1&nbsp; ..&nbsp; 5)&nbsp; ~owl:real",
-      "geometry": { "x": 410, "y": 770, "width": 285, "height": 30 },
-      "objectData": {
-        "IRI_DP": "http://www.daml.org/2003/01/periodictable/PeriodicTable#casRegistryID",
-        "IRI_DT": "http://www.w3.org/2002/07/owl#real"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-26": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "entity",
-      "geometry": { "x": 410, "y": 740, "width": 285, "height": 30 },
-      "objectData": { "IRI": "http://purl.obolibrary.org/obo/BFO_0000001" }
-    },
-    "CeI93uY9QLuZRJVfTrI0-27": {
-      "type": "DatatypeProperty(YesDomainYesRange)",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "has double value&nbsp;~</font><span style=\"font-family: &#34;verdana&#34;\">owl:real</span>",
-      "geometry": { "x": 47, "y": 885, "width": 230, "height": 30 },
-      "objectData": {
-        "IRI_DP": "http://www.ontologyrepository.com/CommonCoreOntologies/has_double_value",
-        "IRI_DT": "Null"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-28": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "entity",
-      "geometry": { "x": 47, "y": 855, "width": 230, "height": 30 },
-      "objectData": { "IRI": "http://purl.obolibrary.org/obo/BFO_0000001" }
-    },
-    "CeI93uY9QLuZRJVfTrI0-29": {
-      "type": "DatatypeProperty(YesDomainNoRange)",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "cco:has_text_value",
-      "geometry": { "x": 470, "y": 870, "width": 136, "height": 30 },
-      "objectData": {
-        "IRI_DP": "http://www.ontologyrepository.com/CommonCoreOntologies/has_text_value",
-        "IRI_DT": "Null"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-30": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "entity",
-      "geometry": { "x": 470, "y": 840, "width": 136, "height": 30 },
-      "objectData": { "IRI": "http://purl.obolibrary.org/obo/BFO_0000001" }
-    },
-    "CeI93uY9QLuZRJVfTrI0-31": {
-      "type": "DatatypeProperty(NoDomainYesRange)",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;fillColor=#FFFFFF;",
-      "label": "pt:symbol~</font><span style=\"font-family: &#34;verdana&#34;\">owl:real</span>",
-      "geometry": { "x": 650, "y": 870, "width": 240, "height": 30 },
-      "objectData": {
-        "IRI_DP": "http://www.daml.org/2003/01/periodictable/PeriodicTable#symbol",
-        "IRI_DT": "Null"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-32": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "entity",
-      "geometry": { "x": 650, "y": 840, "width": 240, "height": 30 },
-      "objectData": { "IRI": "http://purl.obolibrary.org/obo/BFO_0000001" }
-    },
-    "CeI93uY9QLuZRJVfTrI0-33": {
-      "type": "DatatypeProperty(NoDomainNoRange)",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;fillColor=#FFFFFF;",
-      "label": "pt:color",
-      "geometry": { "x": 1000, "y": 870, "width": 136, "height": 30 },
-      "objectData": {
-        "IRI_DP": "http://www.daml.org/2003/01/periodictable/PeriodicTable#color",
-        "IRI_DT": "Null"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-34": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "entity",
-      "geometry": { "x": 1000, "y": 840, "width": 136, "height": 30 },
-      "objectData": { "IRI": "http://purl.obolibrary.org/obo/BFO_0000001" }
-    },
-    "CeI93uY9QLuZRJVfTrI0-50": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "Tattoo",
-      "geometry": { "x": 423, "y": 320, "width": 100, "height": 30 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/Tattoo"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-51": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "Scalp Hair",
-      "geometry": { "x": 149, "y": 320, "width": 100, "height": 30 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/ScalpHair"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-53": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "Armed Force",
-      "geometry": { "x": 423, "y": 410, "width": 100, "height": 30 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/ArmedForce"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-54": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "Organization",
-      "geometry": { "x": 149, "y": 410, "width": 100, "height": 30 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/Organization"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-56": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "Paramilitary Force",
-      "geometry": { "x": 436, "y": 480, "width": 100, "height": 30 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/ParamilitaryForce"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-58": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "Carrier Air Wing",
-      "geometry": { "x": 146, "y": 480, "width": 100, "height": 30 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/CarrierAirWing"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-59": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "&nbsp; Government Agency",
-      "geometry": { "x": 439, "y": 550, "width": 100, "height": 30 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/GovernmentAgency"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-61": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "Government",
-      "geometry": { "x": 149, "y": 550, "width": 100, "height": 30 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/Government"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-62": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "Artifact",
-      "geometry": { "x": 940, "y": 320, "width": 100, "height": 30 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-63": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "Social Network",
-      "geometry": { "x": 666, "y": 320, "width": 100, "height": 30 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/SocialNetwork"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-65": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "Radio Communication Instrument",
-      "geometry": { "x": 950, "y": 400, "width": 100, "height": 30 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/RadioCommunicationInstrument"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-66": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "Combustion Chamber",
-      "geometry": { "x": 676, "y": 400, "width": 100, "height": 30 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/CombustionChamber"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-69": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "Wire Receiver",
-      "geometry": { "x": 1036, "y": 460, "width": 100, "height": 30 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/WireReceiver"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-70": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "Radio Receiver",
-      "geometry": { "x": 676, "y": 460, "width": 100, "height": 30 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/RadioReceiver"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-72": {
-      "type": "DatatypeProperty(Cardinality)",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "cco:has_boolean_value (0..5)~owl:real",
-      "geometry": { "x": 760, "y": 770, "width": 285, "height": 30 },
-      "objectData": {
-        "IRI_DP": "http://www.ontologyrepository.com/CommonCoreOntologies/has_boolean_value",
-        "IRI_DT": "http://www.w3.org/2002/07/owl#real"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-73": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "entity",
-      "geometry": { "x": 760, "y": 740, "width": 285, "height": 30 },
-      "objectData": { "IRI": "http://purl.obolibrary.org/obo/BFO_0000001" }
-    },
-    "CeI93uY9QLuZRJVfTrI0-74": {
-      "type": "DatatypeProperty(Cardinality)",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "pt:symbol (1..N)~owl:real",
-      "geometry": { "x": 1195, "y": 850, "width": 285, "height": 30 },
-      "objectData": {
-        "IRI_DP": "http://www.daml.org/2003/01/periodictable/PeriodicTable#symbol",
-        "IRI_DT": "Null"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-75": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "entity",
-      "geometry": { "x": 1195, "y": 820, "width": 285, "height": 30 },
-      "objectData": { "IRI": "http://purl.obolibrary.org/obo/BFO_0000001" }
-    },
-    "KapBo2hNp-XjdLUf9UMG-0": {
-      "type": "ObjectProperty(WithCharacteristics)",
-      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp; &nbsp; (F,IF,T,S,AS,R,IR)&nbsp;cco:has_maternal_uncle",
-      "geometry": { "x": 54, "y": 1046, "width": 320, "height": 110 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_maternal_uncle"
-      }
-    },
-    "KapBo2hNp-XjdLUf9UMG-1": {
-      "type": "ObjectProperty",
-      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp; &nbsp;has affiliate",
-      "geometry": { "x": 627, "y": 1000, "width": 180, "height": 75 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_affiliate"
-      }
-    },
-    "KapBo2hNp-XjdLUf9UMG-2": {
-      "type": "ObjectProperty",
-      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp; &nbsp;has subsidiary",
-      "geometry": { "x": 627, "y": 1128, "width": 180, "height": 75 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_subsidiary"
-      }
-    },
-    "KapBo2hNp-XjdLUf9UMG-4": {
-      "type": "ObjectProperty",
-      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp; &nbsp;cco:is_grandson_of",
-      "geometry": { "x": 54, "y": 1226, "width": 180, "height": 75 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/is_grandson_of"
-      }
-    },
-    "KapBo2hNp-XjdLUf9UMG-5": {
-      "type": "ObjectProperty",
-      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp; &nbsp; cco:has_grandson",
-      "geometry": { "x": 54, "y": 1354, "width": 180, "height": 75 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_grandson"
-      }
-    },
-    "KapBo2hNp-XjdLUf9UMG-10": {
-      "type": "ObjectProperty",
-      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp; &nbsp;cco:is_grandmother_of",
-      "geometry": { "x": 342, "y": 1226, "width": 180, "height": 75 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/is_grandmother_of"
-      }
-    },
-    "KapBo2hNp-XjdLUf9UMG-11": {
-      "type": "ObjectProperty",
-      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp; &nbsp; cco:is_paternal_grandmother_of",
-      "geometry": { "x": 342, "y": 1354, "width": 180, "height": 75 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/is_paternal_grandmother_of"
-      }
-    },
-    "KapBo2hNp-XjdLUf9UMG-13": {
-      "type": "ObjectProperty",
-      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp; &nbsp;cco:has_son_in_law",
-      "geometry": { "x": 611, "y": 1236, "width": 180, "height": 75 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_son_in_law"
-      }
-    },
-    "KapBo2hNp-XjdLUf9UMG-14": {
-      "type": "ObjectProperty",
-      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp; cco:has_sister_in_law",
-      "geometry": { "x": 611, "y": 1364, "width": 180, "height": 75 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_sister_in_law"
-      }
-    },
-    "KapBo2hNp-XjdLUf9UMG-16": {
-      "type": "ObjectProperty",
-      "style": "rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;",
-      "label": "&lt;&lt;owl:ObjectProperty&gt;&gt;&nbsp; &nbsp;cco:is_nephew_of",
-      "geometry": { "x": 977, "y": 1286, "width": 180, "height": 75 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/is_nephew_of"
-      }
-    },
-    "KapBo2hNp-XjdLUf9UMG-17": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "cco:Stage",
-      "geometry": { "x": 1107, "y": 1391, "width": 120, "height": 30 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/Stage"
-      }
-    },
-    "KapBo2hNp-XjdLUf9UMG-18": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "cco:Farm",
-      "geometry": { "x": 917, "y": 1391, "width": 120, "height": 30 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/Farm"
-      }
-    },
-    "KapBo2hNp-XjdLUf9UMG-21": {
-      "type": "DatatypeProperty(WithCharacteristics)",
-      "style": "rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;",
-      "label": "&lt;&lt;owl:DatatypeProperty&gt;&gt;&nbsp;&nbsp; (F) has column index",
-      "geometry": { "x": 30, "y": 1530, "width": 140, "height": 81 },
-      "objectData": {
-        "IRI": "https://purl.matolab.org/mseo/mid/has_column_index"
-      }
-    },
-    "KapBo2hNp-XjdLUf9UMG-22": {
-      "type": "DatatypeProperty",
-      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "&lt;&lt;owl:DatatypeProperty&gt;&gt;&nbsp; &nbsp;has latitude value",
-      "geometry": { "x": 342, "y": 1506, "width": 180, "height": 75 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_latitude_value"
-      }
-    },
-    "KapBo2hNp-XjdLUf9UMG-23": {
-      "type": "DatatypeProperty",
-      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "&lt;&lt;owl:DatatypeProperty&gt;&gt;&nbsp; &nbsp;pt:atomicNumber",
-      "geometry": { "x": 342, "y": 1634, "width": 180, "height": 75 },
-      "objectData": {
-        "IRI": "http://www.daml.org/2003/01/periodictable/PeriodicTable#atomicNumber"
-      }
-    },
-    "KapBo2hNp-XjdLUf9UMG-25": {
-      "type": "DatatypeProperty",
-      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "&lt;&lt;owl:DatatypeProperty&gt;&gt;&nbsp; &nbsp;pt:number",
-      "geometry": { "x": 611, "y": 1506, "width": 180, "height": 75 },
-      "objectData": {
-        "IRI": "http://www.daml.org/2003/01/periodictable/PeriodicTable#number"
-      }
-    },
-    "KapBo2hNp-XjdLUf9UMG-26": {
-      "type": "DatatypeProperty",
-      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "&lt;&lt;owl:DatatypeProperty&gt;&gt;&nbsp; &nbsp;pt:symbol",
-      "geometry": { "x": 611, "y": 1634, "width": 180, "height": 75 },
-      "objectData": {
-        "IRI": "http://www.daml.org/2003/01/periodictable/PeriodicTable#symbol"
-      }
-    },
-    "KapBo2hNp-XjdLUf9UMG-28": {
-      "type": "DatatypeProperty",
-      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "&lt;&lt;owl:DatatypeProperty&gt;&gt;&nbsp; &nbsp;has latitude value",
-      "geometry": { "x": 937, "y": 1516, "width": 180, "height": 75 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_latitude_value"
-      }
-    },
-    "KapBo2hNp-XjdLUf9UMG-29": {
-      "type": "DatatypeProperty",
-      "style": "rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;",
-      "label": "&lt;&lt;owl:DatatypeProperty&gt;&gt;&nbsp; &nbsp;pt:atomicWeight",
-      "geometry": { "x": 937, "y": 1644, "width": 180, "height": 75 },
-      "objectData": {
-        "IRI": "http://www.daml.org/2003/01/periodictable/PeriodicTable#atomicWeight"
-      }
-    },
-    "KapBo2hNp-XjdLUf9UMG-31": {
-      "type": "DatatypeProperty",
-      "style": "rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;",
-      "label": "&lt;&lt;owl:DatatypeProperty&gt;&gt;&nbsp; &nbsp; &nbsp; has URI value",
-      "geometry": { "x": 97, "y": 1746, "width": 180, "height": 75 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_URI_value"
-      }
-    },
-    "KapBo2hNp-XjdLUf9UMG-32": {
-      "type": "DataType",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FF8C00;",
-      "label": "owl:real",
-      "geometry": { "x": 227, "y": 1851, "width": 120, "height": 30 },
-      "objectData": { "IRI": "http://www.w3.org/2002/07/owl#real" }
-    },
-    "KapBo2hNp-XjdLUf9UMG-33": {
-      "type": "Class",
-      "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#FFFFFF;",
-      "label": "material entity",
-      "geometry": { "x": 37, "y": 1851, "width": 120, "height": 30 },
-      "objectData": { "IRI": "http://purl.obolibrary.org/obo/BFO_0000040" }
-    },
-    "KapBo2hNp-XjdLUf9UMG-36": {
-      "type": "AnnotationProperty",
-      "style": "rhombus;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=12;fillColor=#FFFFFF;",
-      "label": "&lt;&lt;owl:AnnotationProperty&gt;&gt;&nbsp;&nbsp; &nbsp; content license",
-      "geometry": { "x": 507, "y": 1866, "width": 213, "height": 75 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/content_license"
-      }
-    },
-    "KapBo2hNp-XjdLUf9UMG-38": {
-      "type": "AnnotationProperty",
-      "style": "rhombus;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=12;fillColor=#FFFFFF;",
-      "label": "&lt;&lt;owl:AnnotationProperty&gt;&gt;&nbsp;&nbsp; definition source",
-      "geometry": { "x": 942, "y": 1826, "width": 250, "height": 75 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/definition_source"
-      }
-    },
-    "KapBo2hNp-XjdLUf9UMG-39": {
-      "type": "AnnotationProperty",
-      "style": "rhombus;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=12;fillColor=#FFFFFF;",
-      "label": "&lt;&lt;owl:AnnotationProperty&gt;&gt;&nbsp;&nbsp; designator annotation",
-      "geometry": { "x": 942, "y": 1961, "width": 250, "height": 75 },
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/designator_annotation"
-      }
-    },
-    "sMs8Wqos0WnFd3LLX1jw-0": {
-      "type": "Namespace",
-      "style": "shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;",
-      "label": "<div><b>ns</b>: http://test.namespace.com/</div><div>dc:&nbsp;http://purl.org/dc/terms/</div><div>owl:http://www.w3.org/2002/07/owl#</div><span style=\"color: rgb(37 , 37 , 37) ; font-family: sans-serif ; font-size: 14px ; background-color: rgb(255 , 255 , 255)\">&nbsp;</span>",
-      "geometry": { "x": 170, "y": 160, "width": 290, "height": 80 },
-      "objectData": "none"
+    "errors": {
+      "node_errors": [],
+      "edge_errors": [],
+      "relation_errors": [],
+      "other_errors": []
     }
   },
-  "edges": {
-    "CeI93uY9QLuZRJVfTrI0-52": {
-      "type": "ObjectProperty(NoDomainNoRange)",
-      "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;dashed=1;startArrow=oval;startFill=0;arcSize=0;rounded=0;fillColor=#FFFFFF;",
-      "label": "<span style=\"font-size: 12px\">&nbsp; caused by</span>",
-      "source": "CeI93uY9QLuZRJVfTrI0-51",
-      "target": "CeI93uY9QLuZRJVfTrI0-50",
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/caused_by"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-55": {
-      "type": "ObjectProperty(NoDomainNoRange)",
-      "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;dashed=1;arcSize=0;rounded=0;fillColor=#FFFFFF;",
-      "label": "<span style=\"font-size: 12px\">condition described by</span>",
-      "source": "CeI93uY9QLuZRJVfTrI0-54",
-      "target": "CeI93uY9QLuZRJVfTrI0-53",
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/condition_described_by"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-57": {
-      "type": "ObjectProperty(YesDomainYesRange)",
-      "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;fillColor=#FFFFFF;",
-      "label": "cco:has_input",
-      "source": "CeI93uY9QLuZRJVfTrI0-58",
-      "target": "CeI93uY9QLuZRJVfTrI0-56",
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_input"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-60": {
-      "type": "ObjectProperty(YesDomainYesRange)",
-      "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;startArrow=oval;startFill=1;arcSize=0;rounded=0;fillColor=#FFFFFF;",
-      "label": "cco:has_object",
-      "source": "CeI93uY9QLuZRJVfTrI0-61",
-      "target": "CeI93uY9QLuZRJVfTrI0-59",
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_object"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-64": {
-      "type": "ObjectProperty(NoDomainYesRange)",
-      "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;startArrow=oval;startFill=0;arcSize=0;rounded=0;fillColor=#FFFFFF;",
-      "label": "cco:has_recipient",
-      "source": "CeI93uY9QLuZRJVfTrI0-63",
-      "target": "CeI93uY9QLuZRJVfTrI0-62",
-      "objectData": {
-        "IRI": "http://www.ontologyrepository.com/CommonCoreOntologies/has_recipient"
-      }
-    },
-    "CeI93uY9QLuZRJVfTrI0-67": {
-      "type": "ObjectProperty(YesDomainNoRange)",
-      "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;startArrow=oval;startFill=1;dashed=1;arcSize=0;rounded=0;fillColor=#FFFFFF;",
-      "label": "location of",
-      "source": "CeI93uY9QLuZRJVfTrI0-66",
-      "target": "CeI93uY9QLuZRJVfTrI0-65",
-      "objectData": { "IRI": "http://purl.obolibrary.org/obo/RO_0001015" }
-    },
-    "CeI93uY9QLuZRJVfTrI0-68": {
-      "type": "ObjectProperty(WithCharacteristics)",
-      "style": "endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;arcSize=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#FFFFFF;",
-      "label": "(F,IF,T,S,&nbsp; AS,R,&nbsp; IR)&nbsp; &nbsp;generically depends on",
-      "source": "CeI93uY9QLuZRJVfTrI0-70",
-      "target": "CeI93uY9QLuZRJVfTrI0-69",
-      "objectData": { "IRI": "http://purl.obolibrary.org/obo/RO_0010001" }
-    },
-    "KapBo2hNp-XjdLUf9UMG-3": {
-      "type": "SubPropertyOf",
-      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;rounded=0;fontFamily=Verdana;fontSize=12;",
-      "label": "<span style=\"color: rgb(0 , 0 , 0)\">&lt;&lt;rdfs:subPropertyOf&gt;&gt;</span>",
-      "source": "KapBo2hNp-XjdLUf9UMG-2",
-      "target": "KapBo2hNp-XjdLUf9UMG-1",
-      "objectData": "none"
-    },
-    "KapBo2hNp-XjdLUf9UMG-6": {
-      "type": "InverseOf",
-      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;rounded=0;",
-      "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-family: &#34;verdana&#34; ; font-size: 12px\">&lt;&lt;owl:inverseOf&gt;&gt;</span>",
-      "source": "KapBo2hNp-XjdLUf9UMG-5",
-      "target": "KapBo2hNp-XjdLUf9UMG-4",
-      "objectData": "none"
-    },
-    "KapBo2hNp-XjdLUf9UMG-12": {
-      "type": "EquivalentProperty",
-      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;rounded=0;",
-      "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-family: &#34;verdana&#34; ; font-size: 12px\">&lt;&lt;owl:equivalentProperty&gt;&gt;</span>",
-      "source": "KapBo2hNp-XjdLUf9UMG-11",
-      "target": "KapBo2hNp-XjdLUf9UMG-10",
-      "objectData": "none"
-    },
-    "KapBo2hNp-XjdLUf9UMG-15": {
-      "type": "DisjointProperty",
-      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;rounded=0;",
-      "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-family: &#34;verdana&#34; ; font-size: 12px\">&lt;&lt;owl:propertyDisjointWith&gt;&gt;</span>",
-      "source": "KapBo2hNp-XjdLUf9UMG-14",
-      "target": "KapBo2hNp-XjdLUf9UMG-13",
-      "objectData": "none"
-    },
-    "KapBo2hNp-XjdLUf9UMG-19": {
-      "type": "Range",
-      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endSize=8;arcSize=0;exitX=1;exitY=1;exitDx=0;exitDy=0;rounded=0;",
-      "label": "<span style=\"color: rgb(0 , 0 , 0)\">&lt;&lt;rdfs:range&gt;&gt;</span>",
-      "source": "KapBo2hNp-XjdLUf9UMG-16",
-      "target": "KapBo2hNp-XjdLUf9UMG-17",
-      "objectData": "none"
-    },
-    "KapBo2hNp-XjdLUf9UMG-20": {
-      "type": "Domain",
-      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;endSize=8;entryX=0.5;entryY=0;entryDx=0;entryDy=0;arcSize=0;exitX=0;exitY=1;exitDx=0;exitDy=0;rounded=0;",
-      "label": "<span style=\"color: rgb(0 , 0 , 0)\">&lt;&lt;rdfs:domain&gt;&gt;</span>",
-      "source": "KapBo2hNp-XjdLUf9UMG-16",
-      "target": "KapBo2hNp-XjdLUf9UMG-18",
-      "objectData": "none"
-    },
-    "KapBo2hNp-XjdLUf9UMG-24": {
-      "type": "SubPropertyOf",
-      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;rounded=0;fontFamily=Verdana;fontSize=12;",
-      "label": "<span style=\"color: rgb(0 , 0 , 0)\">&lt;&lt;rdfs:subPropertyOf&gt;&gt;</span>",
-      "source": "KapBo2hNp-XjdLUf9UMG-23",
-      "target": "KapBo2hNp-XjdLUf9UMG-22",
-      "objectData": "none"
-    },
-    "KapBo2hNp-XjdLUf9UMG-27": {
-      "type": "DisjointProperty",
-      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;rounded=0;fontFamily=Verdana;",
-      "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-size: 12px\">&lt;&lt;owl:propertyDisjointWith&gt;&gt;</span>",
-      "source": "KapBo2hNp-XjdLUf9UMG-26",
-      "target": "KapBo2hNp-XjdLUf9UMG-25",
-      "objectData": "none"
-    },
-    "KapBo2hNp-XjdLUf9UMG-30": {
-      "type": "EquivalentProperty",
-      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;startArrow=open;startFill=0;startSize=8;rounded=0;",
-      "label": "<span style=\"color: rgb(0 , 0 , 0) ; font-family: &#34;verdana&#34; ; font-size: 12px\">&lt;&lt;owl:equivalentProperty&gt;&gt;</span>",
-      "source": "KapBo2hNp-XjdLUf9UMG-29",
-      "target": "KapBo2hNp-XjdLUf9UMG-28",
-      "objectData": "none"
-    },
-    "KapBo2hNp-XjdLUf9UMG-34": {
-      "type": "Range",
-      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endSize=8;arcSize=0;exitX=1;exitY=1;exitDx=0;exitDy=0;rounded=0;",
-      "label": "<span style=\"color: rgb(0 , 0 , 0)\">&lt;&lt;rdfs:range&gt;&gt;</span>",
-      "source": "KapBo2hNp-XjdLUf9UMG-31",
-      "target": "KapBo2hNp-XjdLUf9UMG-32",
-      "objectData": "none"
-    },
-    "KapBo2hNp-XjdLUf9UMG-35": {
-      "type": "Domain",
-      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;endSize=8;entryX=0.5;entryY=0;entryDx=0;entryDy=0;arcSize=0;exitX=0;exitY=1;exitDx=0;exitDy=0;rounded=0;",
-      "label": "<span style=\"color: rgb(0 , 0 , 0)\">&lt;&lt;rdfs:domain&gt;&gt;</span>",
-      "source": "KapBo2hNp-XjdLUf9UMG-31",
-      "target": "KapBo2hNp-XjdLUf9UMG-33",
-      "objectData": "none"
-    },
-    "KapBo2hNp-XjdLUf9UMG-37": {
-      "type": "SubPropertyOf",
-      "style": "endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endSize=8;rounded=0;fontFamily=Verdana;fontSize=12;exitX=0.5;exitY=0;exitDx=0;exitDy=0;",
-      "label": "<span style=\"color: rgb(0 , 0 , 0)\">&lt;&lt;rdfs:subPropertyOf&gt;&gt;</span>",
-      "source": "KapBo2hNp-XjdLUf9UMG-39",
-      "target": "KapBo2hNp-XjdLUf9UMG-38",
-      "objectData": "none"
-    }
-  }
+  "mappingData": null
 }

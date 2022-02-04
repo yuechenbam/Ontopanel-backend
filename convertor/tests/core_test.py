@@ -419,3 +419,44 @@ class TestGraphToRDF(APITestCase):
             [Literal('0.0.1')])
         assert set([o for _, _, o in g.triples((None, DC.title, None))]) == set(
             [Literal('test')])
+
+    def test_mapping_1(self):
+        filename = 'mapping_1.json'
+        owl_result = self.get_owl(filename)
+        save_path = os.path.join(dir_path, 'files_test', filename + '.owl')
+
+        with open(save_path,  "w") as f:
+            f.write(owl_result.decode('utf-8'))
+
+        g = Graph()
+        g.parse(data=owl_result)
+        ns = Namespace("http://FirstIsBaseIRI.com/")
+
+        assert set(g.objects(subject=ns.single, predicate=OWL.sameAs)) == {
+            ns["mapping3_HP-160-10m"], ns["mapping3_HP-160-1"]}
+
+        assert list(g.objects(subject=ns["mapping3_HP-160-10m"], predicate=ns.datatypeProperty)) == [
+            Literal("value", datatype=ns.Literal)]
+
+        for i in range(1, 6):
+            assert list(g.objects(subject=ns[f"mapping_t-{i}"], predicate=ns.datatypeProperty)) == [
+                Literal("160", datatype=ns.Literal)]
+            assert list(g.objects(subject=ns[f"mapping_t-{i}"], predicate=ns.objectProperty)) == [
+                ns['mapping2_HP-160-10m']]
+
+            assert list(g.objects(subject=ns[f"mapping_t-{i}"], predicate=ns.annotationProperty)) == [
+                Literal("annotation", lang="de")]
+
+        for i in range(6, 11):
+            assert list(g.objects(subject=ns[f"mapping_t-{i}"], predicate=ns.datatypeProperty)) == [
+                Literal("160", datatype=ns.Literal)]
+            assert list(g.objects(subject=ns[f"mapping_t-{i}"], predicate=ns.objectProperty)) == [
+                ns['mapping2_HP-160-1']]
+            assert list(g.objects(subject=ns[f"mapping_t-{i}"], predicate=ns.annotationProperty)) == [
+                Literal("annotation", lang="de")]
+
+        for i in range(1, 11):
+            assert ns.Class1 in list(
+                g.objects(subject=ns[f"mapping4_t-{i}"], predicate=RDF.type))
+            assert list(g.objects(subject=ns[f"mapping4_t-{i}"], predicate=ns.annotationProperty)) == [
+                Literal("160", datatype=ns.Literal)]

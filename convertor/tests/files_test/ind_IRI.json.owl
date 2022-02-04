@@ -4,59 +4,59 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Resource">
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Target">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nad117954e60f4e1fa14451ed9895c09c">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/BruneiDollar">
+    <ns1:SI_unit_label xml:lang="en">annotation1</ns1:SI_unit_label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns1:has_date_value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">IRI</ns1:has_date_value>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ArmenianDram">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Agent"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#long">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/BelarussianRuble">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <ns1:delimits rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/BoliviaBoliviano"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Target">
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Resource">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_subsidiary">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:subPropertyOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_affiliate"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/BruneiDollar">
-    <ns1:has_date_value rdf:datatype="http://www.w3.org/2001/XMLSchema#long">IRI</ns1:has_date_value>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <ns1:SI_unit_label xml:lang="en">annotation1</ns1:SI_unit_label>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_affiliate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/AlbaniaLek">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Resource"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/AzerbaijanManat">
-    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Target"/>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/BelarussianRuble">
+    <ns1:delimits rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/BoliviaBoliviano"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N32bb90f8377547b9a09f77821dd8b5c4">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#long">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_affiliate">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Agent">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/SI_unit_label">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_date_value">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/delimits">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/AzerbaijanManat">
+    <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Target"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/BoliviaBoliviano">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/SI_unit_label">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/delimits">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Agent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>
