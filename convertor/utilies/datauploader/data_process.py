@@ -2,6 +2,7 @@ import pandas as pd
 
 
 def file_to_json(file, keyword, decimal, nrows):
+
     if keyword == "excel":
         df = pd.read_excel(file, decimal=decimal, nrows=nrows, dtype=str)
     elif keyword == "csv":
@@ -15,7 +16,6 @@ def file_to_json(file, keyword, decimal, nrows):
     df.columns = df.columns.str.strip()
 
     result = df.to_json(orient="columns")
-    print(result)
 
     return result
 
