@@ -43,7 +43,12 @@ class TableDataProcessor(APIView):
         file_object = request.FILES.get("myfile")
         decimal = request.POST.get("decimal")
         keyword = request.POST.get("filetype")
-        result = file_to_json(file_object, keyword, decimal)
+        nrows = int(request.POST.get("startRow"))
+
+        print(nrows)
+        if nrows == 0:
+            nrows = None
+        result = file_to_json(file_object, keyword, decimal, nrows)
 
         return result
 

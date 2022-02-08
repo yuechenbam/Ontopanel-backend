@@ -1059,6 +1059,7 @@ class MakeOntology(MakeEntityDF):
 
                 suffix_list = self.mapping_df[has_mapping].to_list()
                 for i in range(len(suffix_list)):
+
                     new_ind_URI = ind_URI + suffix_list[i]
                     self.g.add(
                         (new_ind_URI, RDF.type, OWL.NamedIndividual))
