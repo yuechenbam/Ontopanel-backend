@@ -1,0 +1,269 @@
+{
+  "format": "turtle",
+  "fileData": {
+    "nodes": {
+      "9trsnYkJ0H4v1L5BEDde-2": {
+        "type": "DataValue",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;shadow=0;glass=0;sketch=0;strokeColor=default;fontSize=12;",
+        "label": "\"value\"^^ns:Literal",
+        "geometry": {
+          "x": 600,
+          "y": 440,
+          "width": 170,
+          "height": 30,
+          "TRANSLATE_CONTROL_POINTS": true,
+          "alternateBounds": null,
+          "sourcePoint": null,
+          "targetPoint": null,
+          "points": null,
+          "offset": null,
+          "relative": false
+        },
+        "objectData": { "IRI_DT": "Null", "MappingCol": "Name" }
+      },
+      "9trsnYkJ0H4v1L5BEDde-3": {
+        "type": "Individual",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];shadow=0;glass=0;sketch=0;strokeColor=default;fontSize=12;",
+        "label": "<u>ns:test2_</u>",
+        "geometry": {
+          "x": 290,
+          "y": 440,
+          "width": 100,
+          "height": 30,
+          "TRANSLATE_CONTROL_POINTS": true,
+          "alternateBounds": null,
+          "sourcePoint": null,
+          "targetPoint": null,
+          "points": null,
+          "offset": null,
+          "relative": false
+        },
+        "objectData": { "IRI": "Null", "MappingCol": "Measurement id" }
+      },
+      "9trsnYkJ0H4v1L5BEDde-5": {
+        "type": "Namespace",
+        "style": "shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;",
+        "label": "<div><b>ns</b>: http://FirstIsBaseIRI.com/</div><div><b>other:</b> http://other.namespace.com/#<br></div>",
+        "geometry": {
+          "x": 220,
+          "y": 150,
+          "width": 290,
+          "height": 100,
+          "TRANSLATE_CONTROL_POINTS": true,
+          "alternateBounds": null,
+          "sourcePoint": null,
+          "targetPoint": null,
+          "points": null,
+          "offset": null,
+          "relative": false
+        },
+        "objectData": "none"
+      },
+      "9trsnYkJ0H4v1L5BEDde-6": {
+        "type": "Individual",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "<u>ns:test1_</u>",
+        "geometry": {
+          "x": 40,
+          "y": 460,
+          "width": 100,
+          "height": 30,
+          "TRANSLATE_CONTROL_POINTS": true,
+          "alternateBounds": null,
+          "sourcePoint": null,
+          "targetPoint": null,
+          "points": null,
+          "offset": null,
+          "relative": false
+        },
+        "objectData": { "IRI": "Null", "MappingCol": "Name" }
+      },
+      "SVQscoDcaKE8582S6BdK-0": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Class1",
+        "geometry": {
+          "x": 40,
+          "y": 430,
+          "width": 100,
+          "height": 30,
+          "TRANSLATE_CONTROL_POINTS": true,
+          "alternateBounds": null,
+          "sourcePoint": null,
+          "targetPoint": null,
+          "points": null,
+          "offset": null,
+          "relative": false
+        },
+        "objectData": { "IRI": "Null" }
+      },
+      "ejYOe_WpNhXX_Qtvlly2-0": {
+        "type": "Class",
+        "style": "rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];",
+        "label": "ns:Class1",
+        "geometry": {
+          "x": 290,
+          "y": 410,
+          "width": 100,
+          "height": 30,
+          "TRANSLATE_CONTROL_POINTS": true,
+          "alternateBounds": null,
+          "sourcePoint": null,
+          "targetPoint": null,
+          "points": null,
+          "offset": null,
+          "relative": false
+        },
+        "objectData": { "IRI": "Null" }
+      }
+    },
+    "edges": {
+      "9trsnYkJ0H4v1L5BEDde-4": {
+        "type": "DatatypeProperty",
+        "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;rounded=0;strokeWidth=1;fontSize=12;",
+        "label": "<font style=\"font-size: 12px\">ns:datatypeProperty</font>",
+        "source": "9trsnYkJ0H4v1L5BEDde-3",
+        "target": "9trsnYkJ0H4v1L5BEDde-2",
+        "objectData": { "IRI": "Null" }
+      },
+      "9trsnYkJ0H4v1L5BEDde-7": {
+        "type": "ObjectProperty",
+        "style": "endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=8;rounded=0;",
+        "label": "<span style=\"font-size: 12px\">ns:objectProperty</span>",
+        "source": "9trsnYkJ0H4v1L5BEDde-6",
+        "target": "9trsnYkJ0H4v1L5BEDde-3",
+        "objectData": { "IRI": "Null" }
+      }
+    },
+    "errors": {
+      "node_errors": [],
+      "edge_errors": [],
+      "relation_errors": [],
+      "other_errors": []
+    }
+  },
+  "mappingData": {
+    "Name": {
+      "in_0": "HP-160-10m{}",
+      "in_1": "HP-160-10m",
+      "in_2": "HP-160-10m\\",
+      "in_3": "HP-160-10m"
+    },
+    "Aging temperatur [°C]": {
+      "in_0": "160",
+      "in_1": "160",
+      "in_2": "160",
+      "in_3": "160"
+    },
+    "Aging time [h]": {
+      "in_0": "0.16666666666666666",
+      "in_1": "0.16666666666666666",
+      "in_2": "1",
+      "in_3": "1"
+    },
+    "Total average diameter [mm]": {
+      "in_0": "0.7467819999999998",
+      "in_1": "0.7467819999999998",
+      "in_2": "0.74663",
+      "in_3": "0.74663"
+    },
+    "Brinell hardness (average)": {
+      "in_0": "139.6",
+      "in_1": "139.6",
+      "in_2": "139.8",
+      "in_3": "139.8"
+    },
+    "Brinell hardness (standard deviation)": {
+      "in_0": "0.5477225575051661",
+      "in_1": "0.5477225575051661",
+      "in_2": "1.0954451150103321",
+      "in_3": "1.0954451150103321"
+    },
+    "CRM certified Brinell hardness": {
+      "in_0": "134",
+      "in_1": "134",
+      "in_2": "134",
+      "in_3": "134"
+    },
+    "CRM Brinell hardness (H1)": {
+      "in_0": "133",
+      "in_1": "133",
+      "in_2": "133",
+      "in_3": "133"
+    },
+    "CRM Brinell hardness (H2)": {
+      "in_0": "133",
+      "in_1": "133",
+      "in_2": "133",
+      "in_3": "133"
+    },
+    "CRM Brinell hardness (average)": {
+      "in_0": "133",
+      "in_1": "133",
+      "in_2": "133",
+      "in_3": "133"
+    },
+    "CRM Brinell hardness (standard deviation)": {
+      "in_0": "0",
+      "in_1": "0",
+      "in_2": "0",
+      "in_3": "0"
+    },
+    "uCRM": {
+      "in_0": "0.805",
+      "in_1": "0.805",
+      "in_2": "0.805",
+      "in_3": "0.805"
+    },
+    "UH": { "in_0": "0", "in_1": "0", "in_2": "0", "in_3": "0" },
+    "Ums": {
+      "in_0": "0.17128878739784986",
+      "in_1": "0.17128878739784986",
+      "in_2": "0.17156735761258768",
+      "in_3": "0.17156735761258768"
+    },
+    "UMPE": { "in_0": "4.02", "in_1": "4.02", "in_2": "4.02", "in_3": "4.02" },
+    "Brinell hardness (Uncertainity)": {
+      "in_0": "4.925105013576148",
+      "in_1": "4.925105013576148",
+      "in_2": "4.925143798184238",
+      "in_3": "4.925143798184238"
+    },
+    "Measurement number": {
+      "in_0": "1",
+      "in_1": "2",
+      "in_2": "1",
+      "in_3": "2"
+    },
+    "Measurement id": {
+      "in_0": "HP-160-10m-1",
+      "in_1": "HP-160-10m-2",
+      "in_2": "HP-160-1-1",
+      "in_3": "HP-160-1-2"
+    },
+    "d1 [mm]": {
+      "in_0": "0.74694",
+      "in_1": "0.74849",
+      "in_2": "0.7500399999999999",
+      "in_3": "0.7500399999999999"
+    },
+    "d2 [mm]": {
+      "in_0": "0.74229",
+      "in_1": "0.7438400000000001",
+      "in_2": "0.74694",
+      "in_3": "0.74694"
+    },
+    "Average diameter [mm]": {
+      "in_0": "0.74461",
+      "in_1": "0.7461599999999999",
+      "in_2": "0.74849",
+      "in_3": "0.74849"
+    },
+    "Brinell Hardness": {
+      "in_0": "140",
+      "in_1": "140",
+      "in_2": "139",
+      "in_3": "139"
+    }
+  }
+}

@@ -119,6 +119,10 @@ class MakeEntityDF():
                         else:
                             ann_name = ann.split(":")[2].strip()
 
+                        validated = uri_validator(
+                            self.namespaces[ann_prefix][ann_type])
+                        assert validated, f'"{self.namespaces[ann_prefix][ann_type]}" in the shape is not a valid URI. It should not contains unwise characters, such as {{}}.'
+
                         self.meta_data.append(
                             [self.namespaces[ann_prefix][ann_type], Literal(ann_name)])
                     except Exception as e:
@@ -161,6 +165,7 @@ class MakeEntityDF():
                     if "MappingCol" in object_value:
                         mapping_col = object_value["MappingCol"].strip()
                         assert mapping_col in self.mapping_df.columns, f'The column "{mapping_col}" is not found in the mapping dataset. This mapping request is ignored.'
+
                         self.combined_df.loc[node_id,
                                              'hasMapping'] = mapping_col
 
@@ -287,6 +292,10 @@ class MakeEntityDF():
 
                         name = re.sub(" ", "", name)
                         node_URI = self.namespaces[prefix][name]
+
+                        validated = uri_validator(node_URI)
+                        assert validated, f'"{node_URI}" in the shape is not a valid URI. It should not contains unwise characters, such as {{}}.'
+
                         node_dt_id = node_id + f'_{i}'
                         self.combined_df.loc[node_dt_id, ['name', 'BelongsTo']] = [
                             node_URI, 'datatype']
@@ -433,6 +442,8 @@ class MakeEntityDF():
 
             name = re.sub(" ", "", name)
             node_IRI = self.namespaces[prefix][name]
+            validated = uri_validator(node_IRI)
+            assert validated, f'"{node_IRI}" in the shape is not a valid URI. It should not contains unwise characters, such as {{}}.'
 
         return node_IRI
 
@@ -1053,7 +1064,8 @@ class MakeOntology(MakeEntityDF):
             'sameas': OWL.sameAs, 'differentfrom': OWL.differentFrom, 'rdftype': RDF.type}
 
         if not ind_df_mapping.empty:
-            for _, value in ind_df_mapping.iterrows():
+            for key, value in ind_df_mapping.iterrows():
+                ind_id = key
                 ind_URI = value['name']
                 has_mapping = value['hasMapping']
 
@@ -1061,66 +1073,108 @@ class MakeOntology(MakeEntityDF):
                 for i in range(len(suffix_list)):
 
                     new_ind_URI = ind_URI + suffix_list[i]
-                    self.g.add(
-                        (new_ind_URI, RDF.type, OWL.NamedIndividual))
 
-                    if len(value['specialRelations']):
-                        for predica_name, obj_id in value['specialRelations']:
+                    if not uri_validator(new_ind_URI):
+                        error = {
+                            "message": f'"{new_ind_URI}" composed from mapping data is not a valid URI.',
+                            "id": ind_id
+                        }
 
-                            predica_URI = special_relations_OWL[predica_name]
+                        self.errors["node_errors"].append(error)
 
-                            obj_URI = self.combined_df['name'][obj_id]
-                            obj_mapping = self.combined_df['hasMapping'][obj_id]
+                    else:
 
-                            if obj_mapping:
-                                obj_suffix_list = self.mapping_df[obj_mapping].to_list(
-                                )
-                                obj_URI = obj_URI + obj_suffix_list[i]
+                        self.g.add(
+                            (new_ind_URI, RDF.type, OWL.NamedIndividual))
 
-                            self.g.add((new_ind_URI, predica_URI, obj_URI))
+                        if len(value['specialRelations']):
+                            for predica_name, obj_id in value['specialRelations']:
+
+                                predica_URI = special_relations_OWL[predica_name]
+
+                                obj_URI = self.combined_df['name'][obj_id]
+                                obj_mapping = self.combined_df['hasMapping'][obj_id]
+
+                                if obj_mapping:
+                                    obj_suffix_list = self.mapping_df[obj_mapping].to_list(
+                                    )
+                                    obj_URI = obj_URI + obj_suffix_list[i]
+
+                                    if not uri_validator(obj_URI):
+                                        error = {
+                                            "message": f'"{obj_URI}" composed from mapping data is not a valid URI.',
+                                            "id": obj_id
+                                        }
+
+                                        self.errors["node_errors"].append(
+                                            error)
+                                        continue
+
+                                self.g.add(
+                                    (new_ind_URI, predica_URI, obj_URI))
 
                         # 'a.type = [self.names_space[obj_pre][obj_name]]'
-                    if len(value['triples']):
-                        for predica_id, obj_id in value['triples']:
-                            obj_URI = self.combined_df['name'][obj_id]
-                            predica_URI = self.combined_df['name'][predica_id]
-                            obj_mapping = self.combined_df['hasMapping'][obj_id]
 
-                            if obj_mapping:
-                                obj_suffix_list = self.mapping_df[obj_mapping].to_list(
-                                )
-                                if self.combined_df['BelongsTo'][obj_id] == "individual":
-                                    obj_URI = obj_URI + obj_suffix_list[i]
-                                else:
-                                    obj_dt = obj_URI.datatype
-                                    obj_lang = obj_URI.language
-                                    obj_URI = Literal(
-                                        obj_suffix_list[i], datatype=obj_dt, lang=obj_lang)
+                        if len(value['triples']):
+                            for predica_id, obj_id in value['triples']:
+                                obj_URI = self.combined_df['name'][obj_id]
+                                predica_URI = self.combined_df['name'][predica_id]
+                                obj_mapping = self.combined_df['hasMapping'][obj_id]
 
-                            self.g.add((new_ind_URI, predica_URI,
-                                        obj_URI))
+                                if obj_mapping:
+                                    obj_suffix_list = self.mapping_df[obj_mapping].to_list(
+                                    )
+                                    if self.combined_df['BelongsTo'][obj_id] == "individual":
+                                        obj_URI = obj_URI + obj_suffix_list[i]
+                                        if not uri_validator(obj_URI):
+                                            error = {
+                                                "message": f'"{obj_URI}" composed from mapping data is not a valid URI.',
+                                                "id": obj_id
+                                            }
 
-                    if len(value['annotations']):
-                        for predica_id, obj_id in value['annotations']:
+                                            self.errors["node_errors"].append(
+                                                error)
+                                            continue
+                                    else:
+                                        obj_dt = obj_URI.datatype
+                                        obj_lang = obj_URI.language
+                                        obj_URI = Literal(
+                                            obj_suffix_list[i], datatype=obj_dt, lang=obj_lang)
 
-                            predica_URI = self.combined_df['name'][predica_id]
+                                self.g.add((new_ind_URI, predica_URI,
+                                            obj_URI))
 
-                            obj_URI = self.combined_df['name'][obj_id]
-                            obj_mapping = self.combined_df['hasMapping'][obj_id]
+                        if len(value['annotations']):
+                            for predica_id, obj_id in value['annotations']:
 
-                            if obj_mapping:
-                                obj_suffix_list = self.mapping_df[obj_mapping].to_list(
-                                )
-                                if self.combined_df['BelongsTo'][obj_id] == "individual":
-                                    obj_URI = obj_URI + obj_suffix_list[i]
-                                else:
-                                    obj_dt = obj_URI.datatype
-                                    obj_lang = obj_URI.language
-                                    obj_URI = Literal(
-                                        obj_suffix_list[i], datatype=obj_dt, lang=obj_lang)
+                                predica_URI = self.combined_df['name'][predica_id]
 
-                            self.g.add((new_ind_URI, predica_URI,
-                                        obj_URI))
+                                obj_URI = self.combined_df['name'][obj_id]
+                                obj_mapping = self.combined_df['hasMapping'][obj_id]
+
+                                if obj_mapping:
+                                    obj_suffix_list = self.mapping_df[obj_mapping].to_list(
+                                    )
+                                    if self.combined_df['BelongsTo'][obj_id] == "individual":
+                                        obj_URI = obj_URI + obj_suffix_list[i]
+
+                                        if not uri_validator(obj_URI):
+                                            error = {
+                                                "message": f'"{obj_URI}" composed from mapping data is not a valid URI.',
+                                                "id": obj_id
+                                            }
+
+                                            self.errors["node_errors"].append(
+                                                error)
+                                            continue
+                                    else:
+                                        obj_dt = obj_URI.datatype
+                                        obj_lang = obj_URI.language
+                                        obj_URI = Literal(
+                                            obj_suffix_list[i], datatype=obj_dt, lang=obj_lang)
+
+                                self.g.add((new_ind_URI, predica_URI,
+                                            obj_URI))
 
         if not ind_df_no_mapping.empty:
             for _, value in ind_df_no_mapping.iterrows():
@@ -1142,6 +1196,14 @@ class MakeOntology(MakeEntityDF):
                             )
                             for elem in obj_suffix_list:
                                 new_obj_URI = obj_URI + elem
+                                if not uri_validator(new_obj_URI):
+                                    error = {
+                                        "message": f'"{new_obj_URI}" composed from mapping data is not a valid URI.',
+                                        "id": obj_id
+                                    }
+
+                                    self.errors["node_errors"].append(error)
+                                    continue
                                 self.g.add(
                                     (ind_URI, predica_URI, new_obj_URI))
 
@@ -1162,6 +1224,15 @@ class MakeOntology(MakeEntityDF):
                             for elem in obj_suffix_list:
                                 if self.combined_df['BelongsTo'][obj_id] == "individual":
                                     new_obj_URI = obj_URI + elem
+                                    if not uri_validator(new_obj_URI):
+                                        error = {
+                                            "message": f'"{new_obj_URI}" composed from mapping data is not a valid URI.',
+                                            "id": obj_id
+                                        }
+
+                                        self.errors["node_errors"].append(
+                                            error)
+                                        continue
                                 else:
                                     obj_dt = obj_URI.datatype
                                     obj_lang = obj_URI.language
@@ -1189,6 +1260,15 @@ class MakeOntology(MakeEntityDF):
                             for elem in obj_suffix_list:
                                 if self.combined_df['BelongsTo'][obj_id] == "individual":
                                     new_obj_URI = obj_URI + elem
+                                    if not uri_validator(new_obj_URI):
+                                        error = {
+                                            "message": f'"{new_obj_URI}" composed from mapping data is not a valid URI.',
+                                            "id": obj_id
+                                        }
+
+                                        self.errors["node_errors"].append(
+                                            error)
+                                        continue
                                 else:
                                     obj_dt = obj_URI.datatype
                                     obj_lang = obj_URI.language
@@ -1244,7 +1324,7 @@ class MakeOntology(MakeEntityDF):
 
 
 if __name__ == '__main__':
-    with open(r"C:\Users\ychen2\Documents\Project\django\ontopanel\convertor\tests\mapping_test\mapping.json", encoding='utf-8') as f:
+    with open(r"C:\Users\ychen2\Documents\Project\django\ontopanel\convertor\tests\files_test\mapping_1.json", encoding='utf-8') as f:
         all_data = json.load(f)
 
         # extract_df = MakeEntityDF(data)

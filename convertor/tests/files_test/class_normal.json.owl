@@ -4,220 +4,220 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:nodeID="Nbb51423f267647118fbef8568c805bd2">
-    <owl:someValuesFrom rdf:resource="http://test.namespace.com/Red"/>
+  <rdf:Description rdf:nodeID="Nbf743e8384b44d2bbd5dd40a968444ba">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://test.namespace.com/objectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://test.namespace.com/Apple1">
-    <rdfs:subClassOf rdf:resource="http://test.namespace.com/Fruit"/>
-    <owl:equivalentClass rdf:resource="http://test.namespace.com/Apple2"/>
-    <rdfs:subClassOf rdf:nodeID="N73bf17b7b5b948478bfe47afea7e75c0"/>
-    <rdfs:subClassOf rdf:nodeID="Nc554529c8e14464084bf35800fabd4ed"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://test.namespace.com/NonApple1"/>
-    <rdfs:subClassOf rdf:nodeID="Ne2121b01839d4ebe857c8bf720cd03f1"/>
-    <rdfs:subClassOf rdf:nodeID="Ne31c3545452e42e6bb9dabf9a71b5daf"/>
-    <rdfs:subClassOf rdf:nodeID="Nea386697af2949f793115a1a46e2abd0"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N73bf17b7b5b948478bfe47afea7e75c0">
-    <owl:allValuesFrom rdf:resource="http://test.namespace.com/Round"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://test.namespace.com/hasShape"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N506a22198d7947c1ac18b0771357984f">
-    <owl:onProperty rdf:resource="http://test.namespace.com/hasShape"/>
-    <owl:allValuesFrom rdf:resource="http://test.namespace.com/Round"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nf1b0cf17212744b6a3c0841e38743f3f">
-    <owl:onClass rdf:resource="http://test.namespace.com/Type"/>
-    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</owl:maxCardinality>
     <owl:onProperty rdf:resource="http://test.namespace.com/hasType"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:minCardinality>
+    <owl:onClass rdf:resource="http://test.namespace.com/Type"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://test.namespace.com/">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  <rdf:Description rdf:about="http://test.namespace.com/objectProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasShape">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N20ed8ecbc93d4823af0e08d840245c39">
+    <owl:allValuesFrom rdf:resource="http://test.namespace.com/Round"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://test.namespace.com/hasShape"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://test.namespace.com/Orange1">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <owl:equivalentClass rdf:resource="http://test.namespace.com/Orange2"/>
     <rdfs:subClassOf rdf:resource="http://test.namespace.com/Fruit"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N691854175c574f01876e4328f36d081c">
-    <rdf:rest rdf:nodeID="Nbb5a229f9c704b23bd5a6233cc96f11f"/>
-    <rdf:first rdf:resource="http://test.namespace.com/Apple2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://test.namespace.com/NonApple2">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://test.namespace.com/Apple2"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nea386697af2949f793115a1a46e2abd0">
-    <owl:hasValue rdf:resource="http://test.namespace.com/pinkLady"/>
-    <owl:onProperty rdf:resource="http://test.namespace.com/hasBrand"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://test.namespace.com/Orange2">
-    <owl:equivalentClass rdf:resource="http://test.namespace.com/Orange1"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Necb8f0ab848f4e9898b7022d9efdb5b0">
-    <owl:onProperty rdf:resource="http://test.namespace.com/hasShape"/>
-    <owl:allValuesFrom rdf:resource="http://test.namespace.com/Round"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nab7ff3142dac47b3b64fb14d78fad8e0">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="Ne9eaf06caf9142ad8011bba182dc42a0"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://test.namespace.com/Red">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Ndffb420ddd1d4f06a123f60a4a70cbf2">
-    <rdf:first rdf:resource="http://test.namespace.com/Apple1"/>
-    <rdf:rest rdf:nodeID="Nee6ee9b54aab481587c38eb23f702094"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Neccfe30bbd2d4238b6f9e5f36edc3cee">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
-    <owl:distinctMembers rdf:nodeID="N9fca35c31b7744d79b738cee74826506"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://test.namespace.com/pinkLady3">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://test.namespace.com/sweetFruit">
-    <owl:equivalentClass rdf:nodeID="Nab7ff3142dac47b3b64fb14d78fad8e0"/>
-    <owl:equivalentClass rdf:nodeID="N895d8c32e11b4f3ead7ae407e17d948b"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://test.namespace.com/OrangeApple">
-    <owl:equivalentClass rdf:nodeID="N2d95fa44c498444a81600d41e2ee9614"/>
-    <owl:equivalentClass rdf:nodeID="N9d53815eb06746c6a820df1c18bc660c"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Ndfb5720628c84df697f04e4b4aebd54a">
+  <rdf:Description rdf:nodeID="N23774a5660404758b8ea995f1ea2f64d">
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://test.namespace.com/Orange1"/>
+    <rdf:first rdf:resource="http://test.namespace.com/pinkLady1"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Ne2121b01839d4ebe857c8bf720cd03f1">
-    <owl:onClass rdf:resource="http://test.namespace.com/Type"/>
-    <owl:onProperty rdf:resource="http://test.namespace.com/hasType"/>
-    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:minCardinality>
+  <rdf:Description rdf:nodeID="N1d5d100aaf364fe682adf7b358c2343b">
+    <owl:someValuesFrom rdf:resource="http://test.namespace.com/Red"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://test.namespace.com/hasColor"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N91bb9455e678448891ff955985c91f76">
+    <rdf:first rdf:resource="http://test.namespace.com/Apple1"/>
+    <rdf:rest rdf:nodeID="Ne0d1f752c4e74fdbab4e29a64f08b5d4"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://test.namespace.com/Fruit">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://test.namespace.com/Round">
+  <rdf:Description rdf:nodeID="N6d036323a7ce446f81dbe0651670c22b">
+    <owl:distinctMembers rdf:nodeID="N6603e11a21d3450f9cc08792dc91d9ce"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/Red">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nd76bb7046af64aa6bbf41ff03eabcff1">
-    <rdf:first rdf:resource="http://test.namespace.com/Orange2"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nefa4c3c6e7304432bb7cafcb5973476c">
-    <rdf:rest rdf:nodeID="Nbb0e10cc63944e27955d833df2723606"/>
-    <rdf:first rdf:resource="http://test.namespace.com/pinkLady3"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N9fca35c31b7744d79b738cee74826506">
-    <rdf:rest rdf:nodeID="Nefa4c3c6e7304432bb7cafcb5973476c"/>
-    <rdf:first rdf:resource="http://test.namespace.com/pinkLady2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://test.namespace.com/Apple2">
-    <owl:disjointWith rdf:resource="http://test.namespace.com/NonApple2"/>
-    <rdfs:subClassOf rdf:nodeID="N2850e76ee0064a6193c2f13fbe1167c6"/>
+  <rdf:Description rdf:about="http://test.namespace.com/OrangeApple">
+    <owl:equivalentClass rdf:nodeID="Nda9f15668bd04646a2d7748fbd1c2331"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="Nf1b0cf17212744b6a3c0841e38743f3f"/>
-    <rdfs:subClassOf rdf:nodeID="N506a22198d7947c1ac18b0771357984f"/>
+    <owl:equivalentClass rdf:nodeID="N19aa50ce96034801b6e7d8941fd00f47"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://test.namespace.com/hasShape">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N2d95fa44c498444a81600d41e2ee9614">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:intersectionOf rdf:nodeID="Ndffb420ddd1d4f06a123f60a4a70cbf2"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nbb0e10cc63944e27955d833df2723606">
-    <rdf:first rdf:resource="http://test.namespace.com/pinkLady1"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://test.namespace.com/Apple3">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="Necb8f0ab848f4e9898b7022d9efdb5b0"/>
-    <rdfs:subClassOf rdf:nodeID="N1a31d2629577459481538b33df2375c8"/>
-    <rdfs:subClassOf rdf:nodeID="Nbb51423f267647118fbef8568c805bd2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://test.namespace.com/pinkLady">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Ne31c3545452e42e6bb9dabf9a71b5daf">
-    <owl:onProperty rdf:resource="http://test.namespace.com/hasColor"/>
-    <owl:someValuesFrom rdf:resource="http://test.namespace.com/Red"/>
+  <rdf:Description rdf:nodeID="Nbbefe8fdae504057b06aff98ff9dfcb9">
+    <owl:allValuesFrom rdf:resource="http://test.namespace.com/Round"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://test.namespace.com/hasShape"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nee6ee9b54aab481587c38eb23f702094">
-    <rdf:first rdf:resource="http://test.namespace.com/Orange1"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nbb5a229f9c704b23bd5a6233cc96f11f">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://test.namespace.com/Orange2"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N9feeb9fdd68243b9bbe3fb60b6d55d7a">
-    <rdf:rest rdf:nodeID="Ndfb5720628c84df697f04e4b4aebd54a"/>
-    <rdf:first rdf:resource="http://test.namespace.com/Apple1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://test.namespace.com/hasType">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N9d53815eb06746c6a820df1c18bc660c">
+  <rdf:Description rdf:nodeID="N907278bdebe74398b39460825f0316d3">
+    <owl:unionOf rdf:nodeID="N06ccfa51f78f4b2d8f55e417e1eeeeb5"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:intersectionOf rdf:nodeID="N691854175c574f01876e4328f36d081c"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N1a31d2629577459481538b33df2375c8">
-    <owl:onProperty rdf:resource="http://test.namespace.com/hasType"/>
-    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:minCardinality>
+  <rdf:Description rdf:nodeID="Naec3d3ea94c447b58cd1d541db92ec7e">
     <owl:onClass rdf:resource="http://test.namespace.com/Type"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N895d8c32e11b4f3ead7ae407e17d948b">
-    <owl:unionOf rdf:nodeID="N9feeb9fdd68243b9bbe3fb60b6d55d7a"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N2850e76ee0064a6193c2f13fbe1167c6">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:someValuesFrom rdf:resource="http://test.namespace.com/Red"/>
-    <owl:onProperty rdf:resource="http://test.namespace.com/objectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://test.namespace.com/pinkLady2">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nc554529c8e14464084bf35800fabd4ed">
     <owl:onProperty rdf:resource="http://test.namespace.com/hasType"/>
-    <owl:onClass rdf:resource="http://test.namespace.com/Type"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</owl:maxCardinality>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://test.namespace.com/pinkLady1">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://test.namespace.com/hasColor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdf:Description rdf:about="http://test.namespace.com/Apple1">
+    <rdfs:subClassOf rdf:nodeID="N960b291db23a457ba3acc1e72c85eeab"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://test.namespace.com/Fruit"/>
+    <owl:equivalentClass rdf:resource="http://test.namespace.com/Apple2"/>
+    <rdfs:subClassOf rdf:nodeID="N20ed8ecbc93d4823af0e08d840245c39"/>
+    <rdfs:subClassOf rdf:nodeID="N1d5d100aaf364fe682adf7b358c2343b"/>
+    <rdfs:subClassOf rdf:nodeID="N29d805a3b01c405d8ed1afa300553b45"/>
+    <rdfs:subClassOf rdf:nodeID="Nd515e6b3618448689427398343b19841"/>
+    <owl:disjointWith rdf:resource="http://test.namespace.com/NonApple1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://test.namespace.com/hasBrand">
+  <rdf:Description rdf:about="http://test.namespace.com/hasColor">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://test.namespace.com/NonApple1">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <owl:complementOf rdf:resource="http://test.namespace.com/Fruit"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="N29d805a3b01c405d8ed1afa300553b45">
+    <owl:hasValue rdf:resource="http://test.namespace.com/pinkLady"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://test.namespace.com/hasBrand"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0a34f220596e425e824843fb54045ead">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://test.namespace.com/Orange2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/Apple2">
+    <owl:disjointWith rdf:resource="http://test.namespace.com/NonApple2"/>
+    <rdfs:subClassOf rdf:nodeID="N59f102a6d0ed46fea92c9d4edf24c29d"/>
+    <rdfs:subClassOf rdf:nodeID="N458c87396986428d8ea52eba4248cbae"/>
+    <rdfs:subClassOf rdf:nodeID="Naec3d3ea94c447b58cd1d541db92ec7e"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd515e6b3618448689427398343b19841">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://test.namespace.com/hasType"/>
+    <owl:onClass rdf:resource="http://test.namespace.com/Type"/>
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</owl:maxCardinality>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N19aa50ce96034801b6e7d8941fd00f47">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="Nbeefbfa5e7cd4bb7b462e8e3bfc8a8ff"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/sweetFruit">
+    <owl:equivalentClass rdf:nodeID="N907278bdebe74398b39460825f0316d3"/>
+    <owl:equivalentClass rdf:nodeID="N6871ba4a0bee45919a18e6a219371751"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc51e501637fc493488cfbbee17528a6a">
+    <rdf:rest rdf:nodeID="N9ab6827aff084d8b8867c9ec15ffca40"/>
+    <rdf:first rdf:resource="http://test.namespace.com/Apple1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N80f2f9d5c2ee466f81a8b04bdfb4d562">
+    <rdf:first rdf:resource="http://test.namespace.com/pinkLady3"/>
+    <rdf:rest rdf:nodeID="N23774a5660404758b8ea995f1ea2f64d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/pinkLady">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6603e11a21d3450f9cc08792dc91d9ce">
+    <rdf:first rdf:resource="http://test.namespace.com/pinkLady2"/>
+    <rdf:rest rdf:nodeID="N80f2f9d5c2ee466f81a8b04bdfb4d562"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/Apple3">
+    <rdfs:subClassOf rdf:nodeID="N6cb7ccd7d59a49e7b14fe8772c045127"/>
+    <rdfs:subClassOf rdf:nodeID="Nbf743e8384b44d2bbd5dd40a968444ba"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="Nbbefe8fdae504057b06aff98ff9dfcb9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/pinkLady3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6871ba4a0bee45919a18e6a219371751">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N91bb9455e678448891ff955985c91f76"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbeefbfa5e7cd4bb7b462e8e3bfc8a8ff">
+    <rdf:first rdf:resource="http://test.namespace.com/Apple2"/>
+    <rdf:rest rdf:nodeID="N5d8c159679084a2bb301ad3f721eeca0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nda9f15668bd04646a2d7748fbd1c2331">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="Nc51e501637fc493488cfbbee17528a6a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N59f102a6d0ed46fea92c9d4edf24c29d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://test.namespace.com/Round"/>
+    <owl:onProperty rdf:resource="http://test.namespace.com/hasShape"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9ab6827aff084d8b8867c9ec15ffca40">
+    <rdf:first rdf:resource="http://test.namespace.com/Orange1"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N960b291db23a457ba3acc1e72c85eeab">
+    <owl:onClass rdf:resource="http://test.namespace.com/Type"/>
+    <owl:onProperty rdf:resource="http://test.namespace.com/hasType"/>
+    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:minCardinality>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6cb7ccd7d59a49e7b14fe8772c045127">
+    <owl:onProperty rdf:resource="http://test.namespace.com/objectProperty"/>
+    <owl:someValuesFrom rdf:resource="http://test.namespace.com/Red"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N458c87396986428d8ea52eba4248cbae">
+    <owl:someValuesFrom rdf:resource="http://test.namespace.com/Red"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://test.namespace.com/objectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/NonApple2">
+    <owl:disjointWith rdf:resource="http://test.namespace.com/Apple2"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/pinkLady2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5d8c159679084a2bb301ad3f721eeca0">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://test.namespace.com/Orange2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/Orange2">
+    <owl:equivalentClass rdf:resource="http://test.namespace.com/Orange1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/Round">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/hasBrand">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne0d1f752c4e74fdbab4e29a64f08b5d4">
+    <rdf:first rdf:resource="http://test.namespace.com/Orange1"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://test.namespace.com/">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://test.namespace.com/Type">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://test.namespace.com/objectProperty">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Ne9eaf06caf9142ad8011bba182dc42a0">
+  <rdf:Description rdf:nodeID="N06ccfa51f78f4b2d8f55e417e1eeeeb5">
+    <rdf:rest rdf:nodeID="N0a34f220596e425e824843fb54045ead"/>
     <rdf:first rdf:resource="http://test.namespace.com/Apple2"/>
-    <rdf:rest rdf:nodeID="Nd76bb7046af64aa6bbf41ff03eabcff1"/>
   </rdf:Description>
 </rdf:RDF>

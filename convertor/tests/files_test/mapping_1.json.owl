@@ -4,151 +4,151 @@
    xmlns:ns1="http://www.w3.org/2002/07/owl#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping4_t-4">
-    <ns:annotationProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:annotationProperty>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://FirstIsBaseIRI.com/Class1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping4_t-3">
-    <ns:annotationProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:annotationProperty>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://FirstIsBaseIRI.com/Class1"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping4_t-6">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdf:type rdf:resource="http://FirstIsBaseIRI.com/Class1"/>
     <ns:annotationProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:annotationProperty>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping4_t-10">
-    <ns:annotationProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:annotationProperty>
-    <rdf:type rdf:resource="http://FirstIsBaseIRI.com/Class1"/>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping_t-4">
+    <ns:objectProperty rdf:resource="http://FirstIsBaseIRI.com/mapping2_HP-160-10m"/>
+    <ns:datatypeProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:datatypeProperty>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns:annotationProperty xml:lang="de">annotation</ns:annotationProperty>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping_t-2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns:datatypeProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:datatypeProperty>
+    <ns:annotationProperty xml:lang="de">annotation</ns:annotationProperty>
+    <ns:objectProperty rdf:resource="http://FirstIsBaseIRI.com/mapping2_HP-160-10m"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping_t-8">
     <ns:annotationProperty xml:lang="de">annotation</ns:annotationProperty>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns:datatypeProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:datatypeProperty>
     <ns:objectProperty rdf:resource="http://FirstIsBaseIRI.com/mapping2_HP-160-1"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <ns:datatypeProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:datatypeProperty>
   </rdf:Description>
-  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping4_t-9">
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping4_t-1">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://FirstIsBaseIRI.com/Class1"/>
     <ns:annotationProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:annotationProperty>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/single">
-    <ns1:sameAs rdf:resource="http://FirstIsBaseIRI.com/mapping3_HP-160-10m"/>
-    <ns1:sameAs rdf:resource="http://FirstIsBaseIRI.com/mapping3_HP-160-1"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/datatypeProperty">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping_t-10">
-    <ns:objectProperty rdf:resource="http://FirstIsBaseIRI.com/mapping2_HP-160-1"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <ns:annotationProperty xml:lang="de">annotation</ns:annotationProperty>
-    <ns:datatypeProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:datatypeProperty>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping_t-3">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <ns:objectProperty rdf:resource="http://FirstIsBaseIRI.com/mapping2_HP-160-10m"/>
-    <ns:annotationProperty xml:lang="de">annotation</ns:annotationProperty>
-    <ns:datatypeProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:datatypeProperty>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping4_t-5">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdf:type rdf:resource="http://FirstIsBaseIRI.com/Class1"/>
-    <ns:annotationProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:annotationProperty>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/Literal">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping3_HP-160-1">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <ns:datatypeProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">value</ns:datatypeProperty>
   </rdf:Description>
-  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping_t-2">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <ns:datatypeProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:datatypeProperty>
-    <ns:objectProperty rdf:resource="http://FirstIsBaseIRI.com/mapping2_HP-160-10m"/>
-    <ns:annotationProperty xml:lang="de">annotation</ns:annotationProperty>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping_t-6">
-    <ns:annotationProperty xml:lang="de">annotation</ns:annotationProperty>
-    <ns:datatypeProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:datatypeProperty>
-    <ns:objectProperty rdf:resource="http://FirstIsBaseIRI.com/mapping2_HP-160-1"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping4_t-1">
-    <rdf:type rdf:resource="http://FirstIsBaseIRI.com/Class1"/>
-    <ns:annotationProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:annotationProperty>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping_t-5">
-    <ns:annotationProperty xml:lang="de">annotation</ns:annotationProperty>
-    <ns:objectProperty rdf:resource="http://FirstIsBaseIRI.com/mapping2_HP-160-10m"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <ns:datatypeProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:datatypeProperty>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping2_HP-160-1">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping4_t-7">
-    <ns:annotationProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:annotationProperty>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping4_t-4">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdf:type rdf:resource="http://FirstIsBaseIRI.com/Class1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping_t-4">
-    <ns:objectProperty rdf:resource="http://FirstIsBaseIRI.com/mapping2_HP-160-10m"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <ns:annotationProperty xml:lang="de">annotation</ns:annotationProperty>
-    <ns:datatypeProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:datatypeProperty>
+    <ns:annotationProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:annotationProperty>
   </rdf:Description>
   <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping_t-7">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <ns:datatypeProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:datatypeProperty>
-    <ns:objectProperty rdf:resource="http://FirstIsBaseIRI.com/mapping2_HP-160-1"/>
     <ns:annotationProperty xml:lang="de">annotation</ns:annotationProperty>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping_t-9">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <ns:annotationProperty xml:lang="de">annotation</ns:annotationProperty>
-    <ns:datatypeProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:datatypeProperty>
     <ns:objectProperty rdf:resource="http://FirstIsBaseIRI.com/mapping2_HP-160-1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping_t-1">
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/single">
+    <ns1:sameAs rdf:resource="http://FirstIsBaseIRI.com/mapping3_HP-160-1"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns1:sameAs rdf:resource="http://FirstIsBaseIRI.com/mapping3_HP-160-10m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping_t-5">
     <ns:annotationProperty xml:lang="de">annotation</ns:annotationProperty>
     <ns:datatypeProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:datatypeProperty>
     <ns:objectProperty rdf:resource="http://FirstIsBaseIRI.com/mapping2_HP-160-10m"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping4_t-7">
+    <rdf:type rdf:resource="http://FirstIsBaseIRI.com/Class1"/>
+    <ns:annotationProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:annotationProperty>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping2_HP-160-10m">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping4_t-2">
-    <ns:annotationProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:annotationProperty>
-    <rdf:type rdf:resource="http://FirstIsBaseIRI.com/Class1"/>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping4_t-10">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/Class1">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/annotationProperty">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping4_t-8">
-    <ns:annotationProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:annotationProperty>
     <rdf:type rdf:resource="http://FirstIsBaseIRI.com/Class1"/>
+    <ns:annotationProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:annotationProperty>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping_t-10">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns:datatypeProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:datatypeProperty>
+    <ns:annotationProperty xml:lang="de">annotation</ns:annotationProperty>
+    <ns:objectProperty rdf:resource="http://FirstIsBaseIRI.com/mapping2_HP-160-1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping4_t-3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://FirstIsBaseIRI.com/Class1"/>
+    <ns:annotationProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:annotationProperty>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/datatypeProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping_t-9">
+    <ns:objectProperty rdf:resource="http://FirstIsBaseIRI.com/mapping2_HP-160-1"/>
+    <ns:datatypeProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:datatypeProperty>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns:annotationProperty xml:lang="de">annotation</ns:annotationProperty>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping_t-1">
+    <ns:objectProperty rdf:resource="http://FirstIsBaseIRI.com/mapping2_HP-160-10m"/>
+    <ns:datatypeProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:datatypeProperty>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns:annotationProperty xml:lang="de">annotation</ns:annotationProperty>
   </rdf:Description>
   <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping3_HP-160-10m">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <ns:datatypeProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">value</ns:datatypeProperty>
   </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping2_HP-160-1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping4_t-5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns:annotationProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:annotationProperty>
+    <rdf:type rdf:resource="http://FirstIsBaseIRI.com/Class1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping4_t-2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns:annotationProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:annotationProperty>
+    <rdf:type rdf:resource="http://FirstIsBaseIRI.com/Class1"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://FirstIsBaseIRI.com/objectProperty">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/Literal">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://FirstIsBaseIRI.com/">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping_t-6">
+    <ns:annotationProperty xml:lang="de">annotation</ns:annotationProperty>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns:datatypeProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:datatypeProperty>
+    <ns:objectProperty rdf:resource="http://FirstIsBaseIRI.com/mapping2_HP-160-1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping4_t-8">
+    <rdf:type rdf:resource="http://FirstIsBaseIRI.com/Class1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns:annotationProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:annotationProperty>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/annotationProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping_t-3">
+    <ns:datatypeProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:datatypeProperty>
+    <ns:objectProperty rdf:resource="http://FirstIsBaseIRI.com/mapping2_HP-160-10m"/>
+    <ns:annotationProperty xml:lang="de">annotation</ns:annotationProperty>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/mapping4_t-9">
+    <rdf:type rdf:resource="http://FirstIsBaseIRI.com/Class1"/>
+    <ns:annotationProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">160</ns:annotationProperty>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/Class1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>

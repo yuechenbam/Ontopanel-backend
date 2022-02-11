@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:ns="http://FirstIsBaseIRI.com/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/test2_HP-160-1-1">
+    <ns:datatypeProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">HP-160-10m\</ns:datatypeProperty>
+    <rdf:type rdf:resource="http://FirstIsBaseIRI.com/Class1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/test2_HP-160-10m-1">
+    <rdf:type rdf:resource="http://FirstIsBaseIRI.com/Class1"/>
+    <ns:datatypeProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">HP-160-10m{}</ns:datatypeProperty>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/datatypeProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/Class1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/test2_HP-160-1-2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns:datatypeProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">HP-160-10m</ns:datatypeProperty>
+    <rdf:type rdf:resource="http://FirstIsBaseIRI.com/Class1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/test1_HP-160-10m">
+    <rdf:type rdf:resource="http://FirstIsBaseIRI.com/Class1"/>
+    <ns:objectProperty rdf:resource="http://FirstIsBaseIRI.com/test2_HP-160-10m-2"/>
+    <ns:objectProperty rdf:resource="http://FirstIsBaseIRI.com/test2_HP-160-1-2"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/objectProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/test2_HP-160-10m-2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns:datatypeProperty rdf:datatype="http://FirstIsBaseIRI.com/Literal">HP-160-10m</ns:datatypeProperty>
+    <rdf:type rdf:resource="http://FirstIsBaseIRI.com/Class1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/Literal">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://FirstIsBaseIRI.com/">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+</rdf:RDF>

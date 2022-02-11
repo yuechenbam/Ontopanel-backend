@@ -4,132 +4,128 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/EducationalFacility">
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Decoy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="N25836ddf726a4662baecfa70d43c16a0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Payload">
+    <rdfs:subClassOf rdf:nodeID="N2eb795cb1d8042438df5ba8981a2a435"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N61b2d0daadab4d00b8f09cb1abf44b31">
-    <ns3:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ns3:minCardinality>
-    <ns3:onClass rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/EducationalFacility"/>
+  <rdf:Description rdf:nodeID="N49fb7fffa8324c1bbd4ab71188db5273">
+    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_subsidiary"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_affiliate"/>
+    <ns3:allValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/SetOfEyes"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nbdf1662f305e48bf9723a1870ecc8f2f">
-    <ns3:onClass rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/RamjetEngine"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <ns3:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ns3:minCardinality>
-    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_child_of"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Target">
-    <rdfs:subClassOf rdf:nodeID="Nc74078c6381c4ff584b0041413bbeecc"/>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/RamjetEngine">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Iris">
-    <rdfs:subClassOf rdf:nodeID="N697eefd81b984922817c11f0aebe940d"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="Nda8e0b6b104f408abb409eb511142c80"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000024">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N15df71ae77a7482e9458554cee6d2a12">
-    <ns3:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</ns3:maxCardinality>
-    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_child_of"/>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Facility">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact">
+    <rdfs:subClassOf rdf:nodeID="Ndd4a376fc3c04595abb76201ef994dfe"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2eb795cb1d8042438df5ba8981a2a435">
+    <ns3:allValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ReactionMass"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/delimits"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8e4d82ab5f594780941dc423e06d7f8c">
+    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_uncle"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <ns3:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GasTurbine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Resource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Target">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="N4869b650cacc45c2a5bb8304534692c8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2e56c3cbb9df43158c90e7acb2849105">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_child_of"/>
+    <ns3:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</ns3:maxCardinality>
     <ns3:onClass rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/RamjetEngine"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ElectricMotor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:nodeID="Na19ce2c844b249dca4d00fb411fe5b7d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nc74078c6381c4ff584b0041413bbeecc">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/disconnected_with"/>
-    <ns3:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N5a8dcae6746147d59e026eceb675320a">
+  <rdf:Description rdf:nodeID="Ndd4a376fc3c04595abb76201ef994dfe">
+    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_maternal_aunt"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <ns3:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ElectricMotor"/>
-    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_maternal_aunt"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ReactionEngine">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="Nbdf1662f305e48bf9723a1870ecc8f2f"/>
-    <rdfs:subClassOf rdf:nodeID="N15df71ae77a7482e9458554cee6d2a12"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N8f40a090f6684688bcb2c03a99437504">
-    <ns3:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Engine"/>
+  <rdf:Description rdf:nodeID="N4137d6c9ddaa49dc8c4c77a29aa31a7f">
+    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_child_of"/>
+    <ns3:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ns3:minCardinality>
+    <ns3:onClass rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/RamjetEngine"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/disconnected_with"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N697eefd81b984922817c11f0aebe940d">
+  <rdf:Description rdf:nodeID="N68cf2ce8af0f4424ad9a4d3b78326dd5">
+    <ns3:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ns3:minCardinality>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/caused_by"/>
-    <ns3:hasValue rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CFAFranc"/>
+    <ns3:onClass rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/EducationalFacility"/>
+    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_affiliate"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Engine">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nd907034173534e4fa8c6862100b7ffa0">
+  <rdf:Description rdf:nodeID="Ne4ed037d00ab444daa34f071d970ce9d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <ns3:onClass rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Facility"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_maternal_aunt"/>
     <ns3:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</ns3:maxCardinality>
+    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_maternal_aunt"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Naf7a4eb162614f69bd20f3164ff49aa4">
-    <ns3:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GasTurbine"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_uncle"/>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/GasTurbine">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/delimits">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Park">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Agent"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/GasTurbine">
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ElectricMotor">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Decoy">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="N8f40a090f6684688bcb2c03a99437504"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Tattoo">
-    <rdfs:subClassOf rdf:nodeID="N92046ef627d14df9b76059aecd102847"/>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CoolingSystem">
+    <rdfs:subClassOf rdf:nodeID="Ne4ed037d00ab444daa34f071d970ce9d"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N57df2b4fb827483fb2e3063be3a7ce42">
+  <rdf:Description rdf:nodeID="N25836ddf726a4662baecfa70d43c16a0">
+    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/disconnected_with"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/delimits"/>
-    <ns3:allValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ReactionMass"/>
+    <ns3:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Engine"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_affiliate">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact">
-    <rdfs:subClassOf rdf:nodeID="N5a8dcae6746147d59e026eceb675320a"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N2c64bfb5d4c8469dbb393336bcfb1d46">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Resource">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N92046ef627d14df9b76059aecd102847">
-    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_subsidiary"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <ns3:allValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/SetOfEyes"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_maternal_aunt">
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_child_of">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000024">
+  <rdf:Description rdf:nodeID="Nda8e0b6b104f408abb409eb511142c80">
+    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/caused_by"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <ns3:hasValue rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CFAFranc"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/caused_by">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/StirlingEngine">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="N8e4d82ab5f594780941dc423e06d7f8c"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Farm">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="N61b2d0daadab4d00b8f09cb1abf44b31"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Payload">
-    <rdfs:subClassOf rdf:nodeID="N57df2b4fb827483fb2e3063be3a7ce42"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CoolingSystem">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="Nd907034173534e4fa8c6862100b7ffa0"/>
+    <rdfs:subClassOf rdf:nodeID="N68cf2ce8af0f4424ad9a4d3b78326dd5"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -137,41 +133,45 @@
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CFAFranc">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/RamjetEngine">
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ReactionEngine">
+    <rdfs:subClassOf rdf:nodeID="N4137d6c9ddaa49dc8c4c77a29aa31a7f"/>
+    <rdfs:subClassOf rdf:nodeID="N2e56c3cbb9df43158c90e7acb2849105"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/caused_by">
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/disconnected_with">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/StirlingEngine">
-    <rdfs:subClassOf rdf:nodeID="Naf7a4eb162614f69bd20f3164ff49aa4"/>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Tattoo">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="N49fb7fffa8324c1bbd4ab71188db5273"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_child_of">
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_uncle">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ReactionMass">
+  <rdf:Description rdf:nodeID="N4869b650cacc45c2a5bb8304534692c8">
+    <ns3:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/disconnected_with"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <ns3:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Agent">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/SetOfEyes">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/delimits">
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_maternal_aunt">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Agent">
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Engine">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/EducationalFacility">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_subsidiary">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/disconnected_with">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_uncle">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Facility">
+  <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ReactionMass">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>

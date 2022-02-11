@@ -456,7 +456,62 @@ class TestGraphToRDF(APITestCase):
                 Literal("annotation", lang="de")]
 
         for i in range(1, 11):
+
             assert ns.Class1 in list(
                 g.objects(subject=ns[f"mapping4_t-{i}"], predicate=RDF.type))
             assert list(g.objects(subject=ns[f"mapping4_t-{i}"], predicate=ns.annotationProperty)) == [
                 Literal("160", datatype=ns.Literal)]
+
+    def test_mapping2(self):
+        filename = 'mapping_2.json'
+        owl_result = self.get_owl(filename)
+        save_path = os.path.join(dir_path, 'files_test', filename + '.owl')
+
+        with open(save_path,  "w") as f:
+            f.write(owl_result.decode('utf-8'))
+
+        g = Graph()
+        g.parse(data=owl_result)
+        ns = Namespace("http://FirstIsBaseIRI.com/")
+
+        assert list(g.objects(subject=ns["test2_HP-160-10m-1"], predicate=ns.datatypeProperty)) == [
+            Literal("HP-160-10m{}", datatype=ns.Literal)]
+
+        assert ns.Class1 in list(
+            g.objects(subject=ns["test2_HP-160-10m-1"], predicate=RDF.type))
+
+        assert list(g.objects(subject=ns["test2_HP-160-10m-2"], predicate=ns.datatypeProperty)) == [
+            Literal("HP-160-10m", datatype=ns.Literal)]
+
+        assert ns.Class1 in list(
+            g.objects(subject=ns["test2_HP-160-10m-2"], predicate=RDF.type))
+
+        assert list(g.objects(subject=ns["test2_HP-160-1-1"], predicate=ns.datatypeProperty)) == [
+            Literal("HP-160-10m\\", datatype=ns.Literal)]
+
+        assert ns.Class1 in list(
+            g.objects(subject=ns["test2_HP-160-1-1"], predicate=RDF.type))
+
+        assert list(g.objects(subject=ns["test2_HP-160-1-2"], predicate=ns.datatypeProperty)) == [
+            Literal("HP-160-10m", datatype=ns.Literal)]
+
+        assert ns.Class1 in list(
+            g.objects(subject=ns["test2_HP-160-1-2"], predicate=RDF.type))
+
+        assert list(
+            g.objects(subject=ns["test1_HP-160-10m{}"], predicate=ns.objectProperty)) == []
+
+        assert list(
+            g.objects(subject=ns["test1_HP-160-10m{}"], predicate=RDF.type)) == []
+
+        assert list(
+            g.objects(subject=ns["test1_HP-160-10m\\"], predicate=ns.objectProperty)) == []
+
+        assert list(
+            g.objects(subject=ns["test1_HP-160-10m\\"], predicate=RDF.type)) == []
+
+        assert ns["test2_HP-160-10m-2"] in list(
+            g.objects(subject=ns["test1_HP-160-10m"], predicate=ns.objectProperty))
+
+        assert ns.Class1 in list(
+            g.objects(subject=ns["test1_HP-160-10m"], predicate=RDF.type))
