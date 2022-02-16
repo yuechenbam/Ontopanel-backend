@@ -1,15 +1,16 @@
 import pandas as pd
 import numpy as np
+from io import StringIO
 
 
-def file_to_json(file, keyword, decimal, nrows, sep="none"):
+def file_to_json(file, keyword, decimal, nrows, skip_rows, sep="none"):
 
     if keyword == "excel":
-        df = pd.read_excel(file, decimal=decimal, nrows=nrows, dtype="string")
+        df = pd.read_excel(file, decimal=decimal, nrows=nrows,
+                           dtype="string", skiprows=skip_rows)
     elif keyword == "csv":
         df = pd.read_csv(file, decimal=decimal, nrows=nrows,
-                         dtype="string", sep=sep)
-
+                         dtype="string", sep=sep, encoding_errors="replace", index_col=False, skiprows=skip_rows)
     elif keyword == "json":
         df = pd.read_json(file)
 

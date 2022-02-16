@@ -44,11 +44,14 @@ class TableDataProcessor(APIView):
         decimal = request.POST.get("decimal")
         keyword = request.POST.get("filetype")
         nrows = int(request.POST.get("startRow"))
+        seperator = request.POST.get("seperator")
+        skip_rows = int(request.POST.get("skipRow"))
 
         if nrows == 0:
             nrows = None
         try:
-            result = file_to_json(file_object, keyword, decimal, nrows)
+            result = file_to_json(file_object, keyword,
+                                  decimal, nrows, skip_rows, sep=seperator)
         except Exception as e:
             print(e)
             raise APIException(
