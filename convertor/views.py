@@ -49,7 +49,8 @@ class TableDataProcessor(APIView):
             nrows = None
         try:
             result = file_to_json(file_object, keyword, decimal, nrows)
-        except Exception:
+        except Exception as e:
+            print(e)
             raise APIException(
                 "File type does not match or can not be processed.")
 

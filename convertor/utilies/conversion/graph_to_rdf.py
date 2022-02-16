@@ -30,7 +30,7 @@ class MakeEntityDF():
         self.edges = file_data['edges']
 
         self.mapping_df = pd.DataFrame.from_dict(
-            data['mappingData'], orient="columns")
+            data['mappingData'], orient="columns").fillna("")
 
         # resctritions: only for class, some, all, cardinality, hasValue
         # triples: only for individuals
