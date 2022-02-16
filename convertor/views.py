@@ -7,6 +7,8 @@ import json
 from rest_framework.exceptions import APIException
 from .utilies.conversion.graph_to_rdf import MakeOntology
 from .utilies.datauploader.data_process import file_to_json
+import sys
+import traceback
 
 
 class GraphConvertor(APIView):
@@ -52,8 +54,16 @@ class TableDataProcessor(APIView):
         try:
             result = file_to_json(file_object, keyword,
                                   decimal, nrows, skip_rows, sep=seperator)
+
         except Exception as e:
             print(e)
+            exc_type, exc_value, exc_traceback_obj = sys.exc_info()
+            traceback.print_tb(exc_traceback_obj)
+            print("error", type(e))
+            if type(e) == AssertionError:
+                raise APIException(
+                    str(e))
+
             raise APIException(
                 "File type does not match or can not be processed.")
 

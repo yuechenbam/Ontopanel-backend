@@ -24,6 +24,7 @@ def file_to_json(file, keyword, decimal, nrows, skip_rows, sep="none"):
 
     df = df.dropna(axis=0, how="all")
     df = df.dropna(axis=1, how="all")
+    assert not df.empty, "The file contains no values"
 
     result = df.to_json(orient="columns")
 
