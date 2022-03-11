@@ -97,7 +97,7 @@ class ImportOnto:
                     pass
             if i == len(parse_format_list) - 1:
                 raise APIException(
-                    "Your ontology or it imported ontologies can not be accessed or parsed. Please check access or the format(xml or turtle).")
+                    "Your ontology or its imported ontologies can not be accessed or parsed. Please check access or the format(rdf or turtle) or use merged file.")
 
             if list(t.triples((None, rdflib.OWL.imports, None))):
                 for _, _, o in t.triples((None, rdflib.OWL.imports, None)):
@@ -108,7 +108,7 @@ class ImportOnto:
         except Exception as e:
 
             raise APIException(
-                "There is something wrong in parsing. Please use merged ontologies in xml or turtle.")
+                "Your ontology or its imported ontologies can not be accessed or parsed. Please check access or the format(rdf or turtle) or use merged file.")
 
     def compute_n3(self, entity, includeLabel=True):
         if type(entity) != rdflib.BNode:
