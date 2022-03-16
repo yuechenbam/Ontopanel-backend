@@ -645,7 +645,7 @@ class MakeEntityDF():
                             predica = predica+"(hasvalue)"
 
                         validated = onRule_checker(sub, predica, obj)
-                        assert validated, f'The combination {sub}+{predica}+{obj} is not allowed, please follow the libary.'
+                        assert validated, f'The combination {sub}+{predica}+{obj} is not allowed, please check the owl rule(AllowedCombinations) in Ontopanel-Library, or read this link: https://www.w3.org/TR/owl-features/.'
 
                         # if validated, then go on
 

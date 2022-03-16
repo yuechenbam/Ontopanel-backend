@@ -1,13 +1,17 @@
-import rdflib
-import pandas as pd
-import os
-from rdflib.term import URIRef
-from rdflib.util import find_roots, get_tree
-import json
-from rest_framework.exceptions import APIException
-from owl_processor.utility.machester import Class
-from owl_processor.utility.special_entities import datatype, annotation_properties
+import time
 import copy
+from owl_processor.utility.special_entities import datatype, annotation_properties
+from owl_processor.utility.machester import Class
+from .machester import Class
+from rest_framework.exceptions import APIException
+import json
+from rdflib.util import find_roots, get_tree
+from rdflib.term import URIRef
+import os
+import pandas as pd
+import rdflib
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
 
 
 class ImportOnto:
@@ -136,6 +140,7 @@ class ImportOnto:
 
             # get annotations
             annotations = {}
+
             color = 'none'
 
             for anno in self.anno_properties:
@@ -157,26 +162,12 @@ class ImportOnto:
                     anno_prop_n3 = self.compute_n3(anno)
                     annotations[anno_prop_n3] = anno_list_n3
 
+            specialInfo = {}
+
             if belongsTo == "Class":
                 all_info = Class(sub, graph=self.g).get_expression()
-                specialInfo = {}
                 for i in all_info.keys():
                     specialInfo[i] = [all_info[i]]
-
-                cco = rdflib.Namespace(
-                    'http://www.ontologyrepository.com/CommonCoreOntologies/')
-                bfo = rdflib.Namespace('http://purl.obolibrary.org/obo/')
-
-                if sub in list(self.g.transitive_subjects(object=bfo.BFO_0000015, predicate=rdflib.RDFS.subClassOf)):
-
-                    color = '#1C9E71'
-                elif sub in list(self.g.transitive_subjects(object=cco.InformationContentEntity, predicate=rdflib.RDFS.subClassOf)):
-
-                    color = '#F0F000'
-
-                elif sub in list(self.g.transitive_subjects(object=cco.InformationBearingArtifact, predicate=rdflib.RDFS.subClassOf)):
-
-                    color = '#DADADA'
 
             elif belongsTo == "ObjectProperty":
                 OP_attributes = {
@@ -187,7 +178,6 @@ class ImportOnto:
                     "range": rdflib.RDFS.range,
                     "equivalentTo": rdflib.OWL.equivalentProperty
                 }
-                specialInfo = {}
 
                 for k, v in OP_attributes.items():
                     attr_list = [
@@ -207,7 +197,6 @@ class ImportOnto:
                     "range": rdflib.RDFS.range,
                     "equivalentTo": rdflib.OWL.equivalentProperty
                 }
-                specialInfo = {}
 
                 for k, v in DP_attributes.items():
                     attr_list = [
@@ -221,8 +210,6 @@ class ImportOnto:
 
             elif belongsTo == "AnnotationProperty":
 
-                specialInfo = {}
-
                 subPropertyOf = [
                     self.compute_n3(x)
                     for x in self.g.objects(
@@ -235,7 +222,6 @@ class ImportOnto:
                     }
 
             elif belongsTo == "Individual":
-                specialInfo = {}
 
                 type_ind = [
                     self.compute_n3(x)
@@ -246,7 +232,6 @@ class ImportOnto:
 
             elif belongsTo == "Datatype":
                 color = "#FF8C00"
-                specialInfo = {}
 
             else:
                 pass
@@ -281,14 +266,19 @@ class ImportOnto:
             rdflib.RDFS.Datatype: "Datatype",
         }
 
-        i = 0
         for entity in extract_entity.keys():
-            for s, _, _ in self.g.triples((None, rdflib.RDF.type, entity)):
+            subjects = self.g.subjects(
+                predicate=rdflib.RDF.type, object=entity
+            )
+            for s in subjects:
                 new_row = self.assign_df(s, extract_entity[entity])
                 if new_row:
                     self.df = self.df.append(new_row, ignore_index=True)
                 if entity == rdflib.OWL.Class:
-                    for s_in, _, _ in self.g.triples((None, rdflib.RDF.type, s)):
+                    subjects_ind = self.g.subjects(
+                        predicate=rdflib.RDF.type, object=s
+                    )
+                    for s_in in subjects_ind:
                         new_row = self.assign_df(s_in, "Individual")
                         if new_row:
                             self.df = self.df.append(
@@ -372,32 +362,20 @@ class ImportOnto:
         self.entity_tree["Datatype"] = [(x, []) for x in Datatype]
 
     def run_all(self):
+
         if self.inputType == "URL":
             self.get_imports(self.filepath)
         else:
             self.get_imports(self.filepath, keyword="file")
 
-        # custome namespace, so in different version, they are the same
-
-        pt_namespace = rdflib.URIRef(
-            'http://www.daml.org/2003/01/periodictable/PeriodicTable#')
-
-        self.namespace_list[pt_namespace] = 'pt'
-
-        mid_namespace = rdflib.URIRef('https://purl.matolab.org/mseo/mid/')
-        self.namespace_list[mid_namespace] = 'mid'
-
-        geo_namespace = rdflib.URIRef(
-            'http://www.opengis.net/ont/geosparql#')
-        self.namespace_list[geo_namespace] = 'geo'
-
         for namespace, prefix in self.namespace_list.items():
-
             rdflib.namespace.NamespaceManager(self.g).bind(
                 prefix, namespace, override=True)
 
         self.extract_anno_properties()
+
         self.extract_infos()
+
         self.get_roots()
 
         used_namespaces = self.df["namespace"].unique()
@@ -429,12 +407,9 @@ if __name__ == "__main__":
     filepath = r"https://raw.githubusercontent.com/Mat-O-Lab/MSEO/main/MSEO_mid.owl"
     df, output_namespace, tree = onto_to_table(filepath)
 
-    #save_path = r"C:\Users\ychen2\Documents\Project\javascript\Vue\drawioPlugin\vanilla\drawio\src\main\webapp\plugins\database\mseo.json"
-    save_path = r"C:\Users\ychen2\Documents\Project\javascript\drawioPlugin\vanilla\yuechenbam.github.io\src\main\webapp\plugins\ontopanelPlugin\ontoData\mseo_ontopanel.json"
-
-    with open(
-        save_path,
-        "w",
-    ) as f:
-        json.dump({'title': "MSEO", 'onto_source': filepath, 'onto_table': {"table": df, "tree": tree,
-                  "namespaces": output_namespace}, 'author': 'no author'}, f)
+    # with open(
+    #     r"C:\Users\ychen2\Documents\Project\javascript\Vue\drawioPlugin\vanilla\peple.json",
+    #     "w",
+    # ) as f:
+    #     json.dump({'title': "MESO", 'onto_source': filepath, 'onto_table': {"table": df, "tree": tree,
+    #               "namespace": output_namespace}, 'author': 'no author'}, f)

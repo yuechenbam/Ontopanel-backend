@@ -21,6 +21,10 @@ class OntoList(APIView):
 
     def post(self, request):
         user = request.user
+        ontosCounts = Onto.objects.filter(author=user).count()
+        if ontosCounts >= 10:
+            raise APIException("You can store up to 10 ontologies.")
+
         onto_source, onto_file, tagName, table, namespaces, tree = OwlTable().process_data(request)
 
         data = {
@@ -30,10 +34,6 @@ class OntoList(APIView):
             "onto_table": {"table": table, "namespaces": namespaces, "tree": tree},
             "author": user.id,
         }
-
-        ontosCounts = Onto.objects.filter(author=user).count()
-        if ontosCounts >= 10:
-            raise APIException("You can store up to 10 ontologies.")
 
         serializer = OntoSerializer(data=data)
         if serializer.is_valid():
