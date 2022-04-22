@@ -21,5 +21,4 @@ urlpatterns = [
     path("api/v1/user/", include("user.urls"), name='user'),
     path("api/v1/convertor/", include("convertor.urls"), name='convertor'),
     path('admin/', admin.site.urls),
-    path("api/v1/convertor/", include("convertor.urls"), name="convertor")
 ]

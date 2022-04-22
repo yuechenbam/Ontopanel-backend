@@ -13,7 +13,6 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 
 class RegisterUser(APIView):
     permission_classes = [AllowAny]
-    serializers_class = RegisterSerializer
 
     def post(self, request):
         user_count = User.objects.all().count()
@@ -21,7 +20,7 @@ class RegisterUser(APIView):
             raise APIException(
                 'The number of users exceeds 100, sorry, you can no longer register.')
 
-        serializer = self.serializers_class(data=request.data)
+        serializer = RegisterSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response({'success': 'Registerion success, you can login now!'}, status=status.HTTP_201_CREATED)
@@ -57,23 +56,21 @@ class LogoutUser(APIView):
 
 
 class PasswordResetEmail(APIView):
-    serializer_class = ResetPasswordEmailSerializer
     permission_classes = [AllowAny]
 
     def post(self, request):
-        serializer = self.serializer_class(data=request.data)
+        serializer = ResetPasswordEmailSerializer(data=request.data)
 
         serializer.is_valid(raise_exception=True)
         return Response({'success': 'Email sent, please check!'}, status=status.HTTP_200_OK)
 
 
 class PasswordResetConfirm(APIView):
-    serializer_class = ResetPasswordConfirmSerializer
     permission_classes = [AllowAny]
 
     def patch(self, request):
 
-        serializer = self.serializer_class(data=request.data)
+        serializer = ResetPasswordConfirmSerializer(data=request.data)
 
         serializer.is_valid(raise_exception=True)
         return Response({'success': 'Password reset success!'}, status=status.HTTP_200_OK)
