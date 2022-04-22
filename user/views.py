@@ -9,19 +9,32 @@ from .serializers import ResetPasswordEmailSerializer, ResetPasswordConfirmSeria
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.authtoken.models import Token
 from rest_framework.permissions import AllowAny, IsAuthenticated
+from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
 
 
 class RegisterUser(APIView):
     permission_classes = [AllowAny]
-    serializers_class = RegisterSerializer
+    serializer_class = RegisterSerializer
 
+    @swagger_auto_schema(
+        operation_summary='user registrationn',
+        operation_description='User registration in Ontopanel-EntityManager.',
+        request_body=RegisterSerializer,
+        responses={
+            '200': "Registerion success, you can login now!",
+            "400": "Bad Request",
+            '503': 'The number of users exceeds 100, sorry, you can no longer register.'
+        },
+        security=[],
+    )
     def post(self, request):
         user_count = User.objects.all().count()
         if user_count > 100:
             raise APIException(
                 'The number of users exceeds 100, sorry, you can no longer register.')
 
-        serializer = self.serializers_class(data=request.data)
+        serializer = self.serializer_class(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response({'success': 'Registerion success, you can login now!'}, status=status.HTTP_201_CREATED)
@@ -30,6 +43,26 @@ class RegisterUser(APIView):
 class LoginUser(ObtainAuthToken):
     permission_classes = [AllowAny]
 
+    @swagger_auto_schema(
+        operation_summary='user login',
+        operation_description='User login in Ontopanel-EntityManager. username == email.',
+        responses={
+            "200": openapi.Response('response description', schema=openapi.Schema(type=openapi.TYPE_OBJECT, properties={
+                "token": openapi.Schema(type=openapi.TYPE_STRING, description="generated token"),
+                "user_id": openapi.Schema(type=openapi.TYPE_INTEGER),
+                "email": openapi.Schema(type=openapi.TYPE_STRING),
+            }),
+                examples={
+                "application/json": {
+                    'token': "<Token>",
+                    'user_id': 1,
+                    'email': "test@mail.com"
+                }
+
+            }),
+            "400": "Bad Request",
+        },
+    )
     def post(self, request, *args, **kwargs):
         serializer = self.serializer_class(data=request.data,
                                            context={'request': request})
@@ -47,6 +80,12 @@ class LogoutUser(APIView):
 
     permission_classes = [IsAuthenticated]
 
+    @swagger_auto_schema(
+        operation_summary='user logout',
+        operation_description='User logout in Ontopanel-EntityManager.',
+        responses={
+            '200': "You have successfully logged out.",
+        })
     def get(self, request):
 
         request.user.auth_token.delete()
@@ -60,6 +99,16 @@ class PasswordResetEmail(APIView):
     serializer_class = ResetPasswordEmailSerializer
     permission_classes = [AllowAny]
 
+    @swagger_auto_schema(
+        operation_summary='reset password',
+        operation_description='User reset password in Ontopanel-EntityManager. The backend sends secrect key by email.',
+        request_body=ResetPasswordEmailSerializer,
+        responses={
+            '200': "Email sent, please check!",
+            "400": "This email does not exist, please sign up.",
+        },
+        security=[],
+    )
     def post(self, request):
         serializer = self.serializer_class(data=request.data)
 
@@ -71,6 +120,15 @@ class PasswordResetConfirm(APIView):
     serializer_class = ResetPasswordConfirmSerializer
     permission_classes = [AllowAny]
 
+    @swagger_auto_schema(
+        operation_summary='reset password confirm',
+        operation_description='User reset password with secrect key in Ontopanel-EntityManager.',
+        request_body=ResetPasswordConfirmSerializer,
+        responses={
+            '200': "Password reset success!",
+            "401": "Secret key is not valid, please request a new one.",
+        },
+    )
     def patch(self, request):
 
         serializer = self.serializer_class(data=request.data)

@@ -15,11 +15,32 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework import permissions
+from drf_yasg.views import get_schema_view
+from drf_yasg import openapi
+
+schema_view = get_schema_view(
+    openapi.Info(
+        title="Ontopanel API",
+        default_version='v1',
+        description="Ontopanel is a plugin in diagrams.net(drawio). It consists of three tools: Library, EntityManager, Convertor. EntityManager communicates with ontos and user while Convertor communicates with convertor.",
+        terms_of_service="https://www.google.com/policies/terms/",
+        contact=openapi.Contact(email="yue.chen@bam.de"),
+        license=openapi.License(name="BSD License"),
+    ),
+    public=True,
+    permission_classes=[permissions.AllowAny],
+)
+
 
 urlpatterns = [
     path("api/v1/", include("owl_processor.urls"), name='owl_processor'),
     path("api/v1/user/", include("user.urls"), name='user'),
     path("api/v1/convertor/", include("convertor.urls"), name='convertor'),
     path('admin/', admin.site.urls),
-    path("api/v1/convertor/", include("convertor.urls"), name="convertor")
+    path("api/v1/convertor/", include("convertor.urls"), name="convertor"),
+    path("swagger/", schema_view.with_ui('swagger',
+         cache_timeout=0)),
+    path("redoc/", schema_view.with_ui('redoc',
+         cache_timeout=0)),
 ]

@@ -30,9 +30,6 @@ DEBUG = str(os.environ.get('DEBUG')) == "1"  # 1==True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'ontopanel.herokuapp.com']
 
-# CORS_ORIGIN_ORIGINS = [
-#     "http://127.0.0.1", "https://yuechenbam.github.io"
-# ]
 CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
@@ -47,6 +44,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',
+    'drf_yasg',
     'owl_processor.apps.OwlProcessorConfig',
     'user.apps.UserConfig',
     'convertor.apps.ConvertorConfig'
@@ -104,14 +102,6 @@ if 'test' in sys.argv:
 else:
     DATABASES['default'] = dj_database_url.config(
         conn_max_age=600, ssl_require=True)
-
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
 
 
 # Password validation
@@ -176,8 +166,5 @@ DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_HOST_USER = 'chenpluginbackend@gmail.com'
-# EMAIL_HOST_PASSWORD = 'rqdknhilbaeuvxre'
-
 EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
