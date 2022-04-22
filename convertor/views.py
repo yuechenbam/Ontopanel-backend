@@ -56,10 +56,8 @@ class TableDataProcessor(APIView):
                                   decimal, nrows, skip_rows, sep=seperator)
 
         except Exception as e:
-            print(e)
             exc_type, exc_value, exc_traceback_obj = sys.exc_info()
             traceback.print_tb(exc_traceback_obj)
-            print("error", type(e))
             if type(e) == AssertionError:
                 raise APIException(
                     str(e))

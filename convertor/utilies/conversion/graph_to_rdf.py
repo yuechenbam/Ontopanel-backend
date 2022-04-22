@@ -645,7 +645,7 @@ class MakeEntityDF():
                             predica = predica+"(hasvalue)"
 
                         validated = onRule_checker(sub, predica, obj)
-                        assert validated, f'The combination {sub}+{predica}+{obj} is not allowed, please follow the libary.'
+                        assert validated, f'The combination {sub}+{predica}+{obj} is not allowed, please check the owl rule(AllowedCombinations) in Ontopanel-Library, or read this link: https://www.w3.org/TR/owl-features/.'
 
                         # if validated, then go on
 
@@ -788,7 +788,6 @@ class MakeEntityDF():
         self.combined_df = self.combined_df.fillna('empty').applymap(
             lambda x: [] if x == 'empty' else x)
         self._extract_relations()
-        print('end')
 
 
 class MakeOntology(MakeEntityDF):
@@ -1321,13 +1320,3 @@ class MakeOntology(MakeEntityDF):
             traceback.print_tb(exc_traceback_obj)
             raise APIException(
                 'Something goes wrong, please contact yue.chen@bam.de for fix this. thanks.')
-
-
-if __name__ == '__main__':
-    with open(r"C:\Users\ychen2\Documents\Project\django\ontopanel\convertor\tests\files_test\mapping_1.json", encoding='utf-8') as f:
-        all_data = json.load(f)
-
-        # extract_df = MakeEntityDF(data)
-        # extract_df._run_module()
-        extract_onto = MakeOntology(all_data)
-        print('finished')

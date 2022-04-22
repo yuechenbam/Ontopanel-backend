@@ -93,7 +93,6 @@ class ImportOnto:
 
                     break
                 except Exception as e:
-                    print(e)
                     pass
             if i == len(parse_format_list) - 1:
                 raise APIException(
@@ -401,15 +400,3 @@ def onto_to_table(filepath, inputType="URL"):
     df = df.to_json(orient="index")
 
     return df, output_namespace, tree
-
-
-if __name__ == "__main__":
-    filepath = r"https://raw.githubusercontent.com/Mat-O-Lab/MSEO/main/MSEO_mid.owl"
-    df, output_namespace, tree = onto_to_table(filepath)
-
-    # with open(
-    #     r"C:\Users\ychen2\Documents\Project\javascript\Vue\drawioPlugin\vanilla\peple.json",
-    #     "w",
-    # ) as f:
-    #     json.dump({'title': "MESO", 'onto_source': filepath, 'onto_table': {"table": df, "tree": tree,
-    #               "namespace": output_namespace}, 'author': 'no author'}, f)
