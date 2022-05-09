@@ -1,4 +1,12 @@
-# all the master-shapes in lower case
+"""
+template_shapes:
+    All shape types in Ontopanel-Library. Types that are not in the template are considered unknown shapes and will not be processed in the conversion.
+
+sum_rules:
+    All allowed shape combination based on OWL rules: https://www.w3.org/TR/owl-features/.
+    Excluded combinations are considered wrong and will not be processed in the conversion.
+"""
+
 # work as connections
 edges_shapes = ['subclassof',
                 'subpropertyof',

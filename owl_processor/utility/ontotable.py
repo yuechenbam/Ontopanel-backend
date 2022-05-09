@@ -15,6 +15,13 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 
 class ImportOnto:
+    """ 
+    Class used to extract ontology entities and hierarchy(tree).
+    Attributes:
+        filepath: file URL or file object
+        inputType (string): "URL" or "File"
+    """
+
     def __init__(self, filepath, inputType):
         self.filepath = filepath
         self.inputType = inputType

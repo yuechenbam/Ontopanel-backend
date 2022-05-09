@@ -11,8 +11,17 @@ from rest_framework.authtoken.models import Token
 from rest_framework.permissions import AllowAny, IsAuthenticated
 
 
+"""
+Authentication system that communicates with Ontopanel-EntityManager in the frontend.
+More detailed API documentation is available in the README.
+"""
+
+
 class RegisterUser(APIView):
     permission_classes = [AllowAny]
+    """
+    User registration. Registered users can save their ontology in the databank.
+    """
 
     def post(self, request):
         user_count = User.objects.all().count()
@@ -57,6 +66,9 @@ class LogoutUser(APIView):
 
 class PasswordResetEmail(APIView):
     permission_classes = [AllowAny]
+    """
+    User resets the password. After entering the registered email address, the backend email server will send the secret key.
+    """
 
     def post(self, request):
         serializer = ResetPasswordEmailSerializer(data=request.data)
@@ -67,6 +79,10 @@ class PasswordResetEmail(APIView):
 
 class PasswordResetConfirm(APIView):
     permission_classes = [AllowAny]
+
+    """
+    User enters secrect key and new password to reset.
+    """
 
     def patch(self, request):
 

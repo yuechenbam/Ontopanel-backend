@@ -157,7 +157,8 @@ REST_FRAMEWORK = {
 }
 
 
-# email
+# Email address for sending the secrect key to reset the user's password.
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 EMAIL_USE_TLS = True

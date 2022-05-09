@@ -12,7 +12,13 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-# rewrite the function machesterSyntax and Class in rdflib
+''' 
+Ontopanel:
+rewritten the function 'machesterSyntax' and class 'Class' in rdflib,
+Class: return list of special relationships, such as disjointwith
+machesterSyntax: return qname(rdflabel), such as obo:RO_0000085(has function).
+
+'''
 
 
 """

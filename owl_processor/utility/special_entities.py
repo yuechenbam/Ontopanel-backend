@@ -1,4 +1,7 @@
 from rdflib import OWL, XSD, RDF, RDFS
+"""
+Common entities that will be added to each ontology.
+"""
 datatype = {OWL.rational,
             OWL.real,
             RDF.PlainLiteral,

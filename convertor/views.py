@@ -10,9 +10,18 @@ from .utilies.datauploader.data_process import file_to_json
 import sys
 import traceback
 
+"""
+Convertor that communicates with Ontopanel-Convertor in the frontend.
+More detailed API documentation is available in the README.
+"""
+
 
 class GraphConvertor(APIView):
     permission_classes = [AllowAny]
+
+    """
+    post: convert drawio graph in JSON format into OWL and return errors.
+    """
 
     def process_data(self, request):
         data = json.loads(request.body)
@@ -40,6 +49,10 @@ class GraphConvertor(APIView):
 
 class TableDataProcessor(APIView):
     permission_classes = [AllowAny]
+
+    """
+    post: work in the data-mapping window to convert EXCEL or CSV to JSON format.
+    """
 
     def process_data(self, request):
         file_object = request.FILES.get("myfile")

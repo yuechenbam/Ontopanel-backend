@@ -10,8 +10,18 @@ import json
 from rest_framework.exceptions import APIException
 
 
+"""
+Ontology uploader that communicates with Ontopanel-EntityManager in the frontend.
+More detailed API documentation is available in the README.
+"""
+
+
 class OntoList(APIView):
     permission_classes = [IsAuthenticated]
+    """
+    get: Authenticated user loads his/her ontologies in EntityManager when logging in.
+    post: Authenticated user uploads his/her ontologies to the databank.
+    """
 
     def get(self, request):
         user = request.user
@@ -44,6 +54,12 @@ class OntoList(APIView):
 
 class OntoChange(APIView):
     permission_classes = [IsAuthenticated]
+
+    """
+    put: Authenticated user changes/updates the ontology in the databank.
+    delete: Authenticated user deletes the ontology in the databank.
+
+    """
 
     def get_object(self, user, id):
         try:
@@ -81,6 +97,11 @@ class OntoChange(APIView):
 
 class OwlTable(APIView):
     permission_classes = [AllowAny]
+
+    """
+    Any user can upload ontology into Ontopanel-EntityManager in the frontend.
+    No authentication is required.
+    """
 
     def process_data(self, request):
         file_object = request.FILES.get("formFile")
