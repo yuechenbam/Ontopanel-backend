@@ -16,7 +16,61 @@ EntityManager is a tool that allows user to upload their ontologies and export e
 
 ### Convertor:
 
-Convertor is a tool that converts current graph in diagrams.net into OWL. It can also realize validation and data mapping.
+Convertor is a tool that validates current graph and convert it into diagrams.net into OWL.
+It can also realize data mapping.
+
+## Installation
+
+### Clone the project
+
+```
+git clone https://github.com/yuechenbam/Ontopanel-backend.git
+
+```
+
+### Requirements:
+
+```
+pip install -r requirements.txt
+```
+
+### Create .env file in root
+
+```
+# The variables in settings.py
+SECRET_KEY="your key value"
+DEBUG=1 # 1 is True, 0 is False
+
+# Send mail server configuration
+EMAIL_HOST_USER = your email address
+EMAIL_HOST_PASSWORD = your email password
+```
+
+### Database connection configuration
+
+```
+# change below in setting.py to your own database
+DATABASES = {}
+if 'test' in sys.argv:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+
+
+else:
+    DATABASES['default'] = dj_database_url.config(
+        conn_max_age=600, ssl_require=True)
+
+```
+
+### Run the app
+
+```
+python manage.py runserver
+```
 
 ## Related repositories and links
 
