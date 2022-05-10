@@ -77,7 +77,7 @@ class MakeEntityDF():
                         assert uri_validator(name.strip(
                         )), f'"{name.strip()}" does not seem to be a valid url, please follow the form in shape: Namespace.'
 
-                        self.namespaces[prefix.strip().lower()] = Namespace(
+                        self.namespaces[prefix.strip()] = Namespace(
                             name.strip())
 
                         # identify the base IRI
