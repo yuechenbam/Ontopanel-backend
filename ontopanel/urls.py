@@ -21,11 +21,12 @@ from drf_yasg import openapi
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="Snippets API",
+        title="Ontopanel API",
         default_version='v1',
-        description="Test description",
+        description="Ontopanel is a diagrams.net plugin that assists graphically ontology devleopment in diagrams.net.\
+            This API works with Ontopanel-frontend.",
         terms_of_service="https://www.google.com/policies/terms/",
-        contact=openapi.Contact(email="contact@snippets.local"),
+        contact=openapi.Contact(email="yue.chen@bam.de"),
         license=openapi.License(name="BSD License"),
     ),
     public=True,

@@ -143,8 +143,8 @@ tabledata_parameters = [tabledata_file,
                         tabledata_decimal, tabledata_filetype, tabledata_nrows, tabledata_seperator, tabledata_skiprows]
 
 
-tabledata_response = openapi.Response("Table in JSON format (orient in 'columns')", schema=openapi.Schema(type=openapi.TYPE_OBJECT, additional_properties=openapi.Schema(type=openapi.TYPE_OBJECT, description="column header", properties={
-    "in_x": openapi.Schema(type=openapi.TYPE_STRING, description="value of row x and column header"),
+tabledata_response = openapi.Response("Table in JSON format (orient in 'columns')", schema=openapi.Schema(type=openapi.TYPE_OBJECT, additional_properties=openapi.Schema(type=openapi.TYPE_OBJECT, description="column header H", properties={
+    "in_X": openapi.Schema(type=openapi.TYPE_STRING, description="value of row X and column H"),
 })),
     examples={
     "application/json": {"Test piece ID": {"in_0": "HP-160-10m", "in_1": "HP-160-1"}, "Aging temperature": {"in_0": "160", "in_1": "160"}},
