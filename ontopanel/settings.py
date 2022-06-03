@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'ontopanel.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+# change the setting for your own database.
 
 
 DATABASES = {}
@@ -158,6 +158,7 @@ REST_FRAMEWORK = {
 
 
 # Email address for sending the secrect key to reset the user's password.
+# Info stored in env file.
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')

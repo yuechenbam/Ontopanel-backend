@@ -38,6 +38,10 @@ class RegisterUser(APIView):
 class LoginUser(ObtainAuthToken):
     permission_classes = [AllowAny]
 
+    """
+    User login. After login in Ontopanel-EntityManager, ontologies saved in the databank is automatically loaded.
+    """
+
     def post(self, request, *args, **kwargs):
         serializer = self.serializer_class(data=request.data,
                                            context={'request': request})
@@ -54,6 +58,10 @@ class LoginUser(ObtainAuthToken):
 class LogoutUser(APIView):
 
     permission_classes = [IsAuthenticated]
+
+    """
+    User logout.
+    """
 
     def get(self, request):
 

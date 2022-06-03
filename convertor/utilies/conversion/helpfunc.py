@@ -7,8 +7,9 @@ from bs4 import BeautifulSoup
 
 logger = logging.getLogger(__name__)
 
-# each shape template is stored in master file
-# used to extract all the mastername of each master shape used in the current file
+''' 
+help functions
+'''
 
 
 def clean_html_tags(text):

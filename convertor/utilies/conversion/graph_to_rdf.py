@@ -22,6 +22,19 @@ warnings.simplefilter(action='ignore', category=np.VisibleDeprecationWarning)
 
 logger = logging.getLogger(__name__)
 
+'''
+Class MakeEntityDF: 
+used to decode the graphs in diagrams.net and extract entities and their relationships and
+put them in a dataframe.
+
+Class MakeOntology: 
+convert the dataframe to the OWL language
+
+Attributes:
+data: graph information in JSON format
+
+'''
+
 
 class MakeEntityDF():
     def __init__(self, data):

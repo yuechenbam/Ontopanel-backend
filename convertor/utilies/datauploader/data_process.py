@@ -2,6 +2,12 @@ import pandas as pd
 import numpy as np
 from io import StringIO
 
+'''
+function to turn iput file into JSON format.
+Input file is excel or csv or json.
+
+'''
+
 
 def file_to_json(file, keyword, decimal, nrows, skip_rows, sep="none"):
 
@@ -29,9 +35,3 @@ def file_to_json(file, keyword, decimal, nrows, skip_rows, sep="none"):
     result = df.to_json(orient="columns")
 
     return result
-
-
-if __name__ == "__main__":
-    file = r"C:\Users\ychen2\Desktop\test.xlsx"
-    file_to_json(file, "excel")
-    print('end')
