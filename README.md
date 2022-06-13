@@ -4,9 +4,9 @@
 
 Ontopanel is a plugin in diagrams.net that helps domain experts to build ontologies and method graph visually.
 
-It consist of three tools, their applications can be found in [Ontopanel video tutorials](https://github.com/yuechenbam/yuechenbam.github.io):
+It is designed within the framework of the [Materials Open Laboratory (MatOLab)](https://github.com/Mat-O-Lab) by [Bundesanstalt für Materialforschung und -prüfung (BAM)](https://www.bam.de/Navigation/DE/Home/home.html) to solve the problems encountered by domain experts when building ontologies graphically using diagrames.net, such as ontology reuse, ontology transformation and data mapping.
 
-The source code is developed in the framework of [Materials Open Laboratory (MatOLab)](https://github.com/Mat-O-Lab) project by [Bundesanstalt für Materialforschung und -prüfung (BAM)](https://www.bam.de/Navigation/DE/Home/home.html).
+It consist of three tools, their applications can be found in [Ontopanel video tutorials](https://github.com/yuechenbam/yuechenbam.github.io):
 
 ### Library
 
@@ -19,6 +19,10 @@ EntityManager is a tool that allows user to upload their ontologies and export e
 ### Convertor:
 
 Convertor is a tool that validates current graph and convert it into diagrams.net into OWL. It can also realize data mapping.
+
+## Backend
+
+This project is the backend of Ontopanel and communicates with [Ontopanel-frontend](). Diagrams.net provides permission to add plugins so that users can load the Ontopanel interface. Please follow the tutorial of [Ontopanel-frontend]() to set up the frontend.
 
 ## Installation
 
