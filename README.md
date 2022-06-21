@@ -18,7 +18,7 @@ EntityManager is a tool that allows user to upload their ontologies and export e
 
 ### Convertor:
 
-Convertor is a tool that validates current graph and convert it into diagrams.net into OWL. It can also realize data mapping.
+Convertor is a tool that validates current graph and convert it into diagrams.net into OWL. It can also realize data mapping -- to combine experimental dataset with the method graph.
 
 ## Backend
 
@@ -88,3 +88,4 @@ python manage.py runserver
 ## Contact
 
 Yue Chen (yue.chen@bam.de)
+Markus Schilling (Markus.Schilling@bam.de)
