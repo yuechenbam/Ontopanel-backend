@@ -22,12 +22,14 @@ from drf_yasg import openapi
 schema_view = get_schema_view(
     openapi.Info(
         title="Ontopanel API",
-        default_version='v1',
-        description="Ontopanel is a diagrams.net plugin that assists graphically ontology devleopment in diagrams.net.\
-            This API works with Ontopanel-frontend.",
+        default_version="v1",
+        description='''
+        Ontopanel is a diagrams.net plugin that assists graphically ontology devleopment in diagrams.net.\n
+        Github backend source: https: // github.com/yuechenbam/Ontopanel-backend.\n
+        This API works with Ontopanel-frontend(https: // github.com/yuechenbam/Ontopanel-frontend).''',
         terms_of_service="https://www.google.com/policies/terms/",
         contact=openapi.Contact(email="yue.chen@bam.de"),
-        license=openapi.License(name="BSD License"),
+        license=openapi.License(name="Apache-2.0 license"),
     ),
     public=True,
     permission_classes=[permissions.AllowAny],
