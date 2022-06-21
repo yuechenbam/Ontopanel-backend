@@ -22,7 +22,7 @@ Convertor is a tool that validates current graph and convert it into diagrams.ne
 
 ## Backend
 
-This project is the backend of Ontopanel and communicates with [Ontopanel-frontend](). Diagrams.net provides permission to add plugins so that users can load the Ontopanel interface. Please follow the tutorial of [Ontopanel-frontend]() to set up the frontend.
+This project is the backend of Ontopanel and communicates with [Ontopanel-frontend](). Diagrams.net provides permission to add plugins so that users can load the Ontopanel interface. Please follow the tutorial of [Ontopanel-frontend](https://github.com/yuechenbam/Ontopanel-frontend) to set up the frontend.
 
 ## Installation
 
@@ -79,7 +79,7 @@ python manage.py runserver
 
 [Ontopanel online demo](https://yuechenbam.github.io/src/main/webapp/index.html) - diagrams.net, contains the Ontopanel plugin hosted on the GithubPage.
 
-[Ontopanel-fontend]() - Ontopanel's frontend source code.
+[Ontopanel-fontend](https://github.com/yuechenbam/Ontopanel-frontend) - Ontopanel's frontend source code.
 
 ## Documentation
 
