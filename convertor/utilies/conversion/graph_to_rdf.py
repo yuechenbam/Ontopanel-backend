@@ -653,7 +653,7 @@ class MakeEntityDF():
                         obj = self.combined_df.at[target,
                                                   'BelongsTo']
 
-                        if "hasvalue" in edge_label.lower():
+                        if "(hasValue)" in edge_label:
                             # special cases for (hasValue)objectproperty
                             predica = predica+"(hasvalue)"
 
