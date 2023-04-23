@@ -185,25 +185,32 @@ def manchesterSyntax(thing, store, boolean=None, transientList=False):
 
     elif OWL.Restriction in store.objects(subject=thing, predicate=RDF.type):
         prop = list(store.objects(subject=thing, predicate=OWL.onProperty))[0]
-        prefix, uri, localName = store.compute_qname(prop)
-        propString = ":".join([prefix, localName])
-        label = store.label(prop).strip()
-        if label and (label != localName):
-            propString = propString + "(" + label + ")"
+        try:
 
-        for onlyClass in store.objects(subject=thing, predicate=OWL.allValuesFrom):
-            return "( %s ONLY %s )" % (propString, manchesterSyntax(onlyClass, store))
-        for val in store.objects(subject=thing, predicate=OWL.hasValue):
-            return "( %s VALUE %s )" % (propString, manchesterSyntax(val, store))
-        for someClass in store.objects(subject=thing, predicate=OWL.someValuesFrom):
-            return "( %s SOME %s )" % (propString, manchesterSyntax(someClass, store))
-        cardLookup = {
-            OWL.maxCardinality: "MAX",
-            OWL.minCardinality: "MIN",
-            OWL.cardinality: "EQUALS",
-        }
-        for s, p, o in store.triples_choices((thing, list(cardLookup.keys()), None)):
-            return "( %s %s %s )" % (propString, cardLookup[p], o)
+            prefix, uri, localName = store.compute_qname(prop)
+            propString = ":".join([prefix, localName])
+            label = store.label(prop).strip()
+            if label and (label != localName):
+                propString = propString + "(" + label + ")"
+
+            for onlyClass in store.objects(subject=thing, predicate=OWL.allValuesFrom):
+                return "( %s ONLY %s )" % (propString, manchesterSyntax(onlyClass, store))
+            for val in store.objects(subject=thing, predicate=OWL.hasValue):
+                return "( %s VALUE %s )" % (propString, manchesterSyntax(val, store))
+            for someClass in store.objects(subject=thing, predicate=OWL.someValuesFrom):
+                return "( %s SOME %s )" % (propString, manchesterSyntax(someClass, store))
+            cardLookup = {
+                OWL.maxCardinality: "MAX",
+                OWL.minCardinality: "MIN",
+                OWL.cardinality: "EQUALS",
+            }
+            for s, p, o in store.triples_choices((thing, list(cardLookup.keys()), None)):
+                return "( %s %s %s )" % (propString, cardLookup[p], o)
+        except Exception:
+            if isinstance(thing, BNode):
+                return thing.n3()
+            return "<" + thing + ">"
+
     compl = list(store.objects(subject=thing, predicate=OWL.complementOf))
     if compl:
         return "( NOT %s )" % (manchesterSyntax(compl[0], store))
@@ -1091,7 +1098,7 @@ class Class(AnnotatableTerms):
             or "Class: %s " % self.qname
         ) + klassDescr
 
-    def get_expression(self, full=False, normalization=True):
+    # def get_expression(self, full=False, normalization=True):
         """
         Returns the Manchester Syntax equivalent for this class
         """
@@ -1146,6 +1153,72 @@ class Class(AnnotatableTerms):
             if full:
                 exprs[-1] = "\n    " + exprs[-1]
         return exprs
+
+    def get_expression(self, full=False, normalization=True):
+        """
+        Returns the Manchester Syntax equivalent for this class
+        """
+        exprs = []
+        sc = list(self.subClassOf)
+        ec = list(self.equivalentClass)
+        for boolClass, p, rdfList in self.graph.triples_choices(
+            (self.identifier,
+             [OWL.intersectionOf,
+              OWL.unionOf],
+             None)):
+            ec.append(manchesterSyntax(rdfList, self.graph, boolean=p))
+        dc = list(self.disjointWith)
+        c = self.complementOf
+        if c:
+            dc.append(c)
+        klassKind = ''
+        label = list(self.graph.objects(self.identifier, RDFS.label))
+        label = label and '(' + label[0] + ')' or ''
+        if sc:
+            if full:
+                scJoin = '\n                '
+            else:
+                scJoin = ', '
+            necStatements = [
+                isinstance(s, Class) and isinstance(self.identifier, BNode)
+                and repr(CastClass(s, self.graph)) or
+                # repr(BooleanClass(classOrIdentifier(s),
+                #                  operator=None,
+                #                  graph=self.graph)) or
+                manchesterSyntax(classOrIdentifier(s), self.graph) for s in sc]
+            if necStatements:
+                klassKind = "Primitive Type %s" % label
+            exprs.append("SubClassOf: %s" % scJoin.join(
+                [str(n) for n in necStatements]))
+            if full:
+                exprs[-1] = "\n    " + exprs[-1]
+        if ec:
+            nec_SuffStatements = [
+                isinstance(s, str) and s
+                or manchesterSyntax(classOrIdentifier(s), self.graph) for s in ec]
+            if nec_SuffStatements:
+                klassKind = "A Defined Class %s" % label
+            exprs.append("EquivalentTo: %s" % ', '.join(nec_SuffStatements))
+            if full:
+                exprs[-1] = "\n    " + exprs[-1]
+        if dc:
+            exprs.append("DisjointWith %s\n" % '\n                 '.join(
+                [manchesterSyntax(classOrIdentifier(s), self.graph)
+                    for s in dc]))
+            if full:
+                exprs[-1] = "\n    " + exprs[-1]
+        descr = list(self.graph.objects(self.identifier, RDFS.comment))
+        if full and normalization:
+            klassDescr = klassKind and '\n    ## %s ##' % klassKind +\
+                (descr and "\n    %s" % descr[0] or '') + \
+                ' . '.join(exprs) or ' . '.join(exprs)
+        else:
+            klassDescr = full and (descr and "\n    %s" %
+                                   descr[0] or '') or '' + ' . '.join(exprs)
+        print(exprs)
+        return (isinstance(self.identifier, BNode) and
+                "Some Class " or
+                "Class: %s " % self.qname) + klassDescr
 
 
 class OWLRDFListProxy(object):
