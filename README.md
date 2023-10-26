@@ -85,6 +85,10 @@ python manage.py runserver
 
 [Swagger API documentation](https://ontopanel.herokuapp.com/swagger)
 
+## Publications
+
+[Ontopanel: A Tool for Domain Experts Facilitating Visual Ontology Development and Mapping for FAIR Data Sharing in Materials Testing](https://link.springer.com/article/10.1007/s40192-022-00279-y)
+
 ## Contact
 
 Yue Chen (yue.chen@bam.de)

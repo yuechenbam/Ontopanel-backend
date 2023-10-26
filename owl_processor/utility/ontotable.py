@@ -2,7 +2,6 @@ import time
 import copy
 from owl_processor.utility.special_entities import datatype, annotation_properties
 from owl_processor.utility.machester import Class
-from .machester import Class
 from rest_framework.exceptions import APIException
 import json
 from rdflib.util import find_roots, get_tree
@@ -15,13 +14,6 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 
 class ImportOnto:
-    """ 
-    Class used to extract ontology entities and hierarchy(tree).
-    Attributes:
-        filepath: file URL or file object
-        inputType (string): "URL" or "File"
-    """
-
     def __init__(self, filepath, inputType):
         self.filepath = filepath
         self.inputType = inputType
@@ -55,39 +47,35 @@ class ImportOnto:
         )
 
     def get_imports(self, address, keyword="URL"):
-        try:
-            if keyword != "URL":
-                parse_format = rdflib.util.guess_format(address.name)
-            else:
-                parse_format = rdflib.util.guess_format(address)
+        parse_format_list = [
+            "xml",
+            "turtle",
+            "html",
+            "hturtle",
+            "n3",
+            "nquads",
+            "trix",
+            "rdfa",
+        ]
 
-            parse_format_list = [
-                "xml",
-                "turtle",
-                "html",
-                "hturtle",
-                "n3",
-                "nquads",
-                "trix",
-                "rdfa",
-            ]
+        try:
+            # address_name, address_data
+            if keyword != "URL":
+                address_name = address.name
+
+            else:
+                address_name = address
+
+            parse_format = rdflib.util.guess_format(address_name)
 
             if parse_format:
                 parse_format_list.insert(0, parse_format)
 
-            t = rdflib.Graph()
-            if keyword != "URL":
-                address_data = address.read()
-
             for i in range(len(parse_format_list)):
                 try:
-                    if keyword != "URL":
-                        t.parse(data=address_data, format=parse_format_list[i])
-                        self.g.parse(data=address_data,
-                                     format=parse_format_list[i])
-                    else:
-                        t.parse(address, format=parse_format_list[i])
-                        self.g.parse(address, format=parse_format_list[i])
+
+                    self.g.parse(source=address,
+                                 format=parse_format_list[i])
 
                     namespaces = list(self.g.namespaces())
                     for ns_prefix, namespace in namespaces:
@@ -100,16 +88,20 @@ class ImportOnto:
 
                     break
                 except Exception as e:
+                    print(e)
                     pass
             if i == len(parse_format_list) - 1:
                 raise APIException(
                     "Your ontology or its imported ontologies can not be accessed or parsed. Please check access or the format(rdf or turtle) or use merged file.")
 
-            if list(t.triples((None, rdflib.OWL.imports, None))):
-                for _, _, o in t.triples((None, rdflib.OWL.imports, None)):
+            all_imports = list(self.g.objects(
+                subject=None, predicate=rdflib.OWL.imports))
+
+            if all_imports:
+                for o in all_imports:
                     if o not in self.imported_ontology:
-                        self.get_imports(o)
                         self.imported_ontology.append(o)
+                        self.get_imports(o)
 
         except Exception as e:
 
@@ -407,3 +399,15 @@ def onto_to_table(filepath, inputType="URL"):
     df = df.to_json(orient="index")
 
     return df, output_namespace, tree
+
+
+if __name__ == "__main__":
+    filepath = r"https://raw.githubusercontent.com/Mat-O-Lab/MSEO/main/MSEO_mid.owl"
+    df, output_namespace, tree = onto_to_table(filepath)
+
+    # with open(
+    #     r"C:\Users\ychen2\Documents\Project\javascript\Vue\drawioPlugin\vanilla\peple.json",
+    #     "w",
+    # ) as f:
+    #     json.dump({'title': "MESO", 'onto_source': filepath, 'onto_table': {"table": df, "tree": tree,
+    #               "namespace": output_namespace}, 'author': 'no author'}, f)

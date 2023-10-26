@@ -113,11 +113,13 @@ class OwlTable(APIView):
             onto_source = file_url
             onto_file = file_url
         elif file_object:
+
+            onto_file = file_object.read().decode()
+            file_object.file.seek(0)
             table, namespaces, tree = onto_to_table(
                 file_object, inputType="File")
             onto_source = file_object.name
-            file_object.file.seek(0)
-            onto_file = file_object.read().decode()
+
         else:
             raise APIException("no file available")
 
