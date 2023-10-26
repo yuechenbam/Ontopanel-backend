@@ -10,6 +10,8 @@ import os
 import pandas as pd
 import rdflib
 import warnings
+import cProfile
+import pstats
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
 
@@ -33,6 +35,11 @@ class ImportOnto:
         self.deprecated = []
         self.entity_tree = {}
         self.anno_properties = copy.deepcopy(annotation_properties)
+        # json_format of all the entities
+        self.json_df = {
+
+        }
+
         self.df = pd.DataFrame(
             [],
             columns=(
@@ -47,39 +54,36 @@ class ImportOnto:
         )
 
     def get_imports(self, address, keyword="URL"):
-        try:
-            if keyword != "URL":
-                parse_format = rdflib.util.guess_format(address.name)
-            else:
-                parse_format = rdflib.util.guess_format(address)
+        parse_format_list = [
+            "xml",
+            "turtle",
+            "html",
+            "hturtle",
+            "n3",
+            "nquads",
+            "trix",
+            "rdfa",
+        ]
 
-            parse_format_list = [
-                "xml",
-                "turtle",
-                "html",
-                "hturtle",
-                "n3",
-                "nquads",
-                "trix",
-                "rdfa",
-            ]
+        try:
+            # address_name, address_data
+            if keyword != "URL":
+                address_name = address.name
+                address_data = address.read()
+            else:
+                address_name = address
+                address_data = address
+
+            parse_format = rdflib.util.guess_format(address_name)
 
             if parse_format:
                 parse_format_list.insert(0, parse_format)
 
-            t = rdflib.Graph()
-            if keyword != "URL":
-                address_data = address.read()
-
             for i in range(len(parse_format_list)):
                 try:
-                    if keyword != "URL":
-                        t.parse(data=address_data, format=parse_format_list[i])
-                        self.g.parse(data=address_data,
-                                     format=parse_format_list[i])
-                    else:
-                        t.parse(address, format=parse_format_list[i])
-                        self.g.parse(address, format=parse_format_list[i])
+
+                    self.g.parse(source=address_data,
+                                 format=parse_format_list[i])
 
                     namespaces = list(self.g.namespaces())
                     for ns_prefix, namespace in namespaces:
@@ -96,18 +100,21 @@ class ImportOnto:
                     pass
             if i == len(parse_format_list) - 1:
                 raise APIException(
-                    "Your ontology or it imported ontologies can not be accessed or parsed. Please check access or the format(xml or turtle).")
+                    "Your ontology or its imported ontologies can not be accessed or parsed. Please check access or the format(rdf or turtle) or use merged file.")
 
-            if list(t.triples((None, rdflib.OWL.imports, None))):
-                for _, _, o in t.triples((None, rdflib.OWL.imports, None)):
+            all_imports = list(self.g.objects(
+                subject=None, predicate=rdflib.OWL.imports))
+
+            if all_imports:
+                for o in all_imports:
                     if o not in self.imported_ontology:
-                        self.get_imports(o)
                         self.imported_ontology.append(o)
+                        self.get_imports(o)
 
         except Exception as e:
 
             raise APIException(
-                "There is something wrong in parsing. Please use merged ontologies in xml or turtle.")
+                "Your ontology or its imported ontologies can not be accessed or parsed. Please check access or the format(rdf or turtle) or use merged file.")
 
     def compute_n3(self, entity, includeLabel=True):
         if type(entity) != rdflib.BNode:
@@ -250,95 +257,6 @@ class ImportOnto:
 
         return new_row
 
-    def assign_df_old(self, sub, belongsTo):
-
-        if type(sub) != rdflib.BNode:
-
-            prefix, namespace, name = self.g.compute_qname(sub)
-
-            sub_n3 = self.compute_n3(sub, includeLabel=False)
-
-            # get annotations
-            annotations = {}
-            specialInfo = {}
-            if belongsTo == "ObjectProperty":
-                specialInfo_list = {rdflib.RDFS.subPropertyOf: "subPropertyOf",
-                                    rdflib.RDFS.subPropertyOf: "inverseOf",
-                                    rdflib.OWL.disjointWith: "disjointWith",
-                                    rdflib.RDFS.domain: "domain",
-                                    rdflib.RDFS.range: "range",
-                                    rdflib.OWL.equivalentProperty: "equivalentTo"}
-
-            elif belongsTo == "DatatypeProperty":
-                specialInfo_list = {rdflib.RDFS.subPropertyOf: "subPropertyOf",
-                                    rdflib.OWL.disjointWith: "disjointWith",
-                                    rdflib.RDFS.domain: "domain",
-                                    rdflib.RDFS.range: "range",
-                                    rdflib.OWL.equivalentProperty: "equivalentTo"}
-
-            elif belongsTo == "AnnotationProperty":
-                specialInfo_list = {rdflib.RDFS.subPropertyOf: "subPropertyOf"}
-            elif belongsTo == "Individual":
-                specialInfo_list = {rdflib.RDF.type: "type"}
-
-            elif belongsTo == "Datatype":
-                specialInfo_list = {}
-
-            elif belongsTo == "Class":
-                # specialInfo_list = {rdflib.RDFS.subClassOf: "subClassOf",
-                #                     rdflib.OWL.disjointWith: "disjointWith",
-                #                     rdflib.RDFS.domain: "domain",
-                #                     rdflib.RDFS.range: "range",
-                #                     rdflib.OWL.equivalentProperty: "equivalentTo"}
-                specialInfo_list = {}
-                all_info = Class(sub, graph=self.g).get_expression()
-                for i in all_info.keys():
-                    specialInfo[i] = [all_info[i]]
-
-            else:
-                specialInfo_list = {}
-
-            color = 'none'
-            relation_list = self.g.predicate_objects(subject=sub)
-            for pre, obj in relation_list:
-                if type(obj) != rdflib.BNode:
-                    if pre in self.anno_properties:
-                        anno_prop_n3 = self.compute_n3(pre)
-                        if anno_prop_n3 not in annotations:
-                            annotations[anno_prop_n3] = []
-
-                        if pre == rdflib.OWL.deprecated and obj.value == True:
-                            self.deprecated.append(sub)
-
-                        anno_list_n3 = annotations[anno_prop_n3]
-
-                        try:
-                            anno_list_n3.append(obj.n3())
-                        except Exception:
-                            anno_list_n3.append(obj)
-
-                    elif pre in specialInfo_list:
-                        specialInfo_key = specialInfo_list[pre]
-                        if specialInfo_key not in specialInfo:
-                            specialInfo[specialInfo_key] = []
-
-                        specialInfo_value = specialInfo[specialInfo_key]
-                        specialInfo_value.append(obj)
-
-            new_row = {
-                "Color": color,
-                "EntityName": sub_n3,
-                "RDFLabel": self.g.label(sub),
-                "Annotations": annotations,
-                "SpecialInfo": specialInfo,
-                "BelongsTo": belongsTo,
-                "namespace": namespace,
-                "EntityIRI": sub}
-        else:
-            new_row = None
-
-        return new_row
-
     def extract_anno_properties(self):
         self.anno_properties.update(
             set(self.g.subjects(
@@ -450,6 +368,8 @@ class ImportOnto:
         self.entity_tree["Datatype"] = [(x, []) for x in Datatype]
 
     def run_all(self):
+
+        print("start")
         start_time = time.time()
 
         if self.inputType == "URL":
@@ -461,17 +381,32 @@ class ImportOnto:
             rdflib.namespace.NamespaceManager(self.g).bind(
                 prefix, namespace, override=True)
 
+        end_time_import = time.time()
+
+        import_time = end_time_import-start_time
+        print(f"import_time:{import_time}")
+        print("start anno")
+
         self.extract_anno_properties()
 
-        anno_time = time.time()
-        print("anno_time", anno_time-start_time)
+        end_time_anno = time.time()
+
+        extr_anno_time = end_time_anno-end_time_import
+
+        print(f"extr_anno_time:{extr_anno_time}")
 
         self.extract_infos()
 
-        extract_time = time.time()
-        print("extract time", extract_time-anno_time)
+        end_time_info = time.time()
+        extr_info_time = end_time_info - end_time_anno
+        print(f"extra_info: {extr_info_time}")
 
         self.get_roots()
+
+        end_time_root = time.time()
+
+        get_roots_time = end_time_root-end_time_info
+        print(f"get_roots: {get_roots_time}")
 
         used_namespaces = self.df["namespace"].unique()
 
@@ -493,14 +428,17 @@ def onto_to_table(filepath, inputType="URL"):
     import_onto = ImportOnto(filepath, inputType=inputType)
     df, output_namespace, tree = import_onto.run_all()
 
+    print(df.head(10))
+
     df = df.to_json(orient="index")
 
     return df, output_namespace, tree
 
 
 if __name__ == "__main__":
-    filepath = r"https://raw.githubusercontent.com/CommonCoreOntology/CommonCoreOntologies/master/cco-merged/MergedAllCoreOntology-v1.3-2021-03-01.ttl"
-    df, output_namespace, tree = onto_to_table(filepath)
+    with cProfile.Profile() as profile:
+        filepath = r"https://www.w3.org/ns/prov-o"
+        df, output_namespace, tree = onto_to_table(filepath)
 
     # with open(
     #     r"C:\Users\ychen2\Documents\Project\javascript\Vue\drawioPlugin\vanilla\peple.json",

@@ -10,6 +10,8 @@ import os
 import pandas as pd
 import rdflib
 import warnings
+import cProfile
+import pstats
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
 
@@ -47,35 +49,39 @@ class ImportOnto:
         )
 
     def get_imports(self, address, keyword="URL"):
-        parse_format_list = [
-            "xml",
-            "turtle",
-            "html",
-            "hturtle",
-            "n3",
-            "nquads",
-            "trix",
-            "rdfa",
-        ]
-
         try:
-            # address_name, address_data
             if keyword != "URL":
-                address_name = address.name
-
+                parse_format = rdflib.util.guess_format(address.name)
             else:
-                address_name = address
+                parse_format = rdflib.util.guess_format(address)
 
-            parse_format = rdflib.util.guess_format(address_name)
+            parse_format_list = [
+                "xml",
+                "turtle",
+                "html",
+                "hturtle",
+                "n3",
+                "nquads",
+                "trix",
+                "rdfa",
+            ]
 
             if parse_format:
                 parse_format_list.insert(0, parse_format)
 
+            t = rdflib.Graph()
+            if keyword != "URL":
+                address_data = address.read()
+
             for i in range(len(parse_format_list)):
                 try:
-
-                    self.g.parse(source=address,
-                                 format=parse_format_list[i])
+                    if keyword != "URL":
+                        t.parse(data=address_data, format=parse_format_list[i])
+                        self.g.parse(data=address_data,
+                                     format=parse_format_list[i])
+                    else:
+                        t.parse(address, format=parse_format_list[i])
+                        self.g.parse(address, format=parse_format_list[i])
 
                     namespaces = list(self.g.namespaces())
                     for ns_prefix, namespace in namespaces:
@@ -94,14 +100,11 @@ class ImportOnto:
                 raise APIException(
                     "Your ontology or its imported ontologies can not be accessed or parsed. Please check access or the format(rdf or turtle) or use merged file.")
 
-            all_imports = list(self.g.objects(
-                subject=None, predicate=rdflib.OWL.imports))
-
-            if all_imports:
-                for o in all_imports:
+            if list(t.triples((None, rdflib.OWL.imports, None))):
+                for _, _, o in t.triples((None, rdflib.OWL.imports, None)):
                     if o not in self.imported_ontology:
-                        self.imported_ontology.append(o)
                         self.get_imports(o)
+                        self.imported_ontology.append(o)
 
         except Exception as e:
 
@@ -361,6 +364,9 @@ class ImportOnto:
 
     def run_all(self):
 
+        print("start")
+        start_time = time.time()
+
         if self.inputType == "URL":
             self.get_imports(self.filepath)
         else:
@@ -370,11 +376,32 @@ class ImportOnto:
             rdflib.namespace.NamespaceManager(self.g).bind(
                 prefix, namespace, override=True)
 
+        end_time_import = time.time()
+
+        import_time = end_time_import-start_time
+        print(f"import_time:{import_time}")
+        print("start anno")
+
         self.extract_anno_properties()
+
+        end_time_anno = time.time()
+
+        extr_anno_time = end_time_anno-end_time_import
+
+        print(f"extr_anno_time:{extr_anno_time}")
 
         self.extract_infos()
 
+        end_time_info = time.time()
+        extr_info_time = end_time_info - end_time_anno
+        print(f"extra_info: {extr_info_time}")
+
         self.get_roots()
+
+        end_time_root = time.time()
+
+        get_roots_time = end_time_root-end_time_info
+        print(f"get_roots: {get_roots_time}")
 
         used_namespaces = self.df["namespace"].unique()
 
@@ -402,8 +429,9 @@ def onto_to_table(filepath, inputType="URL"):
 
 
 if __name__ == "__main__":
-    filepath = r"https://raw.githubusercontent.com/Mat-O-Lab/MSEO/main/MSEO_mid.owl"
-    df, output_namespace, tree = onto_to_table(filepath)
+    with cProfile.Profile() as profile:
+        filepath = r"https://raw.githubusercontent.com/CommonCoreOntology/CommonCoreOntologies/master/AllCoreOntology.ttl"
+        df, output_namespace, tree = onto_to_table(filepath)
 
     # with open(
     #     r"C:\Users\ychen2\Documents\Project\javascript\Vue\drawioPlugin\vanilla\peple.json",
