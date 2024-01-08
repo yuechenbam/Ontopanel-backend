@@ -1,4 +1,3 @@
-import time
 import copy
 from owl_processor.utility.special_entities import datatype, annotation_properties
 from owl_processor.utility.machester import Class
@@ -14,6 +13,13 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 
 class ImportOnto:
+    """ 
+    Class used to extract ontology entities and hierarchy(tree).
+    Attributes:
+        filepath: file URL or file object
+        inputType (string): "URL" or "File"
+    """
+
     def __init__(self, filepath, inputType):
         self.filepath = filepath
         self.inputType = inputType

@@ -1,0 +1,15 @@
+{
+  "builds": [
+    {
+      "src": "ontopanel/wsgi.py",
+      "use": "@ardnt/vercel-python-wsgi",
+      "config": { "maxLambdaSize": "15mb" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "ontopanel/wsgi.py"
+    }
+  ]
+}

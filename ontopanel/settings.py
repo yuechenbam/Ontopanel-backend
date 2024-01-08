@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = str(os.environ.get('DEBUG')) == "1"  # 1==True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'ontopanel.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.vercel.app']
 
 CORS_ORIGIN_ALLOW_ALL = True
 
@@ -82,7 +82,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'ontopanel.wsgi.application'
+WSGI_APPLICATION = 'vercel_app.wsgi.app'
 
 
 # Database

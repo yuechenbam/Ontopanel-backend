@@ -1,1 +1,0 @@
-web: gunicorn ontopanel.wsgi --log-file -
