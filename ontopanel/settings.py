@@ -88,9 +88,7 @@ WSGI_APPLICATION = 'ontopanel.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 
-DATABASES = {}
-if 'test' in sys.argv:
-    DATABASES = {
+DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': BASE_DIR / 'db.sqlite3',
@@ -98,9 +96,19 @@ if 'test' in sys.argv:
     }
 
 
-else:
-    DATABASES['default'] = dj_database_url.config(
-        conn_max_age=600, ssl_require=True)
+# DATABASES = {}
+# if 'test' in sys.argv:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': BASE_DIR / 'db.sqlite3',
+#         }
+#     }
+
+
+# else:
+#     DATABASES['default'] = dj_database_url.config(
+#         conn_max_age=600, ssl_require=True)
 
 
 # Password validation
