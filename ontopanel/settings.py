@@ -89,30 +89,20 @@ WSGI_APPLICATION = 'ontopanel.wsgi.application'
 
 
 
-# DATABASES = {}
-# if 'test' in sys.argv:
-#     DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.sqlite3',
-#             'NAME': BASE_DIR / 'db.sqlite3',
-#         }
-#     }
-
-
-# else:
-#     DATABASES = {'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))}
-
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ontopanel-sql',
-        'USER': os.environ.get('DATABASE_USER'),
-        'PASSWORD': os.environ.get('DATABASE_PASSWORD'),
-        'HOST': os.environ.get('DATABASE_HOST'),
-        'PORT': '5432',
+DATABASES = {}
+if 'test' in sys.argv:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
     }
-}
+
+
+else:
+    DATABASES = {'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))}
+
+
 
 
 # Password validation
